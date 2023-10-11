@@ -31,6 +31,9 @@ module.exports = {
           20: '#E7E7E7',
           0: '#FFFFFF',
         },
+        other: {
+          100: '#6FCF97',
+        },
       },
       backgroundImage: {
         'custom-gradient-red': 'linear-gradient(179deg, #A0000C 60.73%, rgba(77, 0, 6, 0.60) 117.12%)',
@@ -59,6 +62,7 @@ module.exports = {
         '22': '22px',
         '24': '24px',
         '40': '40px',
+        '60': '60px',
         '74': '74px',
         '120': '120px',
         '192': '192px',
@@ -67,6 +71,7 @@ module.exports = {
         '8':'8px',
         '10':'10px',
         '12':'12px',
+        '14':'14px',
         '16':'16px',
         '20':'20px',
         '24':'24px',
@@ -83,6 +88,7 @@ module.exports = {
         'xs': '12px',     // Extra Small
         'sm': '14px',    // Small
         'medium': '16px',      // Medium
+        'mlg': '18px',      // Medium
         'lg': '20px',    // Large
         'xl': '24px',     // Extra Large
         '2xl': '28px',     // 2 Extra Large

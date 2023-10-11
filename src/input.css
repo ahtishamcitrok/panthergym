@@ -50,6 +50,13 @@
     }
 }
 
+/* Above 1400 */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+
 /* external font */
 @font-face {
     font-family: "SpyAgencySemi";
@@ -101,7 +108,16 @@
 
 /* General */
 
+header {
+    background: var(--base-base-0, #FFF);
+    box-shadow: 0px 4px 34px 4px rgba(51, 51, 51, 0.08);
+}
+
 span.red {
+    @apply text-primary-100
+}
+
+.active {
     @apply text-primary-100
 }
 
@@ -301,4 +317,135 @@ span.red {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+
+/* schedule tabs css starts */
+
+/* Style the tab */
+.tabs-wrap .tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 3%; */
+    overflow: hidden;
+    border: 1px solid #E0E0E0;
+    background: linear-gradient(103deg, rgba(19, 19, 19, 0.90) 0%, rgba(11, 11, 11, 0.85) 100%), #FCE7E8;
+    padding: 21px 24px;
+}
+
+.tabs-wrap .tab .tablinks.active h4 {
+    color: #E10A17;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tabs-wrap .tab button {
+    background-color: none;
+    float: left;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 16px;
+    transition: 0.3s;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+/* Change background color of buttons on hover */
+.tabs-wrap .tab button:hover {
+    border-color: #E7E7E7;
+}
+
+/* Create an active/current tablink class */
+.tabs-wrap .tab button.active {
+    /* background-color: #ccc; */
+    border-color: #E7E7E7;
+}
+
+/* Style the tab content */
+.tabs-wrap .tabcontent {
+    display: none;
+    /* padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none; */
+}
+
+.tabs-wrap .tabcontent.active {
+    display: block;
+}
+
+/* schedule tabs css ends */
+
+/* tabs content css starts */
+
+.timing-list-wrap .timing-list-single:not(:last-child) {
+    border-bottom: 1px solid #E7E7E7;
+}
+
+.timing-list-item-wrap .timing-list-item:nth-child(1), .timing-list-item-wrap .timing-list-item:nth-child(4) {
+    min-width: 180px;
+    max-width: 180px;
+}
+
+/* tabs content css ends */
+
+/* custom media queries */
+
+@media all and (max-width: 1200px) {
+
+    .timing-list-item-wrap .timing-list-item:nth-child(1), .timing-list-item-wrap .timing-list-item:nth-child(4) {
+        min-width: 150px;
+        max-width: 150px;
+    }
+
+    .tabs-wrap .tab {
+        overflow-x: scroll;
+        justify-content: flex-start;
+    }
+
+}
+
+@media all and (max-width: 992px) {
+
+    /* .timing-list-item-wrap .timing-list-item:nth-child(1), .timing-list-item-wrap .timing-list-item:nth-child(4) {
+        min-width: 150px;
+        max-width: 150px;
+    } */
+
+    .timing-list-item-wrap .timing-list-item {
+        min-width: 150px;
+        max-width: 150px;
+    }
+
+    .tabs-wrap .tab {
+        padding: 16px 18px;
+    }
+
+    .tabs-wrap .tab button {
+        padding: 12px 12px;
+    }
+
+    .timing-list-wrap .timing-list-single:not(:last-child) {
+        border: 1px solid #E7E7E7;
+        margin-bottom: 24px;
+    }
+    
+    .timing-list-wrap .timing-list-single {
+        border: 1px solid #E7E7E7;
+    }
+
+}
+
+@media all and (max-width: 420px) {
+
+    .timing-list-item-wrap {
+        flex-direction: column;
+        min-width: auto;
+        max-width: unset;
+    }
+
+    .timing-list-item-wrap .timing-list-item:nth-child(1), .timing-list-item-wrap .timing-list-item:nth-child(4) {
+        min-width: auto;
+        max-width: unset;
+    }
+
 }

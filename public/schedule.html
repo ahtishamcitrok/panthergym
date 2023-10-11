@@ -1,0 +1,834 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- general tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- title -->
+    <title>Schedule</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png" sizes="any">
+
+    <!-- font awesome -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Swiper slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- css files -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/output.css" rel="stylesheet">
+</head>
+
+<body class="overflow-x-hidden font-sans">
+
+    <!-- header -->
+    <header>
+        <div class="container">
+            <div class="header-inner flex justify-between items-center py-3">
+                <div class="header-logo">
+                    <a href=""><img src="./img/logo-black.svg" alt="panther gym logo"></a>
+                </div>
+                <div class="header-nav hidden lg:block">
+                    <nav>
+                        <ul class="flex gap-x-8">
+                            <li><a class="font-semibold hover:text-primary-100" href="#">Home</a></li>
+                            <li><a class="font-semibold hover:text-primary-100" href="#">Shop</a></li>
+                            <li><a class="font-semibold hover:text-primary-100 active active:text-primary-100" href="#">Class Schedule</a></li>
+                            <li><a class="font-semibold hover:text-primary-100" href="#">Plans</a></li>
+                            <li><a class="font-semibold hover:text-primary-100" href="#">Drop-Ins</a></li>
+                            <li><a class="font-semibold hover:text-primary-100" href="#">FAQ’s</a></li>
+                            <li><a class="font-semibold hover:text-primary-100" href="#">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-btns flex gap-x-6">
+                    <a class="" href=""><img src="./img/header-search-icon.svg" alt=""></a>
+                    <a href=""><img src="./img/header-cart-icon.svg" alt=""></a>
+                    <a href=""><img src="./img/header-wishlist-icon.svg" alt=""></a>
+                    <a href=""><img src="./img/header-profile-icon.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main class="relative">
+
+        <div class="alert-wrap max-w-[600px] w-[90%] mx-auto bg-other-100 py-14 px-16 rounded absolute top-[32px] left-0 right-0">
+            <div class="alert-inner flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="./img/check-white.svg" class="pr-12" alt="">
+                    <p class="sm:text-sm text-xs font-semibold text-base-0">Your booking has been cancelled</p>
+                </div>
+                <div class="cursor-pointer"><img src="./img/close-btn-white.svg" alt=""></div>
+            </div>
+        </div>
+
+        <!-- schedule -->
+        <div class="schedule-outer-wrap lg:py-120 py-60">
+            <div class="container">
+                <div class="schedule-inner">
+                    <div class="sec-head text-center max-w-[850px] w-full mx-auto mb-48">
+                        <h2 class="font-spyagency text-4xl mb-12">WEEK CLASS <span class="red">SCHEDULE</span></h2>
+                        <p class="text-base-80 text-lg">Our calendar is carefully curated to provide you with a variety of workout options that fit seamlessly into your schedule.</p>
+                    </div>
+                    <div class="tabs-wrap">
+                        <!-- Tab links -->
+                        <div class="tab tab-header xxl:gap-8 gap-6">
+                            <button class="tablinks active">
+                                <h4 class="font-bold text-base-0 xl:text-xl text-mlg leading-none mb-14 text-center">8</h4>
+                                <span class="xl:text-mlg text-mdium text-base-0 font-normal leading-none mb-14 text-center block">Oct</span>
+                                <p class="font-medium text-base-0 leading-none text-center uppercase min-w-[97px]">SUNDAY</p>
+                            </button>
+                            <button class="tablinks">
+                                <h4 class="font-bold text-base-0 xl:text-xl text-mlg leading-none mb-14 text-center">9</h4>
+                                <span class="xl:text-mlg text-mdium text-base-0 font-normal leading-none mb-14 text-center block">Oct</span>
+                                <p class="font-medium text-base-0 leading-none text-center uppercase min-w-[97px]">MONDAY</p>
+                            </button>
+                            <button class="tablinks">
+                                <h4 class="font-bold text-base-0 xl:text-xl text-mlg leading-none mb-14 text-center">10</h4>
+                                <span class="xl:text-mlg text-mdium text-base-0 font-normal leading-none mb-14 text-center block">Oct</span>
+                                <p class="font-medium text-base-0 leading-none text-center uppercase min-w-[97px]">TUESDAY</p>
+                            </button>
+                            <button class="tablinks">
+                                <h4 class="font-bold text-base-0 xl:text-xl text-mlg leading-none mb-14 text-center">11</h4>
+                                <span class="xl:text-mlg text-mdium text-base-0 font-normal leading-none mb-14 text-center block">Oct</span>
+                                <p class="font-medium text-base-0 leading-none text-center uppercase min-w-[97px]">WEDNESDAY</p>
+                            </button>
+                            <button class="tablinks">
+                                <h4 class="font-bold text-base-0 xl:text-xl text-mlg leading-none mb-14 text-center">12</h4>
+                                <span class="xl:text-mlg text-mdium text-base-0 font-normal leading-none mb-14 text-center block">Oct</span>
+                                <p class="font-medium text-base-0 leading-none text-center uppercase min-w-[97px]">THURSDAY</p>
+                            </button>
+                            <button class="tablinks">
+                                <h4 class="font-bold text-base-0 xl:text-xl text-mlg leading-none mb-14 text-center">13</h4>
+                                <span class="xl:text-mlg text-mdium text-base-0 font-normal leading-none mb-14 text-center block">Oct</span>
+                                <p class="font-medium text-base-0 leading-none text-center uppercase min-w-[97px]">FRIDAY</p>
+                            </button>
+                            <button class="tablinks">
+                                <h4 class="font-bold text-base-0 xl:text-xl text-mlg leading-none mb-14 text-center">14</h4>
+                                <span class="xl:text-mlg text-mdium text-base-0 font-normal leading-none mb-14 text-center block">Oct</span>
+                                <p class="font-medium text-base-0 leading-none text-center uppercase min-w-[97px]">SATURDAY</p>
+                            </button>
+                        </div>
+                        
+                        <!-- Tab content -->
+                        <div class="tab-content-wrap lg:mt-0 mt-24">
+                            <div class="tabcontent active">
+                                <div class="timing-list-wrap lg:border border-0 border-base-20 w-full">
+                                    <div class="timing-list-single py-24 px-24 w-full flex lg:flex-row flex-col lg:gap-y-[0px] gap-y-[24px] justify-between lg:items-center items-start">
+                                        <div class="timing-list-item-wrap flex lg:flex-nowrap flex-wrap xxl:gap-x-16 lg:gap-x-8 gap-x-6 lg:gap-y-[0px] gap-y-[24px]">
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Title</span>
+                                                <p class="font-bold text-base-80" >Hot Flow Yoga</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Time</span>
+                                                <p class="font-bold text-base-80" >12:00 pm</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Duration</span>
+                                                <p class="font-bold text-base-80" >45 minutes</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Category</span>
+                                                <p class="font-bold text-base-80" >Express Yoga, Yoga</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Availability</span>
+                                                <p class="font-bold text-base-80" >10 spots left</p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-wrap xxl:max-w-[180px] sm:max-w-[150px] max-w-[100%] w-full">
+                                            <a href="#" class="btn-outline w-full text-center">Book</a>
+                                        </div>
+                                    </div>
+                                    <div class="timing-list-single py-24 px-24 w-full flex lg:flex-row flex-col lg:gap-y-[0px] gap-y-[24px] justify-between lg:items-center items-start">
+                                        <div class="timing-list-item-wrap flex lg:flex-nowrap flex-wrap xxl:gap-x-16 lg:gap-x-8 gap-x-6 lg:gap-y-[0px] gap-y-[24px]">
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Title</span>
+                                                <p class="font-bold text-base-80" >Competitive Boxing</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Time</span>
+                                                <p class="font-bold text-base-80" >06:00 pm</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Duration</span>
+                                                <p class="font-bold text-base-80" >50 minutes</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Category</span>
+                                                <p class="font-bold text-base-80" >Express Yoga, Yoga</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Availability</span>
+                                                <p class="font-bold text-base-80" >9 spots left</p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-wrap xxl:max-w-[180px] sm:max-w-[150px] max-w-[100%] w-full">
+                                            <a href="#" class="btn-outline w-full text-center">Book</a>
+                                        </div>
+                                    </div>
+                                    <div class="timing-list-single py-24 px-24 w-full flex lg:flex-row flex-col lg:gap-y-[0px] gap-y-[24px] justify-between lg:items-center items-start">
+                                        <div class="timing-list-item-wrap flex lg:flex-nowrap flex-wrap xxl:gap-x-16 lg:gap-x-8 gap-x-6 lg:gap-y-[0px] gap-y-[24px]">
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Title</span>
+                                                <p class="font-bold text-base-80" >Group Boxing</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Time</span>
+                                                <p class="font-bold text-base-80" >06:00 pm</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Duration</span>
+                                                <p class="font-bold text-base-80" >50 minutes</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Category</span>
+                                                <p class="font-bold text-base-80" >Express Yoga, Yoga</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Availability</span>
+                                                <p class="font-bold text-base-80" >9 spots left</p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-wrap xxl:max-w-[180px] sm:max-w-[150px] max-w-[100%] w-full">
+                                            <a href="#" class="btn-outline w-full text-center">Book</a>
+                                        </div>
+                                    </div>
+                                    <div class="timing-list-single py-24 px-24 w-full flex lg:flex-row flex-col lg:gap-y-[0px] gap-y-[24px] justify-between lg:items-center items-start">
+                                        <div class="timing-list-item-wrap flex lg:flex-nowrap flex-wrap xxl:gap-x-16 lg:gap-x-8 gap-x-6 lg:gap-y-[0px] gap-y-[24px]">
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Title</span>
+                                                <p class="font-bold text-base-80" >Yin Yoga</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Time</span>
+                                                <p class="font-bold text-base-80" >06:00 pm</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Duration</span>
+                                                <p class="font-bold text-base-80" >50 minutes</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Category</span>
+                                                <p class="font-bold text-base-80" >Express Yoga, Yoga</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Availability</span>
+                                                <p class="font-bold text-base-80" >9 spots left</p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-wrap xxl:max-w-[180px] sm:max-w-[150px] max-w-[100%] w-full">
+                                            <a href="#" class="btn-outline w-full text-center">Book</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tabcontent">
+                                <div class="timing-list-wrap border-r border-b border-l border-base-20 w-full">
+                                    <div class="timing-list-single py-24 px-24 w-full flex lg:flex-row flex-col lg:gap-y-[0px] gap-y-[24px] justify-between lg:items-center items-start">
+                                        <div class="timing-list-item-wrap flex lg:flex-nowrap flex-wrap xxl:gap-x-16 lg:gap-x-8 gap-x-6 lg:gap-y-[0px] gap-y-[24px]">
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Title</span>
+                                                <p class="font-bold text-base-80" >Competitive Boxing</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Time</span>
+                                                <p class="font-bold text-base-80" >06:00 pm</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Duration</span>
+                                                <p class="font-bold text-base-80" >50 minutes</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Category</span>
+                                                <p class="font-bold text-base-80" >Express Yoga, Yoga</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Availability</span>
+                                                <p class="font-bold text-base-80" >9 spots left</p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-wrap xxl:max-w-[180px] sm:max-w-[150px] max-w-[100%] w-full">
+                                            <a href="#" class="btn-outline w-full text-center">Book</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tabcontent">
+                                <div class="timing-list-wrap border-r border-b border-l border-base-20 w-full">
+                                    <div class="timing-list-single py-24 px-24 w-full flex lg:flex-row flex-col lg:gap-y-[0px] gap-y-[24px] justify-between lg:items-center items-start">
+                                        <div class="timing-list-item-wrap flex lg:flex-nowrap flex-wrap xxl:gap-x-16 lg:gap-x-8 gap-x-6 lg:gap-y-[0px] gap-y-[24px]">
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Title</span>
+                                                <p class="font-bold text-base-80" >Hot Flow Yoga</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Time</span>
+                                                <p class="font-bold text-base-80" >12:00 pm</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Duration</span>
+                                                <p class="font-bold text-base-80" >45 minutes</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Category</span>
+                                                <p class="font-bold text-base-80" >Express Yoga, Yoga</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Availability</span>
+                                                <p class="font-bold text-base-80" >10 spots left</p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-wrap xxl:max-w-[180px] sm:max-w-[150px] max-w-[100%] w-full">
+                                            <a href="#" class="btn-outline w-full text-center">Book</a>
+                                        </div>
+                                    </div>
+                                    <div class="timing-list-single py-24 px-24 w-full flex lg:flex-row flex-col lg:gap-y-[0px] gap-y-[24px] justify-between lg:items-center items-start">
+                                        <div class="timing-list-item-wrap flex lg:flex-nowrap flex-wrap xxl:gap-x-16 lg:gap-x-8 gap-x-6 lg:gap-y-[0px] gap-y-[24px]">
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Title</span>
+                                                <p class="font-bold text-base-80" >Competitive Boxing</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Time</span>
+                                                <p class="font-bold text-base-80" >06:00 pm</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Duration</span>
+                                                <p class="font-bold text-base-80" >50 minutes</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Category</span>
+                                                <p class="font-bold text-base-80" >Express Yoga, Yoga</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Availability</span>
+                                                <p class="font-bold text-base-80" >9 spots left</p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-wrap xxl:max-w-[180px] sm:max-w-[150px] max-w-[100%] w-full">
+                                            <a href="#" class="btn-outline w-full text-center">Book</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabcontent">
+                                <div class="timing-list-wrap border-r border-b border-l border-base-20 w-full">
+                                    <div class="timing-list-single py-24 px-24 w-full flex lg:flex-row flex-col lg:gap-y-[0px] gap-y-[24px] justify-between lg:items-center items-start">
+                                        <div class="timing-list-item-wrap flex lg:flex-nowrap flex-wrap xxl:gap-x-16 lg:gap-x-8 gap-x-6 lg:gap-y-[0px] gap-y-[24px]">
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Title</span>
+                                                <p class="font-bold text-base-80" >Hot Flow Yoga</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Time</span>
+                                                <p class="font-bold text-base-80" >12:00 pm</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Duration</span>
+                                                <p class="font-bold text-base-80" >45 minutes</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Category</span>
+                                                <p class="font-bold text-base-80" >Express Yoga, Yoga</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Availability</span>
+                                                <p class="font-bold text-base-80" >10 spots left</p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-wrap xxl:max-w-[180px] sm:max-w-[150px] max-w-[100%] w-full">
+                                            <a href="#" class="btn-outline w-full text-center">Book</a>
+                                        </div>
+                                    </div>
+                                    <div class="timing-list-single py-24 px-24 w-full flex lg:flex-row flex-col lg:gap-y-[0px] gap-y-[24px] justify-between lg:items-center items-start">
+                                        <div class="timing-list-item-wrap flex lg:flex-nowrap flex-wrap xxl:gap-x-16 lg:gap-x-8 gap-x-6 lg:gap-y-[0px] gap-y-[24px]">
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Title</span>
+                                                <p class="font-bold text-base-80" >Competitive Boxing</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Time</span>
+                                                <p class="font-bold text-base-80" >06:00 pm</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Duration</span>
+                                                <p class="font-bold text-base-80" >50 minutes</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Category</span>
+                                                <p class="font-bold text-base-80" >Express Yoga, Yoga</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Availability</span>
+                                                <p class="font-bold text-base-80" >9 spots left</p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-wrap xxl:max-w-[180px] sm:max-w-[150px] max-w-[100%] w-full">
+                                            <a href="#" class="btn-outline w-full text-center">Book</a>
+                                        </div>
+                                    </div>
+                                    <div class="timing-list-single py-24 px-24 w-full flex lg:flex-row flex-col lg:gap-y-[0px] gap-y-[24px] justify-between lg:items-center items-start">
+                                        <div class="timing-list-item-wrap flex lg:flex-nowrap flex-wrap xxl:gap-x-16 lg:gap-x-8 gap-x-6 lg:gap-y-[0px] gap-y-[24px]">
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Title</span>
+                                                <p class="font-bold text-base-80" >Group Boxing</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Time</span>
+                                                <p class="font-bold text-base-80" >06:00 pm</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Duration</span>
+                                                <p class="font-bold text-base-80" >50 minutes</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Category</span>
+                                                <p class="font-bold text-base-80" >Express Yoga, Yoga</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Availability</span>
+                                                <p class="font-bold text-base-80" >9 spots left</p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-wrap xxl:max-w-[180px] sm:max-w-[150px] max-w-[100%] w-full">
+                                            <a href="#" class="btn-outline w-full text-center">Book</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabcontent">
+                                <div class="timing-list-wrap border-r border-b border-l border-base-20 w-full">
+                                    <div class="timing-list-single py-24 px-24 w-full flex lg:flex-row flex-col lg:gap-y-[0px] gap-y-[24px] justify-between lg:items-center items-start">
+                                        <div class="timing-list-item-wrap flex lg:flex-nowrap flex-wrap xxl:gap-x-16 lg:gap-x-8 gap-x-6 lg:gap-y-[0px] gap-y-[24px]">
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Title</span>
+                                                <p class="font-bold text-base-80" >Hot Flow Yoga</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Time</span>
+                                                <p class="font-bold text-base-80" >12:00 pm</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Duration</span>
+                                                <p class="font-bold text-base-80" >45 minutes</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Category</span>
+                                                <p class="font-bold text-base-80" >Express Yoga, Yoga</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Availability</span>
+                                                <p class="font-bold text-base-80" >10 spots left</p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-wrap xxl:max-w-[180px] sm:max-w-[150px] max-w-[100%] w-full">
+                                            <a href="#" class="btn-outline w-full text-center">Book</a>
+                                        </div>
+                                    </div>
+                                    <div class="timing-list-single py-24 px-24 w-full flex lg:flex-row flex-col lg:gap-y-[0px] gap-y-[24px] justify-between lg:items-center items-start">
+                                        <div class="timing-list-item-wrap flex lg:flex-nowrap flex-wrap xxl:gap-x-16 lg:gap-x-8 gap-x-6 lg:gap-y-[0px] gap-y-[24px]">
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Title</span>
+                                                <p class="font-bold text-base-80" >Competitive Boxing</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Time</span>
+                                                <p class="font-bold text-base-80" >06:00 pm</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Duration</span>
+                                                <p class="font-bold text-base-80" >50 minutes</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Category</span>
+                                                <p class="font-bold text-base-80" >Express Yoga, Yoga</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Availability</span>
+                                                <p class="font-bold text-base-80" >9 spots left</p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-wrap xxl:max-w-[180px] sm:max-w-[150px] max-w-[100%] w-full">
+                                            <a href="#" class="btn-outline w-full text-center">Book</a>
+                                        </div>
+                                    </div>
+                                    <div class="timing-list-single py-24 px-24 w-full flex lg:flex-row flex-col lg:gap-y-[0px] gap-y-[24px] justify-between lg:items-center items-start">
+                                        <div class="timing-list-item-wrap flex lg:flex-nowrap flex-wrap xxl:gap-x-16 lg:gap-x-8 gap-x-6 lg:gap-y-[0px] gap-y-[24px]">
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Title</span>
+                                                <p class="font-bold text-base-80" >Group Boxing</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Time</span>
+                                                <p class="font-bold text-base-80" >06:00 pm</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Duration</span>
+                                                <p class="font-bold text-base-80" >50 minutes</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Category</span>
+                                                <p class="font-bold text-base-80" >Express Yoga, Yoga</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Availability</span>
+                                                <p class="font-bold text-base-80" >9 spots left</p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-wrap xxl:max-w-[180px] sm:max-w-[150px] max-w-[100%] w-full">
+                                            <a href="#" class="btn-outline w-full text-center">Book</a>
+                                        </div>
+                                    </div>
+                                    <div class="timing-list-single py-24 px-24 w-full flex lg:flex-row flex-col lg:gap-y-[0px] gap-y-[24px] justify-between lg:items-center items-start">
+                                        <div class="timing-list-item-wrap flex lg:flex-nowrap flex-wrap xxl:gap-x-16 lg:gap-x-8 gap-x-6 lg:gap-y-[0px] gap-y-[24px]">
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Title</span>
+                                                <p class="font-bold text-base-80" >Yin Yoga</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Time</span>
+                                                <p class="font-bold text-base-80" >06:00 pm</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Duration</span>
+                                                <p class="font-bold text-base-80" >50 minutes</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Category</span>
+                                                <p class="font-bold text-base-80" >Express Yoga, Yoga</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Availability</span>
+                                                <p class="font-bold text-base-80" >9 spots left</p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-wrap xxl:max-w-[180px] sm:max-w-[150px] max-w-[100%] w-full">
+                                            <a href="#" class="btn-outline w-full text-center">Book</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabcontent">
+                                <div class="timing-list-wrap border-r border-b border-l border-base-20 w-full">
+                                    <div class="timing-list-single py-24 px-24 w-full flex lg:flex-row flex-col lg:gap-y-[0px] gap-y-[24px] justify-between lg:items-center items-start">
+                                        <div class="timing-list-item-wrap flex lg:flex-nowrap flex-wrap xxl:gap-x-16 lg:gap-x-8 gap-x-6 lg:gap-y-[0px] gap-y-[24px]">
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Title</span>
+                                                <p class="font-bold text-base-80" >Hot Flow Yoga</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Time</span>
+                                                <p class="font-bold text-base-80" >12:00 pm</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Duration</span>
+                                                <p class="font-bold text-base-80" >45 minutes</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Category</span>
+                                                <p class="font-bold text-base-80" >Express Yoga, Yoga</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Availability</span>
+                                                <p class="font-bold text-base-80" >10 spots left</p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-wrap xxl:max-w-[180px] sm:max-w-[150px] max-w-[100%] w-full">
+                                            <a href="#" class="btn-outline w-full text-center">Book</a>
+                                        </div>
+                                    </div>
+                                    <div class="timing-list-single py-24 px-24 w-full flex lg:flex-row flex-col lg:gap-y-[0px] gap-y-[24px] justify-between lg:items-center items-start">
+                                        <div class="timing-list-item-wrap flex lg:flex-nowrap flex-wrap xxl:gap-x-16 lg:gap-x-8 gap-x-6 lg:gap-y-[0px] gap-y-[24px]">
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Title</span>
+                                                <p class="font-bold text-base-80" >Competitive Boxing</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Time</span>
+                                                <p class="font-bold text-base-80" >06:00 pm</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Duration</span>
+                                                <p class="font-bold text-base-80" >50 minutes</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Category</span>
+                                                <p class="font-bold text-base-80" >Express Yoga, Yoga</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Availability</span>
+                                                <p class="font-bold text-base-80" >9 spots left</p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-wrap xxl:max-w-[180px] sm:max-w-[150px] max-w-[100%] w-full">
+                                            <a href="#" class="btn-outline w-full text-center">Book</a>
+                                        </div>
+                                    </div>
+                                    <div class="timing-list-single py-24 px-24 w-full flex lg:flex-row flex-col lg:gap-y-[0px] gap-y-[24px] justify-between lg:items-center items-start">
+                                        <div class="timing-list-item-wrap flex lg:flex-nowrap flex-wrap xxl:gap-x-16 lg:gap-x-8 gap-x-6 lg:gap-y-[0px] gap-y-[24px]">
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Title</span>
+                                                <p class="font-bold text-base-80" >Yin Yoga</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Time</span>
+                                                <p class="font-bold text-base-80" >06:00 pm</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Duration</span>
+                                                <p class="font-bold text-base-80" >50 minutes</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Category</span>
+                                                <p class="font-bold text-base-80" >Express Yoga, Yoga</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Availability</span>
+                                                <p class="font-bold text-base-80" >9 spots left</p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-wrap xxl:max-w-[180px] sm:max-w-[150px] max-w-[100%] w-full">
+                                            <a href="#" class="btn-outline w-full text-center">Book</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabcontent">
+                                <div class="timing-list-wrap border-r border-b border-l border-base-20 w-full">
+                                    <div class="timing-list-single py-24 px-24 w-full flex lg:flex-row flex-col lg:gap-y-[0px] gap-y-[24px] justify-between lg:items-center items-start">
+                                        <div class="timing-list-item-wrap flex lg:flex-nowrap flex-wrap xxl:gap-x-16 lg:gap-x-8 gap-x-6 lg:gap-y-[0px] gap-y-[24px]">
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Title</span>
+                                                <p class="font-bold text-base-80" >Hot Flow Yoga</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Time</span>
+                                                <p class="font-bold text-base-80" >12:00 pm</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Duration</span>
+                                                <p class="font-bold text-base-80" >45 minutes</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Category</span>
+                                                <p class="font-bold text-base-80" >Express Yoga, Yoga</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Availability</span>
+                                                <p class="font-bold text-base-80" >10 spots left</p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-wrap xxl:max-w-[180px] sm:max-w-[150px] max-w-[100%] w-full">
+                                            <a href="#" class="btn-outline w-full text-center">Book</a>
+                                        </div>
+                                    </div>
+                                    <div class="timing-list-single py-24 px-24 w-full flex lg:flex-row flex-col lg:gap-y-[0px] gap-y-[24px] justify-between lg:items-center items-start">
+                                        <div class="timing-list-item-wrap flex lg:flex-nowrap flex-wrap xxl:gap-x-16 lg:gap-x-8 gap-x-6 lg:gap-y-[0px] gap-y-[24px]">
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Title</span>
+                                                <p class="font-bold text-base-80" >Competitive Boxing</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Time</span>
+                                                <p class="font-bold text-base-80" >06:00 pm</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Duration</span>
+                                                <p class="font-bold text-base-80" >50 minutes</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Category</span>
+                                                <p class="font-bold text-base-80" >Express Yoga, Yoga</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Availability</span>
+                                                <p class="font-bold text-base-80" >9 spots left</p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-wrap xxl:max-w-[180px] sm:max-w-[150px] max-w-[100%] w-full">
+                                            <a href="#" class="btn-outline w-full text-center">Book</a>
+                                        </div>
+                                    </div>
+                                    <div class="timing-list-single py-24 px-24 w-full flex lg:flex-row flex-col lg:gap-y-[0px] gap-y-[24px] justify-between lg:items-center items-start">
+                                        <div class="timing-list-item-wrap flex lg:flex-nowrap flex-wrap xxl:gap-x-16 lg:gap-x-8 gap-x-6 lg:gap-y-[0px] gap-y-[24px]">
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Title</span>
+                                                <p class="font-bold text-base-80" >Group Boxing</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Time</span>
+                                                <p class="font-bold text-base-80" >06:00 pm</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Duration</span>
+                                                <p class="font-bold text-base-80" >50 minutes</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Category</span>
+                                                <p class="font-bold text-base-80" >Express Yoga, Yoga</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Availability</span>
+                                                <p class="font-bold text-base-80" >9 spots left</p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-wrap xxl:max-w-[180px] sm:max-w-[150px] max-w-[100%] w-full">
+                                            <a href="#" class="btn-outline w-full text-center">Book</a>
+                                        </div>
+                                    </div>
+                                    <div class="timing-list-single py-24 px-24 w-full flex lg:flex-row flex-col lg:gap-y-[0px] gap-y-[24px] justify-between lg:items-center items-start">
+                                        <div class="timing-list-item-wrap flex lg:flex-nowrap flex-wrap xxl:gap-x-16 lg:gap-x-8 gap-x-6 lg:gap-y-[0px] gap-y-[24px]">
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Title</span>
+                                                <p class="font-bold text-base-80" >Yin Yoga</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Time</span>
+                                                <p class="font-bold text-base-80" >06:00 pm</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Duration</span>
+                                                <p class="font-bold text-base-80" >50 minutes</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Category</span>
+                                                <p class="font-bold text-base-80" >Express Yoga, Yoga</p>
+                                            </div>
+                                            <div class="timing-list-item">
+                                                <span class="text-base-80">Availability</span>
+                                                <p class="font-bold text-base-80" >9 spots left</p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-wrap xxl:max-w-[180px] sm:max-w-[150px] max-w-[100%] w-full">
+                                            <a href="#" class="btn-outline w-full text-center">Book</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- CTA -->
+        <section class="banner-cta bg-cta-banner-bg py-114 bg-cover bg-no-repeat bg-right-top relative">
+            <div class="container">
+                <div class="cta-inner py-28">
+                    <div class="cta-text relative z-[10]">
+                        <h2 class="font-spyagency text-base-0 text-6xl mb-8 leading-62">READY TO GET STARTED?</h2>
+                        <p class="text-base-0 text-lg font-normal mb-32">Join Panther Gym Today</p>
+                        <div class="cta-btns">
+                            <a href="#"
+                                class="btn-outline-white mr-16">Book
+                                Classes</a>
+                            <a href="#"
+                                class="btn-filled-white">Become
+                                A Member</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-base-100">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-cta py-[80px] border-b border-base-20 flex justify-between items-center">
+                    <div class="footer-cta-text">
+                        <h4 class="text-base-0 font-spyagency text-xl mb-12">Keep In Touch Through Our <br> Newsletter!</h4>
+                        <p class="text-base-0 text-mdium">Product launches and behind the scenes info...</p>
+                    </div>
+                    <div class="footer-cta-form border border-base-20 rounded-lg py-12 px-16 max-w-[520px] w-full">
+                        <form action="" class="flex justify-between gap-x-6">
+                            <input class="w-full bg-base-100 text-base-0 focus:border-transparent outline-none" type="email" placeholder="Enter your email address" name="" id="">
+                            <button class="btn-filled text-mdium px-40 hover:bg-base-0 hover:text-base-100" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-links-wrap py-[80px]">
+                    <div class="footer-links">
+                        <a href="" class="mb-16 block"><img src="./img/logo-white.svg" alt=""></a>
+                        <p class="text-base-0">Panther Gym is an Edmonton based Boxing Gym & Training Center. Ready to get in shape and become disciplined? Reach out today or come to one of our walk-in classes.</p>
+                    </div>
+                    <div class="footer-links">
+                        <h4 class="text-medium font-bold text-base-0 mb-16">Quick Links</h4>
+                        <ul>
+                            <li class="mb-12"><a class="text-mdium text-base-0 hover:text-primary-100" href="">Home</a></li>
+                            <li class="mb-12"><a class="text-mdium text-base-0 hover:text-primary-100" href="">Class Schedule</a></li>
+                            <li class="mb-12"><a class="text-mdium text-base-0 hover:text-primary-100" href="">Plans</a></li>
+                            <li class="mb-12"><a class="text-mdium text-base-0 hover:text-primary-100" href="">Drop-Ins</a></li>
+                            <li class="mb-12"><a class="text-mdium text-base-0 hover:text-primary-100" href="">FAQ’s</a></li>
+                            <li class="mb-12"><a class="text-mdium text-base-0 hover:text-primary-100" href="">Contact Us</a></li>
+                            <li class="mb-12"><a class="text-mdium text-base-0 hover:text-primary-100" href="">Privacy Policy</a></li>
+                            <li class=""><a class="text-mdium text-base-0 hover:text-primary-100" href="">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4 class="text-medium font-bold text-base-0 mb-16">Classes & Services</h4>
+                        <ul>
+                            <li class="mb-12"><a class="text-mdium text-base-0 hover:text-primary-100" href="">Boxing Classes</a></li>
+                            <li class="mb-12"><a class="text-mdium text-base-0 hover:text-primary-100" href="">Yoga Classes</a></li>
+                            <li class="mb-12"><a class="text-mdium text-base-0 hover:text-primary-100" href="">Competitive Boxing</a></li>
+                            <li class="mb-12"><a class="text-mdium text-base-0 hover:text-primary-100" href="">Personal Training</a></li>
+                            <li class=""><a class="text-mdium text-base-0 hover:text-primary-100" href="">Nutrition Counselling</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4 class="text-medium font-bold text-base-0 mb-16">Contact Us</h4>
+                        <ul>
+                            <li class="mb-12 flex items-start gap-x-2"><img src="./img/location-icon.svg" class="pt-[4px]" alt=""><a class="text-mdium text-base-0 hover:text-base-0" href="javascript:void(0);">9556 82 Ave NW, Edmonton, AB T6C 0Z8P</a></li>
+                            <li class="mb-12 flex items-start gap-x-2"><img src="./img/phone-icon.svg" class="pt-[2px]" alt=""><a class="text-mdium text-base-0 hover:text-primary-100" href="tel:7807186161">(780) 718-6161</a></li>
+                            <li class="flex items-start gap-x-2"><img src="./img/mail-icon.svg" class="pt-[2px]" alt=""><a class="text-mdium text-base-0 hover:text-primary-100" href="mailto:info@panthergym.com">info@panthergym.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright bg-base-20 py-12">
+            <div class="container">
+                <div class="flex justify-between items-center">
+                    <p class="text-sm text-base-100">Copyright © 2023 Panther Gym | All Rights Reserved</p>
+                    <ul class="flex items-center gap-x-6">
+                        <li><a href=""><img src="./img/facebook-icon.svg" alt=""></a></li>
+                        <li><a href=""><img src="./img/insta-icon.svg" alt=""></a></li>
+                        <li><a href=""><img src="./img/twitter-icon.svg" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
