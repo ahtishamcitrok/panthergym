@@ -2348,6 +2348,10 @@ img.close-menu {
     text-align: left;
   }
 
+  .sm\:text-start {
+    text-align: start;
+  }
+
   .sm\:text-sm {
     font-size: 14px;
   }
