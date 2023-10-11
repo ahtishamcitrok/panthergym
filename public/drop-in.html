@@ -52,11 +52,14 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="header-btns flex gap-x-6">
+                <div class="header-btns gap-x-6 hidden lg:flex">
                     <a class="" href=""><img src="./img/header-search-icon.svg" alt=""></a>
                     <a href=""><img src="./img/header-cart-icon.svg" alt=""></a>
                     <a href=""><img src="./img/header-wishlist-icon.svg" alt=""></a>
                     <a href=""><img src="./img/header-profile-icon.svg" alt=""></a>
+                </div>
+                <div class="menu-toggle block lg:hidden">
+                    <img src="./img/menu.svg" alt="">
                 </div>
             </div>
         </div>
@@ -759,8 +762,8 @@
     <footer class="bg-base-100">
         <div class="container">
             <div class="footer-inner">
-                <div class="footer-cta py-[80px] border-b border-base-20 flex justify-between items-center">
-                    <div class="footer-cta-text">
+                <div class="footer-cta py-[80px] border-b border-base-20 flex flex-col md:flex-row justify-between items-center gap-[32px]">
+                    <div class="footer-cta-text text-center md:text-start">
                         <h4 class="text-base-0 font-spyagency text-xl mb-12">Keep In Touch Through Our <br> Newsletter!</h4>
                         <p class="text-base-0 text-mdium">Product launches and behind the scenes info...</p>
                     </div>
@@ -771,7 +774,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="footer-links-wrap py-[80px]">
+                <div class="footer-links-wrap py-[80px] grid-cols-1 footer-grid-cols">
                     <div class="footer-links">
                         <a href="" class="mb-16 block"><img src="./img/logo-white.svg" alt=""></a>
                         <p class="text-base-0">Panther Gym is an Edmonton based Boxing Gym & Training Center. Ready to get in shape and become disciplined? Reach out today or come to one of our walk-in classes.</p>
@@ -812,7 +815,7 @@
         </div>
         <div class="footer-copyright bg-base-20 py-12">
             <div class="container">
-                <div class="flex justify-between items-center">
+                <div class="flex flex-col md:flex-row gap-[20px] text-center md:text-start justify-between items-center">
                     <p class="text-sm text-base-100">Copyright © 2023 Panther Gym | All Rights Reserved</p>
                     <ul class="flex items-center gap-x-6">
                         <li><a href=""><img src="./img/facebook-icon.svg" alt=""></a></li>
@@ -826,7 +829,7 @@
 
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
