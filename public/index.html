@@ -17,7 +17,7 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Swiper slider -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,11 +52,14 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="header-btns flex gap-x-6">
+                <div class="header-btns gap-x-6 hidden lg:flex">
                     <a class="" href=""><img src="./img/header-search-icon.svg" alt=""></a>
                     <a href=""><img src="./img/header-cart-icon.svg" alt=""></a>
                     <a href=""><img src="./img/header-wishlist-icon.svg" alt=""></a>
                     <a href=""><img src="./img/header-profile-icon.svg" alt=""></a>
+                </div>
+                <div class="menu-toggle block lg:hidden">
+                    <img src="./img/menu.svg" alt="">
                 </div>
             </div>
         </div>
@@ -83,8 +86,8 @@
             <div class="container">
                 <div class="offers-inner">
                     <div class="sec-head text-center max-w-550 mx-auto mb-48">
-                        <h2 class="font-spyagency text-4xl mb-12">What WE <span class="red">Offer</span></h2>
-                        <p class="text-base-80 text-lg">Lorem ipsum dolor sit amet consectetur  turpis id ultrices mattis dignissim.</p>
+                        <h2 class="font-spyagency text-lg md:text-4xl mb-12">What WE <span class="red">Offer</span></h2>
+                        <p class="text-base-80 text-medium md:text-lg">Lorem ipsum dolor sit amet consectetur  turpis id ultrices mattis dignissim.</p>
                     </div>
                     <div class="offers-list grid grid-cols-3 gap-8">
                         <a href="#" class="offer-single h-500 bg-offer-class-bg bg-cover bg-no-repeat bg-center relative tilt-btn transition duration-300 ease-in-out translate-x-28">
@@ -109,7 +112,7 @@
 
         <!-- about us -->
         <section class="about-outer-wrap pt-120 relative">
-            <div class="container-fluid p-0">
+            <div class="container-fluid xl:p-0">
                 <div class="about-inner">
                     <div class="sec-head text-center max-w-968 mx-auto mb-24">
                         <h2 class="font-spyagency text-base-0 text-4xl mb-12">What We're All About</h2>
@@ -121,7 +124,7 @@
                         </div>
                       </div>
                     <div class="about-video rounded-2xl max-w-5xl w-full mx-auto relative">
-                        <iframe src="https://www.youtube.com/embed/4-zjQvTDnbw?si=ri8teKP97RDBF1YA" class="rounded-2xl w-full h-606" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/4-zjQvTDnbw?si=ri8teKP97RDBF1YA" class="rounded-2xl w-full h-606 youtube-video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -135,7 +138,7 @@
                         <h2 class="font-spyagency text-base-100 text-4xl mb-12">NO GEAR? <span class="red">NO WORRIES</span></h2>
                         <p class="text-base-80 text-lg">We have boxing gear for rent for drop-in guests and top-of-the-line Panther Gear for <br> those that are ready to get serious about their training.</p>
                     </div>
-                    <div class="products-list grid grid-cols-4 gap-8">
+                    <div class="products-list owl-carousel grid grid-cols-4 gap-8">
                         <div class="product-single relative bg-base-0 custom-box-shadow rounded-lg">
                             <div class="product-single-img h-[306px] border-b border-base-20">
                                 <img src="./img/product-img-1.png" class="w-full h-full object-cover object-center" alt="">
@@ -211,77 +214,73 @@
         <!-- What makes us  -->
         <section class="what-make-wrap bg-custom-gradient-fullblack py-120 relative">
             <div class="container">
-                <div class="what-make-parent flex items-center">
-                    <div class="what-make-left relative">
+                <div class="what-make-parent flex items-center flex-col gap-[63px] lg:flex-row">
+                    <div class="what-make-left relative lg:w-[40%]">
                         <img src="./img/what-make-img.png" alt="">
                     </div>
-                    <div class="what-make-right pl-74">
+                    <div class="what-make-right lg:w-[60%]">
                         <h2 class="font-spyagency text-base-0 text-4xl  max-w-550 pb-40 ">WHAT MAKES US <span
                                 class="red"> DIFFERENT </span> FROM THE REST?</h2>
-                        <div class="make-icon-parent flex items-center justify-space-between pb-74">
-                            <div class="make-icon-child flex items-center pr-74  ">
+                        <div class="make-icon-parent grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-[40px] lg:gap-[74px] justify-space-between">
+                            <div class="make-icon-child flex items-center">
                                 <div
-                                    class=" bg-base-0 flex items-center justify-center rounded-lg w-14 h-14 make-inner-icon">
+                                    class="inner-icon">
                                     <img src="./img/weight-training.svg" alt="">
                                 </div>
                                 <p class="text-base-0 text-medium font-bold pl-3.5 w-170 ">Weight Training</p>
                             </div>
-                            <div class="make-icon-child flex items-center pr-74 ">
+                            <div class="make-icon-child flex items-center ">
                                 <div
-                                    class=" bg-base-0 flex items-center justify-center rounded-lg w-14 h-14 make-inner-icon">
+                                    class="inner-icon">
                                     <img src="./img/cardio-room.svg" alt="">
                                 </div>
                                 <p class="text-base-0 text-medium font-bold pl-3.5 w-170">Cardio Room</p>
                             </div>
                             <div class="make-icon-child flex items-center ">
                                 <div
-                                    class=" bg-base-0 flex items-center justify-center rounded-lg w-14 h-14 make-inner-icon">
+                                    class="inner-icon">
                                     <img src="./img/lockers.svg" alt="">
                                 </div>
                                 <p class="text-base-0 text-medium font-bold pl-3.5 w-170">Lockers & Showers</p>
                             </div>
-                        </div>
-                        <div class="make-icon-parent flex items-center justify-space-between pb-74">
-                            <div class="make-icon-child flex items-center pr-74  ">
+                            <div class="make-icon-child flex items-center  ">
                                 <div
-                                    class=" bg-base-0 flex items-center justify-center rounded-lg w-14 h-14 make-inner-icon">
+                                    class="inner-icon">
                                     <img src="./img/steam-room.svg" alt="">
                                 </div>
                                 <p class="text-base-0 text-medium font-bold pl-3.5 w-170">Steam Room</p>
                             </div>
-                            <div class="make-icon-child flex items-center pr-74 ">
+                            <div class="make-icon-child flex items-center ">
                                 <div
-                                    class=" bg-base-0 flex items-center justify-center rounded-lg w-14 h-14 make-inner-icon">
+                                    class="inner-icon">
                                     <img src="./img/acupunture.svg" alt="">
                                 </div>
                                 <p class="text-base-0 text-medium font-bold pl-3.5 w-170">Acupunture</p>
                             </div>
                             <div class="make-icon-child flex items-center ">
                                 <div
-                                    class=" bg-base-0 flex items-center justify-center rounded-lg w-14 h-14 make-inner-icon">
+                                    class="inner-icon">
                                     <img src="./img/chiro.svg" alt="">
                                 </div>
                                 <p class="text-base-0 text-medium font-bold pl-3.5 w-170">Chiro</p>
                             </div>
-                        </div>
-                        <div class="make-icon-parent flex items-center justify-space-between">
-                            <div class="make-icon-child flex items-center pr-74  ">
+                            <div class="make-icon-child flex items-center  ">
                                 <div
-                                    class=" bg-base-0 flex items-center justify-center rounded-lg w-14 h-14 make-inner-icon">
+                                    class="inner-icon">
                                     <img src="./img/massage.svg" alt="">
                                 </div>
                                 <p class="text-base-0 text-medium font-bold pl-3.5 w-170">Massage</p>
                             </div>
-                            <div class="make-icon-child flex items-center pr-74 ">
+                            <div class="make-icon-child flex items-center ">
                                 <div
-                                    class=" bg-base-0 flex items-center justify-center rounded-lg w-14 h-14 make-inner-icon">
+                                    class="inner-icon">
                                     <img src="./img/juice-bar.svg" alt="">
                                 </div>
                                 <p class="text-base-0 text-medium font-bold pl-3.5 w-170">Juice Bar</p>
                             </div>
                             <div class="make-icon-child flex items-center ">
                                 <div
-                                    class=" bg-base-0 flex items-center justify-center rounded-lg w-14 h-14 make-inner-icon">
+                                    class="inner-icon">
                                     <img src="./img/differently-abled.svg" alt="">
                                 </div>
                                 <p class="text-base-0 text-medium font-bold pl-3.5 w-170">Differently Abled</p>
@@ -300,29 +299,29 @@
                         <h2 class="font-spyagency text-4xl mb-12">OUR <span class="red">TRAINERS</span></h2>
                         <p class="text-base-80 text-lg">If you want to be the best, you have to train with the best. Our trainers have years of professional boxing experience under their belts.</p>
                     </div>
-                    <div class="trainers-list grid grid-cols-4 gap-8">
+                    <div class="trainers-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                         <a href="#" class="trainers-single h-500 bg-trainer-1-bg bg-cover bg-no-repeat bg-center relative tilt-btn transition duration-300 ease-in-out">
                             <div class="trainers-single-btn text-lg font-semibold bg-primary-100 text-base-0 py-20 px-40 block text-left absolute inset-x-0 bottom-0 w-79 hover:bg-base-100">
                                 Alex Spark
-                                <span class="text-sm block" >Professional Boxer</span>
+                                <span class="text-sm block">Professional Boxer</span>
                             </div>
                         </a>
                         <a href="#" class="trainers-single h-500 bg-trainer-2-bg bg-cover bg-no-repeat bg-center relative tilt-btn transition duration-300 ease-in-out">
                             <div class="trainers-single-btn text-lg font-semibold bg-primary-100 text-base-0 py-20 px-40 block text-left absolute inset-x-0 bottom-0 w-79 hover:bg-base-100">
                                 Tom Hardy
-                                <span class="text-sm block" >Personal Trainer</span>
+                                <span class="text-sm block">Personal Trainer</span>
                             </div>
                         </a>
                         <a href="#" class="trainers-single h-500 bg-trainer-3-bg bg-cover bg-no-repeat bg-center relative tilt-btn transition duration-300 ease-in-out">
                             <div class="trainers-single-btn text-lg font-semibold bg-primary-100 text-base-0 py-20 px-40 block text-left absolute inset-x-0 bottom-0 w-79 hover:bg-base-100">
                                 Andy Braun
-                                <span class="text-sm block" >Trainer</span>
+                                <span class="text-sm block">Trainer</span>
                             </div>
                         </a>
                         <a href="#" class="trainers-single h-500 bg-trainer-4-bg bg-cover bg-no-repeat bg-center relative tilt-btn transition duration-300 ease-in-out">
                             <div class="trainers-single-btn text-lg font-semibold bg-primary-100 text-base-0 py-20 px-40 block text-left absolute inset-x-0 bottom-0 w-79 hover:bg-base-100">
                                 Victoria Kim
-                                <span class="text-sm block" >Professional Athelete</span>
+                                <span class="text-sm block">Professional Athelete</span>
                             </div>
                         </a>
                     </div>
@@ -333,30 +332,22 @@
         <!-- what you get -->
         <section class="what-get bg-custom-gradient-fullblack py-120 relative">
             <div class="container">
-                <div class="what-get-parent flex items-center justify-center ">
+                <div class="what-get-parent flex flex-col md:flex-row gap-[40px] md:gap-[67px] items-center justify-center ">
                     <div class="what-get-banner-text relative z-[10]">
-                        <h2 class="font-spyagency text-base-0 text-6xl mb-24 leading-62">WHAT YOU GET AT <br> <span
-                                class="red"> PANTHER GYM</span></h2>
-                        <div class="tick-point flex items-center pb-12"><img src="./img/tick-circle.svg" alt="">
-                            <p class="text-base-0 text-lg font-semibold pl-8 "> Increased strength & agility</p>
-                        </div>
-                        <div class="tick-point flex items-center pb-12"><img src="./img/tick-circle.svg" alt="">
-                            <p class="text-base-0 text-lg font-semibold pl-8 ">Burn fat faster</p>
-                        </div>
-                        <div class="tick-point flex items-center pb-12"><img src="./img/tick-circle.svg" alt="">
-                            <p class="text-base-0 text-lg font-semibold pl-8 ">Less stress & more energy</p>
-                        </div>
-                        <div class="tick-point flex items-center pb-12"><img src="./img/tick-circle.svg" alt="">
-                            <p class="text-base-0 text-lg font-semibold pl-8 ">Improved mental health</p>
-                        </div>
-                        <div class="tick-point flex items-center pb-12"><img src="./img/tick-circle.svg" alt="">
-                            <p class="text-base-0 text-lg font-semibold pl-8 ">Comradery & Friendship</p>
-                        </div>
+                        <h2 class="font-spyagency text-base-0 text-lg md:text-4xl mb-24 leading-[1.3em]">WHAT YOU GET AT <span
+                                class="red inline xxl:block"> PANTHER GYM</span></h2>
+                        <ul class="check-list">
+                            <li class="text-base-0 text-medium md:text-lg font-semibold pl-8">Increased strength & agility</li>
+                            <li class="text-base-0 text-medium md:text-lg font-semibold pl-8">Burn fat faster</li>
+                            <li class="text-base-0 text-medium md:text-lg font-semibold pl-8">Less stress & more energy</li>
+                            <li class="text-base-0 text-medium md:text-lg font-semibold pl-8">Improved mental health</li>
+                            <li class="text-base-0 text-medium md:text-lg font-semibold pl-8">Comradery & Friendship</li>
+                        </ul>
                         <a href="#"
-                            class="btn-filled join-us relative hover:bg-base-0 hover:text-primary-100 mt-20 w-[180px] text-center">Join
+                            class="btn-filled join-us relative hover:bg-base-0 hover:text-primary-100 mt-20 w-[100%] sm:w-[180px] text-center">Join
                             Us</a>
                     </div>
-                    <div class="what-get-img relative pl-74">
+                    <div class="what-get-img relative">
                         <img src="./img/what-get-img.png" alt="">
                     </div>
                 </div>
@@ -367,7 +358,7 @@
         <section class="review-wrap py-120">
             <div class="container">
                 <div class="review-inner max-w-550  ">
-                    <h2 class="font-spyagency text-4xl mb-12">SEE WHY PEOPLE <span class="red">LOVE</span> PANTHER GYM
+                    <h2 class="font-spyagency text-lg md:text-4xl mb-12">SEE WHY PEOPLE <span class="red">LOVE</span> PANTHER GYM
                     </h2>
                     <div class="overall-rating flex items-center ">
                         <div class="google-icon">
@@ -394,7 +385,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="review-parent-box flex items-center justify-between mt-48">
+                <div class="review-parent-box owl-carousel flex items-center justify-between mt-48">
+
                     <div class="review-child-box p-20 border border-base-20 rounded-xl">
                         <div class="rate-star flex">
                             <img class="mr-[8px]" src="./img/Star.svg" alt="">
@@ -404,7 +396,7 @@
                             <img class="mr-[8px]" src="./img/Star.svg" alt="">
                         </div>
                         <div class="review-text pt-12 pb-20">
-                            <p class="text-medium font-normal text-base-80 w-[384px] min-h-[290px]">It's been a very
+                            <p class="text-medium font-normal text-base-80 min-h-[290px]">It's been a very
                                 long time since I was trained at the Panther Gym (close to 30 years) but its encouraging
                                 to see it's still doing what it does best, offering high quality self-defense training
                                 in a low key, accessible environment. I trained with Daryl Duke the original owner and
@@ -432,7 +424,7 @@
                             <img class="mr-[8px]" src="./img/Star.svg" alt="">
                         </div>
                         <div class="review-text pt-12 pb-20">
-                            <p class="text-medium font-normal text-base-80 w-[384px] min-h-[290px]">Easily the best
+                            <p class="text-medium font-normal text-base-80 min-h-[290px]">Easily the best
                                 boxing gym in Edmonton! If you want high quality coaching or classes, Panther's gym is
                                 where you want to train.Benny and Cyndie are fantastic owners, and will do everything
                                 possible to accommodate you in their gym. Highly recommended, 5/5 stars.</p>
@@ -457,7 +449,7 @@
                             <img class="mr-[8px]" src="./img/Star.svg" alt="">
                         </div>
                         <div class="review-text pt-12 pb-20">
-                            <p class="text-medium font-normal text-base-80 w-[384px] min-h-[290px]">Hands down the best
+                            <p class="text-medium font-normal text-base-80 min-h-[290px]">Hands down the best
                                 boxing gym in the city. The trainers are phenomenal, the owners are amazing with
                                 wonderful customer service. There's a great sense of boxing community too — whether
                                 you're new to boxing or a regular. Panther gym put me in the best shape of my life! 5
@@ -483,14 +475,14 @@
             <div class="container">
                 <div class="cta-inner py-28">
                     <div class="cta-text relative z-[10]">
-                        <h2 class="font-spyagency text-base-0 text-6xl mb-8 leading-62">READY TO GET STARTED?</h2>
-                        <p class="text-base-0 text-lg font-normal mb-32">Join Panther Gym Today</p>
-                        <div class="cta-btns">
+                        <h2 class="font-spyagency text-base-0 text-xl text-center sm:text-left md:text-6xl mb-8 sm:leading-62">READY TO GET STARTED?</h2>
+                        <p class="text-base-0 text-lg font-normal text-center sm:text-left mb-32">Join Panther Gym Today</p>
+                        <div class="cta-btns flex flex-col md:flex-row gap-[16px]">
                             <a href="#"
-                                class="btn-outline-white mr-16">Book
+                                class="btn-outline-white text-center">Book
                                 Classes</a>
                             <a href="#"
-                                class="btn-filled-white">Become
+                                class="btn-filled-white text-center">Become
                                 A Member</a>
                         </div>
                     </div>
@@ -504,8 +496,8 @@
     <footer class="bg-base-100">
         <div class="container">
             <div class="footer-inner">
-                <div class="footer-cta py-[80px] border-b border-base-20 flex justify-between items-center">
-                    <div class="footer-cta-text">
+                <div class="footer-cta py-[80px] border-b border-base-20 flex flex-col md:flex-row justify-between items-center gap-[32px]">
+                    <div class="footer-cta-text text-center md:text-start">
                         <h4 class="text-base-0 font-spyagency text-xl mb-12">Keep In Touch Through Our <br> Newsletter!</h4>
                         <p class="text-base-0 text-mdium">Product launches and behind the scenes info...</p>
                     </div>
@@ -516,7 +508,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="footer-links-wrap py-[80px]">
+                <div class="footer-links-wrap py-[80px] grid-cols-1 footer-grid-cols">
                     <div class="footer-links">
                         <a href="" class="mb-16 block"><img src="./img/logo-white.svg" alt=""></a>
                         <p class="text-base-0">Panther Gym is an Edmonton based Boxing Gym & Training Center. Ready to get in shape and become disciplined? Reach out today or come to one of our walk-in classes.</p>
@@ -557,7 +549,7 @@
         </div>
         <div class="footer-copyright bg-base-20 py-12">
             <div class="container">
-                <div class="flex justify-between items-center">
+                <div class="flex flex-col md:flex-row gap-[20px] text-center md:text-start justify-between items-center">
                     <p class="text-sm text-base-100">Copyright © 2023 Panther Gym | All Rights Reserved</p>
                     <ul class="flex items-center gap-x-6">
                         <li><a href=""><img src="./img/facebook-icon.svg" alt=""></a></li>
@@ -569,9 +561,8 @@
         </div>
     </footer>
 
-
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
