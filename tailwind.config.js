@@ -49,6 +49,8 @@ module.exports = {
         'trainer-4-bg': "url('/public/img/trainer-img-4.png')",
         'custom-gradient-fullblack':'linear-gradient(103deg, rgba(19, 19, 19, 0.90) 0%, rgba(11, 11, 11, 0.85) 100%)',
         'cta-banner-bg': "url('/public/img/cta-banner-img.png')",
+        'plans-banner-bg': "url('/public/img/plans-banner-img.png')",
+        'dropin-banner-bg': "url('/public/img/dropin-banner-img.png')",
       },
       // Define custom padding values
       padding: {
@@ -61,6 +63,7 @@ module.exports = {
         '20': '20px',
         '22': '22px',
         '24': '24px',
+        '30': '30px',
         '40': '40px',
         '60': '60px',
         '74': '74px',
