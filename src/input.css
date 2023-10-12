@@ -560,6 +560,12 @@ img.close-menu {
         left: 0;
     }
 }
+.owl-nav > *, .tablinks {
+	cursor: pointer;
+}
+nav a {
+	cursor: pointer;
+}
 .owl-carousel .owl-nav.disabled,.owl-carousel .owl-nav {
     display: flex!important;
     position: absolute;

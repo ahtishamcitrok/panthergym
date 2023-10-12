@@ -1033,7 +1033,7 @@ video {
 }
 
 .bg-cta-banner-bg {
-  background-image: url('/public/img/cta-banner-img.png');
+  background-image: url('../img/cta-banner-img.png');
 }
 
 .bg-custom-gradient-fullblack {
@@ -1041,35 +1041,35 @@ video {
 }
 
 .bg-home-banner-bg-mobile {
-  background-image: url('/public/img/home-banner-mobile.jpg');
+  background-image: url('../img/home-banner-mobile.jpg');
 }
 
 .bg-offer-class-bg {
-  background-image: url('/public/img/offer-img-1.png');
+  background-image: url('../img/offer-img-1.png');
 }
 
 .bg-offer-gear-bg {
-  background-image: url('/public/img/offer-img-3.png');
+  background-image: url('../img/offer-img-3.png');
 }
 
 .bg-offer-schedule-bg {
-  background-image: url('/public/img/offer-img-2.png');
+  background-image: url('../img/offer-img-2.png');
 }
 
 .bg-trainer-1-bg {
-  background-image: url('/public/img/trainer-img-1.png');
+  background-image: url('../img/trainer-img-1.png');
 }
 
 .bg-trainer-2-bg {
-  background-image: url('/public/img/trainer-img-2.png');
+  background-image: url('../img/trainer-img-2.png');
 }
 
 .bg-trainer-3-bg {
-  background-image: url('/public/img/trainer-img-3.png');
+  background-image: url('../img/trainer-img-3.png');
 }
 
 .bg-trainer-4-bg {
-  background-image: url('/public/img/trainer-img-4.png');
+  background-image: url('../img/trainer-img-4.png');
 }
 
 .bg-cover {
@@ -2340,7 +2340,7 @@ img.close-menu {
   }
 
   .sm\:bg-home-banner-bg {
-    background-image: url('/public/img/home-banner-img.png');
+    background-image: url('../img/home-banner-img.png');
   }
 
   .sm\:py-192 {
@@ -2498,4 +2498,10 @@ img.close-menu {
     -moz-column-gap: 4rem;
          column-gap: 4rem;
   }
+}
+.owl-nav > *, .tablinks {
+	cursor: pointer;
+}
+nav a {
+	cursor: pointer;
 }
