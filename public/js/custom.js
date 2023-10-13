@@ -22,8 +22,8 @@ jQuery(document).ready(function ($) {
     },
     nav: true,
     navText: [
-        "<img src='./img/arrow-left.svg' class='prev-btn'>",
-        "<img src='./img/arrow-right.svg' class='next-btn'>"
+      "<img src='./img/arrow-left.svg' class='prev-btn'>",
+      "<img src='./img/arrow-right.svg' class='next-btn'>"
     ],
     onInitialized: setEqualHeight, // Call function on carousel initialization
     onResized: setEqualHeight,
@@ -51,12 +51,12 @@ jQuery(document).ready(function ($) {
     },
     nav: true,
     navText: [
-        "<img src='./img/arrow-left.svg' class='prev-btn'>",
-        "<img src='./img/arrow-right.svg' class='next-btn'>"
+      "<img src='./img/arrow-left.svg' class='prev-btn'>",
+      "<img src='./img/arrow-right.svg' class='next-btn'>"
     ],
     onInitialized: setEqualHeight, // Call function on carousel initialization
     onResized: setEqualHeight,
-    
+
   })
   function setEqualHeight(event) {
     var maxHeight = 0;
@@ -108,7 +108,14 @@ $(document).ready(function () {
     const index = $(this).index();
     $(".tabcontent").eq(index).show();
   });
+
+  //Micro Modal Init
+  MicroModal.init();
+
+  // Close modal on click of element with custom close attribute
+  $('[data-close-modal]').on('click', function () {
+    let currModal = $(this).closest('.modal').attr('id')
+    MicroModal.close(currModal)
+  })
 });
 
-
-MicroModal.init();
