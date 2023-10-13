@@ -741,6 +741,15 @@ nav a {
     height: 100%;
 }
 
+/* .modal {
+    display: none;
+}
+  
+.modal.is-open {
+    display: block;
+} */
+     
+
 /* custom media queries */
 
 @media all and (max-width: 1200px) {

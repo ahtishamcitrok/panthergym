@@ -109,3 +109,6 @@ $(document).ready(function () {
     $(".tabcontent").eq(index).show();
   });
 });
+
+
+MicroModal.init();
