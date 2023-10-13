@@ -119,3 +119,25 @@ $(document).ready(function () {
   })
 });
 
+// password field show password
+
+$(document).ready(function () {
+  $(".toggle-password").click(function () {
+    // Toggle the input type
+    var passwordField = $(this).siblings(".password");
+    if (passwordField.attr("type") === "password") {
+      passwordField.attr("type", "text");
+    } else {
+      passwordField.attr("type", "password");
+    }
+
+    // Toggle the icon class
+    var eyeIcon = $(this);
+    if (eyeIcon.hasClass("fa-eye-slash")) {
+      eyeIcon.removeClass("fa-eye-slash").addClass("fa-eye");
+    } else {
+      eyeIcon.removeClass("fa-eye").addClass("fa-eye-slash");
+    }
+  });
+});
+
