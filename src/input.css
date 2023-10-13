@@ -584,6 +584,11 @@ img.close-menu {
         left: 0;
     }
 }
+@media (max-width: 575px) {
+    .header-nav {
+        padding: 20px 16px;
+    }
+}
 .owl-nav > *, .tablinks {
 	cursor: pointer;
 }
@@ -741,14 +746,14 @@ nav a {
     height: 100%;
 }
 
-/* .modal {
+.modal {
     display: none;
 }
   
 .modal.is-open {
     display: block;
-} */
-/* .modal {
+} 
+.modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -760,14 +765,14 @@ nav a {
 }
 .modal:before {
     content: "";
-    background: black;
+    background: #000;
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.3;
-} */
+    opacity: 0.8;
+}
      
 
 /* custom media queries */

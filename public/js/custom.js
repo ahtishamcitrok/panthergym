@@ -14,7 +14,12 @@ jQuery(document).ready(function ($) {
         items: 2,
         nav: false
       },
-      1000: {
+      992: {
+        items: 3,
+        nav: true,
+        loop: true
+      },
+      1200: {
         items: 4,
         nav: true,
         loop: true
@@ -116,6 +121,14 @@ $(document).ready(function () {
   $('[data-close-modal]').on('click', function () {
     let currModal = $(this).closest('.modal').attr('id')
     MicroModal.close(currModal)
+  })
+
+  $('[data-micromodal-trigger="confirmation-modal"]').on('click', function(){
+    
+    MicroModal.close('booking-modal');
+  })
+  $('[data-micromodal-trigger="cancel-modal"]').on('click', function(){
+    MicroModal.close('booking-modal');
   })
 });
 
