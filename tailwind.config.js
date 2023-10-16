@@ -51,6 +51,7 @@ module.exports = {
         'cta-banner-bg': "url('/public/img/cta-banner-img.png')",
         'plans-banner-bg': "url('/public/img/plans-banner-img.png')",
         'dropin-banner-bg': "url('/public/img/dropin-banner-img.png')",
+        'account-banner-bg': "url('/public/img/account-banner-img.png')",
       },
       // Define custom padding values
       padding: {
