@@ -856,6 +856,37 @@ table tbody tr:not(:last-child) {
     border-bottom: 1px solid #E7E7E7;
 }
 
+.icon-btn img {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+}
+
+.icon-btn:hover img {
+    /* filter: revert; */
+    filter: brightness(0) saturate(100%) invert(96%) sepia(7%) saturate(134%) hue-rotate(160deg) brightness(116%) contrast(100%);
+}
+
+/* account screen calendar */
+
+.btn-left a, .btn-right a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0px 4px 24px 0px rgba(51, 51, 51, 0.12);
+}
+
+.calendar-body {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 130px));
+    gap: 20px;
+}
+
 
 /* custom media queries */
 
@@ -923,6 +954,10 @@ table tbody tr:not(:last-child) {
 
     .popular p {
         line-height: 18px;
+    }
+
+    .calendar-body {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 100px));
     }
 
 }
