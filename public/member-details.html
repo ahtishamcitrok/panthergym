@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- general tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- title -->
+    <title>Member Details</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png" sizes="any">
+
+    <!-- font awesome -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Owl slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- css files -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/output.css" rel="stylesheet">
+</head>
+
+<body class="overflow-x-hidden font-sans">
+
+    <!-- header -->
+    <header>
+        <div class="container">
+            <div class="header-inner flex justify-between items-center py-3">
+                <div class="header-logo">
+                    <a href="index.html"><img src="./img/logo-black.svg" alt="panther gym logo"></a>
+                </div>
+                <div class="header-nav hidden lg:block">
+                    <div class="mobile-menu-logo mobile-menu-logo mb-[24px] block lg:hidden">
+                        <a href="index.html"><img src="./img/logo-black.svg" alt="panther gym logo"></a>
+                    </div>
+                    <nav class="pb-16 lg:p-0">
+                        <ul class="flex xl:gap-x-8 gap-x-[16px]">
+                            <li><a class="font-semibold text-base-80 hover:text-primary-100" href="index.html">Home</a>
+                            </li>
+                            <li><a class="font-semibold text-base-80 hover:text-primary-100" href="#">Shop</a></li>
+                            <li><a class="font-semibold text-base-80 hover:text-primary-100" href="schedule.html">Class
+                                    Schedule</a></li>
+                            <li><a class="font-semibold text-base-80 hover:text-primary-100"
+                                    href="plans.html">Plans</a></li>
+                            <li><a class="font-semibold text-base-80 hover:text-primary-100"
+                                    href="plans-dropin.html">Drop-Ins</a></li>
+                            <li><a class="font-semibold text-base-80 hover:text-primary-100" href="#">FAQ’s</a></li>
+                            <li><a class="font-semibold text-base-80 hover:text-primary-100" href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="mobile-menu-content flex-col flex lg:hidden">
+                        <div class="logged-in hidden pt-[8px]">
+                            <a href="#"
+                                class="btn-filled hover:bg-base-0 hover:text-primary-100 w-[100%] text-center sm:w-[auto]">Become
+                                A Member</a>
+                        </div>
+                        <div class="logged-out  py-16 border-solid border-t border-base-20 w-full">
+                            <ul class="flex gap-x-8">
+                                <li><a class="font-semibold text-base-80 hover:text-primary-100" href="#">Profile</a>
+                                </li>
+                                <li><a class="font-semibold text-base-80 hover:text-primary-100" href="#">Wishlist</a>
+                                </li>
+                                <li><a class="font-semibold text-base-80 hover:text-primary-100" href="#">Cart</a></li>
+                                <li><a class="font-semibold text-base-80 hover:text-primary-100" href="#">Search</a>
+                                </li>
+                                <li><a class="font-semibold hover:text-primary-100 text-primary-100" href="#">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-btns gap-x-6 hidden lg:flex">
+                    <a class="" href=""><img src="./img/header-search-icon.svg" alt=""></a>
+                    <a href=""><img src="./img/header-cart-icon.svg" alt=""></a>
+                    <a href=""><img src="./img/header-wishlist-icon.svg" alt=""></a>
+                    <a href="javascript:void(0)" class="block flex items-center gap-x-[12px] font-bold xl:text-medium text-sm text-base-100 hover:text-primary-100" data-micromodal-trigger="login-modal"><img
+                            src="./img/header-profile-icon.svg" alt="">Talan</a>
+                </div>
+                <div class="menu-toggle block lg:hidden">
+                    <img src="./img/menu.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main class="relative">
+
+        <section
+            class="inner-banner-wrap plans-banner relative bg-member-banner-bg bg-cover bg-no-repeat bg-center md:h-[350px] h-[200px]">
+            <div class="container h-full">
+                <div class="inner-banner flex items-center justify-start h-full z-10 relative">
+                    <h1 class="font-spyagency text-lg text-base-0 md:text-4xl mb-12 uppercase">my <br
+                            class="md:hidden"> <span class="red">account</span></h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- my account -->
+        <section class="details-wrap lg:py-120 py-60">
+            <div class="container">
+                <div class="details-inner">
+                    <div class="details-search flex md:flex-row flex-col justify-between items-center md:gap-[8px] gap-[12px] max-w-[834px] w-full mx-auto">
+                        <div class="w-full relative">
+                            <input type="search" class="w-full py-12 pr-16 pl-[52px] border border-base-20 rounded-lg focus:border-base-80 focus:outline-none" placeholder="Search for a member" name="" id="">
+                            <img src="img/search-icon.svg" alt="" class="absolute top-[13px] left-[16px]">
+                        </div>
+                        <a href="#" class="btn-filled md:min-w-max md:w-fit w-full text-center">Search Member</a>
+                    </div>
+                    <div class="details-wrap grid lg:grid-cols-[300px,1fr] grid-cols-[1fr] lg:gap-[24px] gap-[32px] md:mt-48 mt-32">
+                        <div class="details-list h-fit lg:py-24 py-20 border border-base-20 rounded-lg">
+                            <button class="tablinks active block font-semibold text-base-60 text-medium w-full text-left py-10 lg:px-24 px-12 hover:text-primary-100">Member Details</button>
+                            <button class="tablinks block font-semibold text-base-60 text-medium py-10 w-full text-left lg:px-24 px-12 hover:text-primary-100">My Check-Ins</button>
+                            <button class="tablinks block font-semibold text-base-60 text-medium py-10 w-full text-left lg:px-24 px-12 hover:text-primary-100">QR Code Scans</button>
+                            <button class="tablinks block font-semibold text-base-60 text-medium py-10 w-full text-left lg:px-24 px-12 hover:text-primary-100">Classes</button>
+                        </div>
+                        <div class="details-data overflow-hidden">
+                            <!-- Tab 1 Content -->
+                            <div class="tabcontent active">
+                                <div class="tabcontent-inner border border-base-20 rounded-lg">
+                                   <div class="flex justify-between items-center gap-[16px] md:px-24 px-16 py-24 border-b border-base-20">
+                                        <div class="flex items-center md:gap-[20px] gap-[8px]">
+                                            <div class="flex items-center justify-center md:py-12 py-[6px] md:px-12 px-[6px] rounded-full bg-other-customProfileBg">
+                                                <img src="img/profile-placeholder.svg" class="md:max-w-[56px] max-w-[28px]" alt="">
+                                            </div>
+                                            <div>
+                                                <h2 class="font-semibold md:text-lg text-medium text-base-100 md:leading-[34px] leading-[26px]">Full Member</h2>
+                                                <p class="font-semibold md:text-sm text-xs text-base-60 break-all">fullmember@blackbmedia.com</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <img src="img/qr-code.png" class="md:max-w-[100px] max-w-[48px] w-full" alt="">
+                                        </div>
+                                   </div>
+                                   <div class="md:px-24 md:py-24 px-[16px] py-[20px]">
+                                        <div>
+                                            <ul>
+                                                <li class="member-details md:mb-24 mb-20"><p class="font-bold text-base-80 md:text-medium text-sm break-word">Membership:</p><p class="text-base-80 md:text-medium text-sm">Free Membership</p></li>
+                                                <li class="member-details md:mb-24 mb-20"><p class="font-bold text-base-80 md:text-medium text-sm break-word">Membership Status:</p><p class="text-base-80 md:text-medium text-sm">Active</p></li>
+                                                <li class="member-details md:mb-24 mb-20"><p class="font-bold text-base-80 md:text-medium text-sm break-word">Without Gear:</p><p class="text-base-80 md:text-medium text-sm">2</p></li>
+                                                <li class="member-details md:mb-24 mb-20"><p class="font-bold text-base-80 md:text-medium text-sm break-word">With Gear:</p><p class="text-base-80 md:text-medium text-sm">0</p></li>
+                                                <li class="member-details md:mb-24 mb-20"><p class="font-bold text-base-80 md:text-medium text-sm break-word">Last Check-In:</p><p class="text-base-80 md:text-medium text-sm">July 19th 2023, 3:02:28 pm</p></li>
+                                                <li class="member-details"><p class="font-bold text-base-80 md:text-medium text-sm break-word">Last QR Code Scan:</p><p class="text-base-80 md:text-medium text-sm">October 6th 2023, 5:44:56 am</p></li>
+                                            </ul>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                            <!-- Tab 2 Content -->
+                            <div class="tabcontent">
+                                <div class="tabcontent-inner py-24 lg:px-24 px-16 border border-base-20 rounded-lg">
+                                    <div class="calendar-wrap">
+                                        <div class="calendar-head flex justify-center items-center md:gap-[64px] gap-[32px]">
+                                            <div class="btn-left">
+                                                <a href="javascript:void(0);"><img src="./img/left-chevron.svg" alt=""></a>
+                                            </div>
+                                            <div class="head-text">
+                                                <h2 class="font-semibold text-medium text-base-100 text-center">September 2023</h2>
+                                            </div>
+                                            <div class="btn-right">
+                                                <a href="javascript:void(0);"><img src="./img/right-chevron.svg" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-body lg:mt-32 mt-[24px]">
+                                            <div class="lg:border border-0 border-base-20 rounded-lg lg:py-[22px] lg:px-[24px] py-[0] px-[0] text-center">
+                                                <span class="font-semibold lg:text-lg text-medium text-primary-100 text-center leading-0">01</span>
+                                                <p class="text-medium font-semibold text-base-100 text-center">08:30 Am</p>
+                                            </div>
+                                            <div class="lg:border border-0 border-base-20 rounded-lg lg:py-[22px] lg:px-[24px] py-[0] px-[0] text-center">
+                                                <span class="font-semibold lg:text-lg text-medium text-primary-100 text-center leading-0">02</span>
+                                                <p class="text-medium font-semibold text-base-100 text-center">08:30 Am</p>
+                                            </div>
+                                            <div class="lg:border border-0 border-base-20 rounded-lg lg:py-[22px] lg:px-[24px] py-[0] px-[0] text-center">
+                                                <span class="font-semibold lg:text-lg text-medium text-primary-100 text-center leading-0">03</span>
+                                                <p class="text-medium font-semibold text-base-100 text-center">08:30 Am</p>
+                                            </div>
+                                            <div class="lg:border border-0 border-base-20 rounded-lg lg:py-[22px] lg:px-[24px] py-[0] px-[0] text-center">
+                                                <span class="font-semibold lg:text-lg text-medium text-primary-100 text-center leading-0">04</span>
+                                                <p class="text-medium font-semibold text-base-100 text-center">08:30 Am</p>
+                                            </div>
+                                            <div class="lg:border border-0 border-base-20 rounded-lg lg:py-[22px] lg:px-[24px] py-[0] px-[0] text-center">
+                                                <span class="font-semibold lg:text-lg text-medium text-primary-100 text-center leading-0">05</span>
+                                                <p class="text-medium font-semibold text-base-100 text-center">08:30 Am</p>
+                                            </div>
+                                            <div class="lg:border border-0 border-base-20 rounded-lg lg:py-[22px] lg:px-[24px] py-[0] px-[0] text-center">
+                                                <span class="font-semibold lg:text-lg text-medium text-primary-100 text-center leading-0">06</span>
+                                                <p class="text-medium font-semibold text-base-100 text-center">08:30 Am</p>
+                                            </div>
+                                            <div class="lg:border border-0 border-base-20 rounded-lg lg:py-[22px] lg:px-[24px] py-[0] px-[0] text-center">
+                                                <span class="font-semibold lg:text-lg text-medium text-primary-100 text-center leading-0">07</span>
+                                                <p class="text-medium font-semibold text-base-100 text-center">08:30 Am</p>
+                                            </div>
+                                            <div class="lg:border border-0 border-base-20 rounded-lg lg:py-[22px] lg:px-[24px] py-[0] px-[0] text-center">
+                                                <span class="font-semibold lg:text-lg text-medium text-primary-100 text-center leading-0">08</span>
+                                                <p class="text-medium font-semibold text-base-100 text-center">08:30 Am</p>
+                                            </div>
+                                            <div class="lg:border border-0 border-base-20 rounded-lg lg:py-[22px] lg:px-[24px] py-[0] px-[0] text-center">
+                                                <span class="font-semibold lg:text-lg text-medium text-primary-100 text-center leading-0">09</span>
+                                                <p class="text-medium font-semibold text-base-100 text-center">08:30 Am</p>
+                                            </div>
+                                            <div class="lg:border border-0 border-base-20 rounded-lg lg:py-[22px] lg:px-[24px] py-[0] px-[0] text-center">
+                                                <span class="font-semibold lg:text-lg text-medium text-primary-100 text-center leading-0">10</span>
+                                                <p class="text-medium font-semibold text-base-100 text-center">08:30 Am</p>
+                                            </div>
+                                            <div class="lg:border border-0 border-base-20 rounded-lg lg:py-[22px] lg:px-[24px] py-[0] px-[0] text-center">
+                                                <span class="font-semibold lg:text-lg text-medium text-primary-100 text-center leading-0">11</span>
+                                                <p class="text-medium font-semibold text-base-100 text-center">08:30 Am</p>
+                                            </div>
+                                            <div class="lg:border border-0 border-base-20 rounded-lg lg:py-[22px] lg:px-[24px] py-[0] px-[0] text-center">
+                                                <span class="font-semibold lg:text-lg text-medium text-primary-100 text-center leading-0">12</span>
+                                                <p class="text-medium font-semibold text-base-100 text-center">08:30 Am</p>
+                                            </div>
+                                            <div class="lg:border border-0 border-base-20 rounded-lg lg:py-[22px] lg:px-[24px] py-[0] px-[0] text-center">
+                                                <span class="font-semibold lg:text-lg text-medium text-primary-100 text-center leading-0">13</span>
+                                                <p class="text-medium font-semibold text-base-100 text-center">08:30 Am</p>
+                                            </div>
+                                            <div class="lg:border border-0 border-base-20 rounded-lg lg:py-[22px] lg:px-[24px] py-[0] px-[0] text-center">
+                                                <span class="font-semibold lg:text-lg text-medium text-primary-100 text-center leading-0">14</span>
+                                                <p class="text-medium font-semibold text-base-100 text-center">08:30 Am</p>
+                                            </div>
+                                            <div class="lg:border border-0 border-base-20 rounded-lg lg:py-[22px] lg:px-[24px] py-[0] px-[0] text-center">
+                                                <span class="font-semibold lg:text-lg text-medium text-primary-100 text-center leading-0">15</span>
+                                                <p class="text-medium font-semibold text-base-100 text-center">08:30 Am</p>
+                                            </div>
+                                            <div class="lg:border border-0 border-base-20 rounded-lg lg:py-[22px] lg:px-[24px] py-[0] px-[0] text-center">
+                                                <span class="font-semibold lg:text-lg text-medium text-primary-100 text-center leading-0">16</span>
+                                                <p class="text-medium font-semibold text-base-100 text-center">08:30 Am</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tab 3 Content -->
+                            <div class="tabcontent">
+                                <div class="tabcontent-inner py-24 lg:px-24 px-16 border border-base-20 rounded-lg">
+                                    <div class="calendar-wrap">
+                                        <div class="calendar-head flex justify-center items-center md:gap-[64px] gap-[32px]">
+                                            <div class="btn-left">
+                                                <a href="javascript:void(0);"><img src="./img/left-chevron.svg" alt=""></a>
+                                            </div>
+                                            <div class="head-text">
+                                                <h2 class="font-semibold text-medium text-base-100 text-center">August 2023</h2>
+                                            </div>
+                                            <div class="btn-right">
+                                                <a href="javascript:void(0);"><img src="./img/right-chevron.svg" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-body lg:mt-32 mt-[24px]">
+                                            <div class="lg:border border-0 border-base-20 rounded-lg lg:py-[22px] lg:px-[24px] py-[0] px-[0] text-center">
+                                                <span class="font-semibold lg:text-lg text-medium text-primary-100 text-center leading-0">01</span>
+                                                <p class="text-medium font-semibold text-base-100 text-center">08:30 Am</p>
+                                            </div>
+                                            <div class="lg:border border-0 border-base-20 rounded-lg lg:py-[22px] lg:px-[24px] py-[0] px-[0] text-center">
+                                                <span class="font-semibold lg:text-lg text-medium text-primary-100 text-center leading-0">02</span>
+                                                <p class="text-medium font-semibold text-base-100 text-center">08:30 Am</p>
+                                            </div>
+                                            <div class="lg:border border-0 border-base-20 rounded-lg lg:py-[22px] lg:px-[24px] py-[0] px-[0] text-center">
+                                                <span class="font-semibold lg:text-lg text-medium text-primary-100 text-center leading-0">03</span>
+                                                <p class="text-medium font-semibold text-base-100 text-center">08:30 Am</p>
+                                            </div>
+                                            <div class="lg:border border-0 border-base-20 rounded-lg lg:py-[22px] lg:px-[24px] py-[0] px-[0] text-center">
+                                                <span class="font-semibold lg:text-lg text-medium text-primary-100 text-center leading-0">04</span>
+                                                <p class="text-medium font-semibold text-base-100 text-center">08:30 Am</p>
+                                            </div>
+                                            <div class="lg:border border-0 border-base-20 rounded-lg lg:py-[22px] lg:px-[24px] py-[0] px-[0] text-center">
+                                                <span class="font-semibold lg:text-lg text-medium text-primary-100 text-center leading-0">05</span>
+                                                <p class="text-medium font-semibold text-base-100 text-center">08:30 Am</p>
+                                            </div>
+                                            <div class="lg:border border-0 border-base-20 rounded-lg lg:py-[22px] lg:px-[24px] py-[0] px-[0] text-center">
+                                                <span class="font-semibold lg:text-lg text-medium text-primary-100 text-center leading-0">06</span>
+                                                <p class="text-medium font-semibold text-base-100 text-center">08:30 Am</p>
+                                            </div>
+                                            <div class="lg:border border-0 border-base-20 rounded-lg lg:py-[22px] lg:px-[24px] py-[0] px-[0] text-center">
+                                                <span class="font-semibold lg:text-lg text-medium text-primary-100 text-center leading-0">07</span>
+                                                <p class="text-medium font-semibold text-base-100 text-center">08:30 Am</p>
+                                            </div>
+                                            <div class="lg:border border-0 border-base-20 rounded-lg lg:py-[22px] lg:px-[24px] py-[0] px-[0] text-center">
+                                                <span class="font-semibold lg:text-lg text-medium text-primary-100 text-center leading-0">08</span>
+                                                <p class="text-medium font-semibold text-base-100 text-center">08:30 Am</p>
+                                            </div>
+                                            <div class="lg:border border-0 border-base-20 rounded-lg lg:py-[22px] lg:px-[24px] py-[0] px-[0] text-center">
+                                                <span class="font-semibold lg:text-lg text-medium text-primary-100 text-center leading-0">09</span>
+                                                <p class="text-medium font-semibold text-base-100 text-center">08:30 Am</p>
+                                            </div>
+                                            <div class="lg:border border-0 border-base-20 rounded-lg lg:py-[22px] lg:px-[24px] py-[0] px-[0] text-center">
+                                                <span class="font-semibold lg:text-lg text-medium text-primary-100 text-center leading-0">10</span>
+                                                <p class="text-medium font-semibold text-base-100 text-center">08:30 Am</p>
+                                            </div>
+                                            <div class="lg:border border-0 border-base-20 rounded-lg lg:py-[22px] lg:px-[24px] py-[0] px-[0] text-center">
+                                                <span class="font-semibold lg:text-lg text-medium text-primary-100 text-center leading-0">11</span>
+                                                <p class="text-medium font-semibold text-base-100 text-center">08:30 Am</p>
+                                            </div>
+                                            <div class="lg:border border-0 border-base-20 rounded-lg lg:py-[22px] lg:px-[24px] py-[0] px-[0] text-center">
+                                                <span class="font-semibold lg:text-lg text-medium text-primary-100 text-center leading-0">12</span>
+                                                <p class="text-medium font-semibold text-base-100 text-center">08:30 Am</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tab 4 Content -->
+                            <div class="tabcontent">
+                                <div class="tabcontent-inner overflow-x-auto border border-base-20 rounded-lg">
+                                    <table class="w-full min-w-[784px]">
+                                        <thead>
+                                            <tr>
+                                                <th>Class Date</th>
+                                                <th>Class Name</th>
+                                                <th>Time</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <p class="font-semibold text-base-80 text-sm">May 08,2023</p>
+                                                </td>
+                                                <td>
+                                                    <p class="font-semibold text-base-80 text-sm">Hot Flow Yoga</p>
+                                                </td>
+                                                <td>
+                                                    <p class="font-semibold text-base-80 text-sm">6:00 PM</p>
+                                                </td>
+                                                <td class="flex justify-start gap-[16px]">
+                                                    <a href="" class="btn-filled !bg-base-100 !border-base-100 hover:!bg-base-0 hover:text-base-100">Check-In</a>
+                                                    <a href="" class="btn-outline">Cancel</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="font-semibold text-base-80 text-sm">May 08,2023</p>
+                                                </td>
+                                                <td>
+                                                    <p class="font-semibold text-base-80 text-sm">Yin Yoga</p>
+                                                </td>
+                                                <td>
+                                                    <p class="font-semibold text-base-80 text-sm">3:00 PM</p>
+                                                </td>
+                                                <td class="flex justify-start gap-[16px]">
+                                                    <a href="" class="btn-filled !bg-base-100 !border-base-100 hover:!bg-base-0 hover:text-base-100">Check-In</a>
+                                                    <a href="" class="btn-outline">Cancel</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- Login Modal -->
+        <div id="login-modal" class="modal sm:px-24 px-16" aria-hidden="true">
+            <div
+                class="modal-inner max-w-[754px] w-full mx-auto relative border rounded-2xl bg-base-0 md:p-74 py-[90px] px-16">
+                <div class="absolute top-[30px] right-[30px]">
+                    <button data-close-modal><img src="./img/close-icon-black.svg" alt=""></button>
+                </div>
+
+                <div tabindex="-1" data-micromodal-close>
+                    <div role="dialog" aria-modal="true" aria-labelledby="login-modal-title">
+                        <div id="login-modal-content">
+                            <div class="">
+                                <div class="md:mb-32 mb-24 text-center">
+                                    <h3 class="text-base-80 font-semibold md:text-2xl text-lg text-center">Login</h3>
+                                </div>
+                                <div>
+                                    <div class="mb-[18px]">
+                                        <label class="text-base-100 font-semibold text-medium mb-8 block" for="">Member
+                                            ID or Email Address</label>
+                                        <input
+                                            class="w-full rounded-lg border border-base-40 py-12 px-16 focus:border-base-80 focus:outline-none"
+                                            type="text" autocomplete="off" placeholder="Member ID or Email Address"
+                                            name="" id="">
+                                    </div>
+                                    <div class="">
+                                        <label class="text-base-100 font-semibold text-medium mb-8 block"
+                                            for="">Password</label>
+                                        <div class="relative">
+                                            <input
+                                                class="relative w-full rounded-lg border border-base-40 py-12 px-16 focus:border-base-80 focus:outline-none password"
+                                                type="password" autocomplete="new-password" placeholder="Password"
+                                                name="" id="">
+                                            <i class="fa fa-eye-slash toggle-password text-base-40 absolute top-0 bottom-0 right-[16px] m-auto h-[16px] cursor-pointer"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="md:mt-32 mt-24 flex flex-col md:flex-row md:justify-between items-center justify-start gap-[24px]">
+                                    <a href=""
+                                        class="btn-filled md:min-w-[180px] md:w-auto w-full  text-center">Login</a>
+                                    <a href="" class="text-right text-base-80 hover:text-primary-100">Forgot
+                                        Password?</a>
+                                </div>
+                                <div class="md:mt-48 mt-32">
+                                    <p class="text-base-80 text-center">Don’t have an account? <a href=""
+                                            class="font-semibold text-base-80 hover:text-primary-100">Sign Up</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-base-100">
+        <div class="container">
+            <div class="footer-inner">
+                <div
+                    class="footer-cta py-[80px] border-b border-base-20 flex flex-col md:flex-row justify-between items-center gap-[32px]">
+                    <div class="footer-cta-text text-center md:text-start">
+                        <h4 class="text-base-0 font-spyagency text-xl mb-12">Keep In Touch Through Our <br> Newsletter!
+                        </h4>
+                        <p class="text-base-0 text-mdium">Product launches and behind the scenes info...</p>
+                    </div>
+                    <div class="footer-cta-form border border-base-20 rounded-lg py-12 px-16 max-w-[520px] w-full">
+                        <form action="" class="flex justify-between gap-x-6">
+                            <input class="w-full bg-base-100 text-base-0 focus:border-transparent outline-none"
+                                type="email" placeholder="Enter your email address" name="" id="">
+                            <button class="btn-filled text-mdium px-40 hover:bg-base-0 hover:text-base-100"
+                                type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-links-wrap py-[80px] grid-cols-1 footer-grid-cols">
+                    <div class="footer-links">
+                        <a href="" class="mb-16 block"><img src="./img/logo-white.svg" alt=""></a>
+                        <p class="text-base-0">Panther Gym is an Edmonton based Boxing Gym & Training Center. Ready to
+                            get in shape and become disciplined? Reach out today or come to one of our walk-in classes.
+                        </p>
+                    </div>
+                    <div class="footer-links">
+                        <h4 class="text-medium font-bold text-base-0 mb-16">Quick Links</h4>
+                        <ul>
+                            <li class="mb-12"><a class="text-mdium text-base-0 hover:text-primary-100" href="">Home</a>
+                            </li>
+                            <li class="mb-12"><a class="text-mdium text-base-0 hover:text-primary-100" href="">Class
+                                    Schedule</a></li>
+                            <li class="mb-12"><a class="text-mdium text-base-0 hover:text-primary-100" href="">Plans</a>
+                            </li>
+                            <li class="mb-12"><a class="text-mdium text-base-0 hover:text-primary-100"
+                                    href="">Drop-Ins</a></li>
+                            <li class="mb-12"><a class="text-mdium text-base-0 hover:text-primary-100" href="">FAQ’s</a>
+                            </li>
+                            <li class="mb-12"><a class="text-mdium text-base-0 hover:text-primary-100" href="">Contact
+                                    Us</a></li>
+                            <li class="mb-12"><a class="text-mdium text-base-0 hover:text-primary-100" href="">Privacy
+                                    Policy</a></li>
+                            <li class=""><a class="text-mdium text-base-0 hover:text-primary-100" href="">Terms &
+                                    Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4 class="text-medium font-bold text-base-0 mb-16">Classes & Services</h4>
+                        <ul>
+                            <li class="mb-12"><a class="text-mdium text-base-0 hover:text-primary-100" href="">Boxing
+                                    Classes</a></li>
+                            <li class="mb-12"><a class="text-mdium text-base-0 hover:text-primary-100" href="">Yoga
+                                    Classes</a></li>
+                            <li class="mb-12"><a class="text-mdium text-base-0 hover:text-primary-100"
+                                    href="">Competitive Boxing</a></li>
+                            <li class="mb-12"><a class="text-mdium text-base-0 hover:text-primary-100" href="">Personal
+                                    Training</a></li>
+                            <li class=""><a class="text-mdium text-base-0 hover:text-primary-100" href="">Nutrition
+                                    Counselling</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4 class="text-medium font-bold text-base-0 mb-16">Contact Us</h4>
+                        <ul>
+                            <li class="mb-12 flex items-start gap-x-2"><img src="./img/location-icon.svg"
+                                    class="pt-[4px]" alt=""><a class="text-mdium text-base-0 hover:text-base-0"
+                                    href="javascript:void(0);">9556 82 Ave NW, Edmonton, AB T6C 0Z8P</a></li>
+                            <li class="mb-12 flex items-start gap-x-2"><img src="./img/phone-icon.svg" class="pt-[2px]"
+                                    alt=""><a class="text-mdium text-base-0 hover:text-primary-100"
+                                    href="tel:7807186161">(780) 718-6161</a></li>
+                            <li class="flex items-start gap-x-2"><img src="./img/mail-icon.svg" class="pt-[2px]"
+                                    alt=""><a class="text-mdium text-base-0 hover:text-primary-100"
+                                    href="mailto:info@panthergym.com">info@panthergym.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright bg-base-20 py-12">
+            <div class="container">
+                <div
+                    class="flex flex-col md:flex-row gap-[20px] text-center md:text-start justify-between items-center">
+                    <p class="text-sm text-base-100">Copyright © 2023 Panther Gym | All Rights Reserved</p>
+                    <ul class="flex items-center gap-x-6">
+                        <li><a href=""><img src="./img/facebook-icon.svg" alt=""></a></li>
+                        <li><a href=""><img src="./img/insta-icon.svg" alt=""></a></li>
+                        <li><a href=""><img src="./img/twitter-icon.svg" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -33,6 +33,7 @@ module.exports = {
         },
         other: {
           100: '#6FCF97',
+          customProfileBg: '#D9D9D9',
         },
       },
       backgroundImage: {
@@ -52,6 +53,7 @@ module.exports = {
         'plans-banner-bg': "url('/public/img/plans-banner-img.png')",
         'dropin-banner-bg': "url('/public/img/dropin-banner-img.png')",
         'account-banner-bg': "url('/public/img/account-banner-img.png')",
+        'member-banner-bg': "url('/public/img/member-banner-bg.png')",
       },
       // Define custom padding values
       padding: {

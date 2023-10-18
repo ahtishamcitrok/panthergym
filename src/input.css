@@ -887,6 +887,14 @@ table tbody tr:not(:last-child) {
     gap: 20px;
 }
 
+/* member details */
+
+.member-details {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    gap: 64px;
+}
+
 
 /* custom media queries */
 
@@ -937,6 +945,11 @@ table tbody tr:not(:last-child) {
         background-color: #FCE7E8;
     }
 
+    .member-details {
+        grid-template-columns: 200px 1fr;
+        gap: 42px;
+    }
+
 }
 
 @media all and (max-width: 768px) {
@@ -958,6 +971,20 @@ table tbody tr:not(:last-child) {
 
     .calendar-body {
         grid-template-columns: repeat(auto-fill, minmax(100px, 100px));
+    }
+
+    .member-details {
+        grid-template-columns: 130px 1fr;
+        gap: 20px;
+    }
+
+}
+
+@media all and (max-width: 575px) {
+
+    .btn-filled, .btn-outline, .btn-white {
+        font-size: 14px;
+        font-weight: 600;
     }
 
 }

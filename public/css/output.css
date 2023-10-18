@@ -605,6 +605,10 @@ video {
   left: 0px;
 }
 
+.left-\[16px\] {
+  left: 16px;
+}
+
 .right-0 {
   right: 0px;
 }
@@ -627,6 +631,10 @@ video {
 
 .top-4 {
   top: 1rem;
+}
+
+.top-\[13px\] {
+  top: 13px;
 }
 
 .top-\[30px\] {
@@ -752,6 +760,10 @@ video {
 
 .mt-\[24px\] {
   margin-top: 24px;
+}
+
+.mb-\[16px\] {
+  margin-bottom: 16px;
 }
 
 .block {
@@ -916,12 +928,20 @@ video {
   max-width: 100px;
 }
 
+.max-w-\[28px\] {
+  max-width: 28px;
+}
+
 .max-w-\[374px\] {
   max-width: 374px;
 }
 
 .max-w-\[460px\] {
   max-width: 460px;
+}
+
+.max-w-\[48px\] {
+  max-width: 48px;
 }
 
 .max-w-\[520px\] {
@@ -946,6 +966,10 @@ video {
 
 .max-w-\[758px\] {
   max-width: 758px;
+}
+
+.max-w-\[834px\] {
+  max-width: 834px;
 }
 
 .max-w-\[850px\] {
@@ -1043,6 +1067,10 @@ video {
   gap: 2rem;
 }
 
+.gap-\[12px\] {
+  gap: 12px;
+}
+
 .gap-\[16px\] {
   gap: 16px;
 }
@@ -1132,6 +1160,10 @@ video {
 
 .whitespace-pre {
   white-space: pre;
+}
+
+.break-all {
+  word-break: break-all;
 }
 
 .rounded {
@@ -1232,6 +1264,11 @@ video {
   background-color: rgb(111 207 151 / var(--tw-bg-opacity));
 }
 
+.bg-other-customProfileBg {
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 217 217 / var(--tw-bg-opacity));
+}
+
 .bg-primary-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(225 10 23 / var(--tw-bg-opacity));
@@ -1260,6 +1297,10 @@ video {
 
 .bg-home-banner-bg-mobile {
   background-image: url('/public/img/home-banner-mobile.jpg');
+}
+
+.bg-member-banner-bg {
+  background-image: url('/public/img/member-banner-bg.png');
 }
 
 .bg-offer-class-bg {
@@ -1353,6 +1394,16 @@ video {
   padding-right: 0;
 }
 
+.px-\[16px\] {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.px-\[6px\] {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
 .px-\[9px\] {
   padding-left: 9px;
   padding-right: 9px;
@@ -1413,6 +1464,16 @@ video {
   padding-bottom: 0;
 }
 
+.py-\[20px\] {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.py-\[6px\] {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
 .py-\[80px\] {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -1467,8 +1528,16 @@ video {
   padding-left: 8px;
 }
 
+.pl-\[52px\] {
+  padding-left: 52px;
+}
+
 .pr-12 {
   padding-right: 12px;
+}
+
+.pr-16 {
+  padding-right: 16px;
 }
 
 .pt-12 {
@@ -1605,6 +1674,10 @@ video {
 
 .leading-\[16px\] {
   line-height: 16px;
+}
+
+.leading-\[26px\] {
+  line-height: 26px;
 }
 
 .leading-none {
@@ -2757,6 +2830,14 @@ table tbody tr:not(:last-child) {
   gap: 20px;
 }
 
+/* member details */
+
+.member-details {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  gap: 64px;
+}
+
 /* custom media queries */
 
 @media all and (max-width: 1200px) {
@@ -2802,6 +2883,11 @@ table tbody tr:not(:last-child) {
     border-color: unset;
     background-color: #FCE7E8;
   }
+
+  .member-details {
+    grid-template-columns: 200px 1fr;
+    gap: 42px;
+  }
 }
 
 @media all and (max-width: 768px) {
@@ -2822,6 +2908,18 @@ table tbody tr:not(:last-child) {
 
   .calendar-body {
     grid-template-columns: repeat(auto-fill, minmax(100px, 100px));
+  }
+
+  .member-details {
+    grid-template-columns: 130px 1fr;
+    gap: 20px;
+  }
+}
+
+@media all and (max-width: 575px) {
+  .btn-filled, .btn-outline, .btn-white {
+    font-size: 14px;
+    font-weight: 600;
   }
 }
 
@@ -3014,12 +3112,30 @@ table tbody tr:not(:last-child) {
     width: auto;
   }
 
+  .md\:w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
   .md\:min-w-\[180px\] {
     min-width: 180px;
   }
 
+  .md\:min-w-max {
+    min-width: -moz-max-content;
+    min-width: max-content;
+  }
+
+  .md\:max-w-\[100px\] {
+    max-width: 100px;
+  }
+
   .md\:max-w-\[168px\] {
     max-width: 168px;
+  }
+
+  .md\:max-w-\[56px\] {
+    max-width: 56px;
   }
 
   .md\:grid-cols-3 {
@@ -3042,6 +3158,10 @@ table tbody tr:not(:last-child) {
     gap: 1.5rem;
   }
 
+  .md\:gap-\[20px\] {
+    gap: 20px;
+  }
+
   .md\:gap-\[24px\] {
     gap: 24px;
   }
@@ -3058,6 +3178,10 @@ table tbody tr:not(:last-child) {
     gap: 67px;
   }
 
+  .md\:gap-\[8px\] {
+    gap: 8px;
+  }
+
   .md\:gap-y-\[32px\] {
     row-gap: 32px;
   }
@@ -3068,6 +3192,26 @@ table tbody tr:not(:last-child) {
 
   .md\:p-74 {
     padding: 74px;
+  }
+
+  .md\:px-12 {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .md\:px-24 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .md\:py-12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .md\:py-24 {
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 
   .md\:pb-\[32px\] {
@@ -3110,6 +3254,10 @@ table tbody tr:not(:last-child) {
     font-size: 18px;
   }
 
+  .md\:text-sm {
+    font-size: 14px;
+  }
+
   .md\:text-xl {
     font-size: 24px;
   }
@@ -3124,6 +3272,10 @@ table tbody tr:not(:last-child) {
 
   .md\:leading-\[33px\] {
     line-height: 33px;
+  }
+
+  .md\:leading-\[34px\] {
+    line-height: 34px;
   }
 
   .md\:leading-\[62px\] {
