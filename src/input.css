@@ -138,6 +138,17 @@ span.red {
     @apply text-primary-100
 }
 
+.breadcrumbs-list > li:not(:last-child) {
+    position: relative;
+
+    &:after {
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='13' viewBox='0 0 12 13' fill='none'%3E%3Cpath d='M4 3.08L7.26 6.34C7.645 6.725 7.645 7.355 7.26 7.74L4 11' stroke='%23424242' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+        width: 12px;
+        position: absolute;
+        right: -17px;
+        top: 1px;
+    }
+}
 .banner-home::after {
     content: '';
     background-image: url(../img/linear-gradient.svg);
@@ -704,7 +715,7 @@ nav a {
 
 /* tabs content css starts */
 
-.timing-list-wrap .timing-list-single:not(:last-child) {
+.timing-list-wrap .timing-list-single:not(:last-child), .cart-list-wrap .cart-list-single, .wishlist-list-wrap .wishlist-list-single {
     border-bottom: 1px solid #E7E7E7;
 }
 
@@ -859,3 +870,113 @@ nav a {
 
 }
 
+/* Cart Page Styles */
+.cart-table-wrap, .wishlist-table-wrap {
+    overflow: auto;
+}
+.cart-list-wrap, .wishlist-list-wrap {
+    min-width: 850px;
+}
+.cart-list-item, .wishlist-list-item {
+
+    &.cart-control {
+        width: 100%;
+        max-width: 20px;
+    }
+    &.wishlist-control {
+        max-width: 52px;
+        width: 100%;
+    }
+    &.prod-item {
+        width: 100%;
+        max-width: 400px;
+    }
+    &:not(.cart-control):not(.prod-item), &:not(.wishlist-control):not(.prod-item) {
+        flex: 1;
+    }
+} 
+.custom-backdrop {
+    display: none;
+    position: fixed;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+
+    &.visible {
+        display: block;
+    }
+}
+
+/* Checkout Styles */
+.required label:after {
+    content: "*";
+    margin-left: 8px;
+    color: #E10A17;
+    font-weight: 600;
+}
+
+/* FAQ Styles */
+.faq-banner::after, .shop-banner::after {
+    content: '';
+    background-image: url(../img/plans-banner-gradient.svg);
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.accordion-head {
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: 24px;
+        width: 20px;
+        height: 20px;
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='21' viewBox='0 0 20 21' fill='none'%3E%3Cpath d='M10 5L10 17' stroke='%23A1A1A1' stroke-width='1.6' stroke-linecap='round'/%3E%3Cpath d='M4 11L16 11' stroke='%23A1A1A1' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E") center/contain no-repeat;
+        background-size: 20px;
+    }
+
+    &.active:after {
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='21' viewBox='0 0 20 21' fill='none'%3E%3Cpath d='M4 11H16' stroke='%23E10A17' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat;
+    }
+}
+.product-categories .accordion-head {
+    background: #E10A17;
+    color: #fff;
+    &:after {
+        width: 20px;
+        height: 20px;
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25' viewBox='0 0 24 25' fill='none'%3E%3Cpath d='M11.9969 9.52422C11.8635 9.52422 11.7342 9.54922 11.6089 9.59922C11.4835 9.64922 11.3795 9.71589 11.2969 9.79922L6.69687 14.3992C6.51354 14.5826 6.42188 14.8159 6.42188 15.0992C6.42188 15.3826 6.51354 15.6159 6.69687 15.7992C6.88021 15.9826 7.11354 16.0742 7.39687 16.0742C7.68021 16.0742 7.91354 15.9826 8.09688 15.7992L11.9969 11.8992L15.8969 15.7992C16.0802 15.9826 16.3135 16.0742 16.5969 16.0742C16.8802 16.0742 17.1135 15.9826 17.2969 15.7992C17.4802 15.6159 17.5719 15.3826 17.5719 15.0992C17.5719 14.8159 17.4802 14.5826 17.2969 14.3992L12.6969 9.79922C12.5969 9.69922 12.4885 9.62822 12.3719 9.58622C12.2552 9.54422 12.1302 9.52355 11.9969 9.52422Z' fill='white'/%3E%3C/svg%3E") center/contain no-repeat;
+        background-size: 24px;
+        right: 18px;
+        transition: transform 0.25s;
+    }
+
+    &.active {
+        color: #fff;
+        &:after {
+            transform: rotate(180deg);
+            
+        }
+    }
+}
+.accordion-body p:not(:last-child) {
+    margin-bottom: 16px;
+}
+.categories-list a {
+    transition: color 0.25s;
+    &:hover {
+        color: #E10A17;
+    }
+}

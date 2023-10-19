@@ -1,7 +1,7 @@
 jQuery(document).ready(function ($) {
 
   // Products Slider 
-  $('.products-list').owlCarousel({
+  $('.products-list.owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
     responsiveClass: true,
@@ -123,11 +123,11 @@ $(document).ready(function () {
     MicroModal.close(currModal)
   })
 
-  $('[data-micromodal-trigger="confirmation-modal"]').on('click', function(){
-    
+  $('[data-micromodal-trigger="confirmation-modal"]').on('click', function () {
+
     MicroModal.close('booking-modal');
   })
-  $('[data-micromodal-trigger="cancel-modal"]').on('click', function(){
+  $('[data-micromodal-trigger="cancel-modal"]').on('click', function () {
     MicroModal.close('booking-modal');
   })
 });
@@ -152,5 +152,33 @@ $(document).ready(function () {
       eyeIcon.removeClass("fa-eye").addClass("fa-eye-slash");
     }
   });
+
+  //Cart Drawer
+  $('[data-drawer-target]').on('click', function () {
+    let drawerId = $(this).data('drawer-target');
+    if ($('.custom-backdrop').length <= 0) {
+      $('body').append('<div class="custom-backdrop"></div>')
+    }
+    $('.custom-backdrop').toggleClass('visible')
+    $('#' + drawerId).toggleClass('translate-x-full')
+  })
+
+  $('.close-drawer').on('click', function () {
+    $(this).closest('.drawer').addClass('translate-x-full');
+    $('.custom-backdrop').removeClass('visible')
+  })
+
+  $('.custom-backdrop').on('click', function () {
+    $('.drawer').addClass('translate-x-full');
+    $('.custom-backdrop').removeClass('visible')
+  })
+
+  //Accordion Script
+  $('.accordion-head').on('click', function () {
+    $(this).next().slideToggle()
+
+    $(this).hasClass('active') ? $(this).removeClass('active') : $(this).addClass('active');
+
+  })
 });
 

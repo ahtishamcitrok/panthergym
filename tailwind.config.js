@@ -10,6 +10,7 @@ module.exports = {
     screens: {
       xxl: '1400px',
       xl: '1200px',
+      sxl: '1025px',
       lg: '992px',
       md: '768px',
       sm: '576px'
@@ -33,6 +34,7 @@ module.exports = {
         },
         other: {
           100: '#6FCF97',
+          lightgray: '#F9F9F9'
         },
       },
       backgroundImage: {
@@ -51,6 +53,8 @@ module.exports = {
         'cta-banner-bg': "url('/public/img/cta-banner-img.png')",
         'plans-banner-bg': "url('/public/img/plans-banner-img.png')",
         'dropin-banner-bg': "url('/public/img/dropin-banner-img.png')",
+        'faq-banner-bg': "url('/public/img/faq-banner-img.jpg')",
+        'shop-banner-bg': "url('/public/img/shop-banner-img.jpg')",
       },
       // Define custom padding values
       padding: {
@@ -71,6 +75,7 @@ module.exports = {
         '192': '192px',
       },
       margin: {
+        '4':'4px',
         '8':'8px',
         '10':'10px',
         '12':'12px',
@@ -79,9 +84,11 @@ module.exports = {
         '20':'20px',
         '24':'24px',
         '32':'32px',
+        '40': '40px',
         '48':'48px',
         '60':'60px',
         '96':'96px',
+        '100': '100px',
         '130':'130px',
       },
       lineHeight: {
@@ -107,6 +114,10 @@ module.exports = {
         '808':'808px',
         '968':'968px',
       },
+      minWidth: {
+        '420':'420px',
+        '600':'600px',
+      },
       height: {
         '500': '500px',
         '606': '606px',
@@ -122,6 +133,9 @@ module.exports = {
         medium: '500',
         semibold: '600',
         bold: '700',
+      },
+      boxShadow: {
+        'sm': '0px 4px 34px 4px rgba(51, 51, 51, 0.08)',
       }
     },
   },
@@ -133,6 +147,5 @@ module.exports = {
     // padding: false,
     boxSizing: false,
     outline: false,
-    boxShadow: false,
   },
 }
