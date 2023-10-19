@@ -182,3 +182,77 @@ $(document).ready(function () {
   })
 });
 
+
+// crowd meter page chartjs
+
+// const ctx = document.getElementById('crowdChart');
+
+//   new Chart(ctx, {
+//     type: 'bar',
+//     data: {
+//       labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+//       datasets: [{
+//         label: '# of Votes',
+//         data: [12, 19, 3, 5, 2, 3],
+//         borderWidth: 1
+//       }]
+//     },
+//     options: {
+//       scales: {
+//         y: {
+//           beginAtZero: true
+//         }
+//     }
+//   }
+// });
+
+
+var ctx = document.getElementById('crowdChart').getContext('2d');
+
+var data = {
+  labels: ['3 AM', '', '', '6 AM', '', '', '9 AM', '', '', '12 PM', '', '', '3 PM', '', '', '6 PM', '', '', '9 PM', '', '', '12 AM', '', ''],
+  datasets: [
+    {
+      label: 'Percent Capacity',
+      data: [2, 18, 7, 17, 9, 10, 12, 2, 6, 11, 18, 17, 16, 4, 9, 100, 7, 3, 18, 11, 8, 11, 6, 18, 15],
+      backgroundColor: '#E73B45', // Bar color
+      borderWidth: 0, // Border width
+      borderRadius: 2, // Border radius
+    },
+  ],
+};
+
+var chart = new Chart(ctx, {
+  type: 'bar',
+  data: data,
+  options: {
+    scales: {
+      x: {
+        ticks: {
+          beginAtZero: true,
+          autoSkip: false,
+          maxRotation: 0,
+          minRotation: 0
+        },
+        grid: {
+          display: false, // Hide x-axis grid lines
+        },
+      },
+      y: {
+        ticks: {
+          beginAtZero: true,
+          max: 100,
+          stepSize: 10,
+        },
+        grid: {
+          display: false, // Hide y-axis grid lines
+        },
+      },
+    },
+    plugins: {
+      legend: {
+        display: false, // Hide the legend
+      }
+    },
+  },
+});
