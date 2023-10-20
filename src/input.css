@@ -1133,3 +1133,16 @@ table tbody tr:not(:last-child) {
         color: #E10A17;
     }
 }
+.color-swatches .active {
+    border-color: #E10A17;
+}
+.size-swatches .active {
+    background-color: #E10A17;
+    color: #fff;
+}
+.product-image-gallery .active {
+    border: 4px solid #E10A17;
+}
+.breadcrumbs-list > li:last-child a {
+    cursor: initial;
+}
