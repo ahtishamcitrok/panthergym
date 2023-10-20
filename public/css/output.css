@@ -1389,10 +1389,6 @@ video {
   border-style: solid;
 }
 
-.border-none {
-  border-style: none;
-}
-
 .\!border-base-100 {
   --tw-border-opacity: 1 !important;
   border-color: rgb(19 19 19 / var(--tw-border-opacity)) !important;
@@ -3712,15 +3708,6 @@ table tbody tr:not(:last-child) {
 
   .md\:gap-y-\[32px\] {
     row-gap: 32px;
-  }
-
-  .md\:border {
-    border-width: 1px;
-  }
-
-  .md\:border-base-20 {
-    --tw-border-opacity: 1;
-    border-color: rgb(231 231 231 / var(--tw-border-opacity));
   }
 
   .md\:p-30 {
