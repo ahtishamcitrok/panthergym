@@ -1356,6 +1356,10 @@ video {
   border-style: solid;
 }
 
+.border-none {
+  border-style: none;
+}
+
 .\!border-base-100 {
   --tw-border-opacity: 1 !important;
   border-color: rgb(19 19 19 / var(--tw-border-opacity)) !important;
@@ -1738,6 +1742,10 @@ video {
   padding-bottom: 64px;
 }
 
+.pb-\[8px\] {
+  padding-bottom: 8px;
+}
+
 .pl-12 {
   padding-left: 12px;
 }
@@ -1804,10 +1812,6 @@ video {
 
 .pt-\[8px\] {
   padding-top: 8px;
-}
-
-.pb-\[8px\] {
-  padding-bottom: 8px;
 }
 
 .text-left {
@@ -1981,10 +1985,6 @@ video {
 
 .underline-offset-2 {
   text-underline-offset: 2px;
-}
-
-.underline-offset-4 {
-  text-underline-offset: 4px;
 }
 
 .underline-offset-8 {
@@ -3630,6 +3630,15 @@ table tbody tr:not(:last-child) {
     row-gap: 32px;
   }
 
+  .md\:border {
+    border-width: 1px;
+  }
+
+  .md\:border-base-20 {
+    --tw-border-opacity: 1;
+    border-color: rgb(231 231 231 / var(--tw-border-opacity));
+  }
+
   .md\:p-30 {
     padding: 30px;
   }
@@ -3648,6 +3657,11 @@ table tbody tr:not(:last-child) {
     padding-right: 24px;
   }
 
+  .md\:px-40 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
   .md\:py-12 {
     padding-top: 12px;
     padding-bottom: 12px;
@@ -3656,11 +3670,6 @@ table tbody tr:not(:last-child) {
   .md\:py-24 {
     padding-top: 24px;
     padding-bottom: 24px;
-  }
-
-  .md\:px-40 {
-    padding-left: 40px;
-    padding-right: 40px;
   }
 
   .md\:pb-\[32px\] {
