@@ -36,7 +36,7 @@
 <body class="overflow-x-hidden font-sans">
 
     <!-- header -->
-    <header>
+    <header class="relative">
         <div class="container">
             <div class="header-inner flex justify-between items-center py-3">
                 <div class="header-logo">
@@ -45,6 +45,15 @@
                 <div class="header-nav hidden lg:block">
                     <div class="mobile-menu-logo mobile-menu-logo mb-[24px] block lg:hidden">
                         <a href="index.html"><img src="./img/logo-black.svg" alt="panther gym logo"></a>
+                    </div>
+                    <div class="mobile-search mt-[48px] mb-[32px] lg:hidden hidden">
+                        <div class="details-search flex md:flex-row flex-col justify-between items-center md:gap-[8px] gap-[12px] max-w-[834px] w-full mx-auto">
+                            <div class="w-full relative">
+                                <input type="search" class="w-full text-medium py-[10px] pr-16 pl-[40px] border border-base-20 rounded-lg focus:border-base-80 focus:outline-none" placeholder="Search for a product" name="" id="">
+                                <img src="img/search-icon.svg" alt="" class="absolute top-[15px] left-[16px] max-w-[16px]">
+                            </div>
+                            <a href="#" class="btn-filled !pt-[9px] !pb-[9px] md:min-w-max md:w-fit w-full text-center">Search</a>
+                        </div>
                     </div>
                     <nav class="pb-16 lg:p-0">
                         <ul class="flex xl:gap-x-8 gap-x-[16px]">
@@ -75,7 +84,7 @@
                                 <li><a class="font-semibold text-base-80 hover:text-primary-100" href="#">Wishlist</a>
                                 </li>
                                 <li><a class="font-semibold text-base-80 hover:text-primary-100" href="#">Cart</a></li>
-                                <li><a class="font-semibold text-base-80 hover:text-primary-100" href="#">Search</a>
+                                <li><a class="font-semibold text-base-80 hover:text-primary-100 mobile-search-btn" href="#">Search</a>
                                 </li>
                                 <li><a class="font-semibold hover:text-primary-100 text-primary-100" href="#">Logout</a>
                                 </li>
@@ -84,7 +93,7 @@
                     </div>
                 </div>
                 <div class="header-btns gap-x-6 hidden lg:flex">
-                    <a class="" href=""><img src="./img/header-search-icon.svg" alt=""></a>
+                    <a class="search-btn" href="javascript:void(0);"><img src="./img/header-search-icon.svg" alt=""></a>
                     <a href=""><img src="./img/header-cart-icon.svg" alt=""></a>
                     <a href=""><img src="./img/header-wishlist-icon.svg" alt=""></a>
                     <a href="javascript:void(0)" data-micromodal-trigger="reset-password-modal"><img
@@ -95,10 +104,34 @@
                 </div>
             </div>
         </div>
+        <div class="search-wrap bg-base-100 absolute top-[100%] left-0 right-0 z-10 hidden lg:hidden">
+            <div class="container">
+                <div class="search-inner md:py-[20px] py-[16px]">
+                    <div class="flex md:flex-row flex-col justify-between items-center md:gap-[8px] gap-[12px] max-w-[834px] w-full mx-auto">
+                        <div class="w-full relative">
+                            <input type="search" class="w-full py-12 pr-16 pl-[52px] border border-base-20 bg-base-100 text-base-20 rounded-lg focus:border-base-40 focus:outline-none placeholder:text-base-20" placeholder="Search for a product" name="" id="">
+                            <img src="img/search-icon-base-20.svg" alt="" class="absolute top-[13px] left-[16px]">
+                        </div>
+                        <a href="#" class="btn-filled md:min-w-[180px] md:w-fit w-full text-center hover:border-base-0 hover:bg-base-0 hover:text-primary-100">Search</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
     <!-- main -->
     <main class="">
+
+        <!-- news wrap -->
+        <section class="news-wrap bg-primary-100">
+            <div class="container">
+                <div class="news-inner py-20 flex md:flex-row flex-col md:justify-between justify-center items-center md:gap-[24px] gap-[16px]">
+                    <p class="max-w-[850px] w-full md:text-lg text-medium text-base-0 uppercase md:text-left text-center">JOIN NOW FOR $0 ENROLMENT ON THE ULTIMATE AND PERFORMANCE MEMBERSHIPS! ENDS AUGUST 31!</p>
+                    <a href="" class="btn-white max-w-[fit-content] min-w-[fit-content]">Get Started Today</a>
+                </div>
+            </div>
+        </section>
+
 
         <!-- banner home -->
         <section
@@ -119,7 +152,7 @@
         </section>
 
         <!-- home offers -->
-        <section class="offers-outer-wrap py-120">
+        <section class="offers-outer-wrap md:py-120 py-60">
             <div class="container">
                 <div class="offers-inner">
                     <div class="sec-head text-center max-w-550 mx-auto mb-48">
@@ -127,25 +160,28 @@
                         <p class="text-base-80 text-medium md:text-lg">Lorem ipsum dolor sit amet consectetur turpis id
                             ultrices mattis dignissim.</p>
                     </div>
-                    <div class="offers-list grid grid-cols-3 gap-8">
-                        <a href="#"
-                            class="offer-single h-500 bg-offer-class-bg bg-cover bg-no-repeat bg-center relative tilt-btn transition duration-300 ease-in-out translate-x-28">
-                            <div
-                                class="offer-single-btn text-lg font-semibold bg-primary-100 text-base-0 py-20 px-40 block text-left absolute inset-x-0 bottom-0 w-78 hover:bg-base-100">
+                    <div class="offers-list grid grid-cols-3 gap-[24px]">
+                        <a href="" class="offer-single group bg-cover bg-no-repeat bg-center relative transition duration-300 ease-in-out rounded-tl-lg rounded-tr-lg">
+                            <div class="h-[310px] rounded-tl-lg rounded-tr-lg">
+                                <img src="img/offer-img-1.png" class="w-full h-full object-cover object-center rounded-tl-lg rounded-tr-lg" alt="">
+                            </div>
+                            <div class="offer-single-btn md:text-lg text-medium font-semibold bg-base-0 text-base-100 group-hover:text-base-0 py-20 lg:px-40 px-16 block text-left group-hover:bg-base-100 rounded-bl-lg rounded-br-lg">
                                 Our Classes
                             </div>
                         </a>
-                        <a href="#"
-                            class="offer-single h-500 bg-offer-schedule-bg bg-cover bg-no-repeat bg-center relative tilt-btn transition duration-300 ease-in-out">
-                            <div
-                                class="offer-single-btn text-lg font-semibold bg-primary-100 text-base-0 py-20 px-40 block text-left absolute inset-x-0 bottom-0 w-78 hover:bg-base-100">
+                        <a href="" class="offer-single group bg-cover bg-no-repeat bg-center relative transition duration-300 ease-in-out rounded-tl-lg rounded-tr-lg">
+                            <div class="h-[310px] rounded-tl-lg rounded-tr-lg">
+                                <img src="img/offer-img-2.png" class="w-full h-full object-cover object-center rounded-tl-lg rounded-tr-lg" alt="">
+                            </div>
+                            <div class="offer-single-btn md:text-lg text-medium font-semibold bg-base-0 text-base-100 group-hover:text-base-0 py-20 lg:px-40 px-16 block text-left group-hover:bg-base-100 rounded-bl-lg rounded-br-lg">
                                 Our Schedule
                             </div>
                         </a>
-                        <a href="#"
-                            class="offer-single h-500 bg-offer-gear-bg bg-cover bg-no-repeat bg-center relative tilt-btn transition duration-300 ease-in-out -translate-x-28">
-                            <div
-                                class="offer-single-btn text-lg font-semibold bg-primary-100 text-base-0 py-20 px-40 block text-left absolute inset-x-0 bottom-0 w-78 hover:bg-base-100">
+                        <a href="" class="offer-single group bg-cover bg-no-repeat bg-center relative transition duration-300 ease-in-out rounded-tl-lg rounded-tr-lg">
+                            <div class="h-[310px] rounded-tl-lg rounded-tr-lg">
+                                <img src="img/offer-img-3.png" class="w-full h-full object-cover object-center rounded-tl-lg rounded-tr-lg" alt="">
+                            </div>
+                            <div class="offer-single-btn md:text-lg text-medium font-semibold bg-base-0 text-base-100 group-hover:text-base-0 py-20 lg:px-40 px-16 block text-left group-hover:bg-base-100 rounded-bl-lg rounded-br-lg">
                                 Our Gear
                             </div>
                         </a>
@@ -159,7 +195,7 @@
             <div class="container-fluid xl:p-0">
                 <div class="about-inner">
                     <div class="sec-head text-center max-w-968 mx-auto mb-24">
-                        <h2 class="font-spyagency text-base-0 text-4xl mb-12">What We're All About</h2>
+                        <h2 class="font-spyagency text-base-0 text-lg md:text-4xl mb-12">What We're All About</h2>
                         <p class="text-base-0 text-lg">Panther Gym is more than just a local boxing gym, it’s a place
                             where a young athlete, a middle-aged business owner, a stay at home mom, a first timer, and
                             a seasoned pro can all feel welcome, comfortable, and challenged to be their best.</p>
@@ -180,14 +216,14 @@
         </section>
 
         <!-- products -->
-        <section class="products-wrap py-120">
+        <section class="products-wrap lg:py-120 py-60">
             <div class="container">
                 <div class="products-inner">
-                    <div class="sec-head text-left mb-48">
-                        <h2 class="font-spyagency text-base-100 text-4xl mb-12">NO GEAR? <span class="red">NO
+                    <div class="sec-head text-left mb-48 max-w-[800px] w-full">
+                        <h2 class="font-spyagency text-base-100 text-lg md:text-4xl mb-12">NO GEAR? <span class="red">NO
                                 WORRIES</span></h2>
                         <p class="text-base-80 text-lg">We have boxing gear for rent for drop-in guests and
-                            top-of-the-line Panther Gear for <br> those that are ready to get serious about their
+                            top-of-the-line Panther Gear for those that are ready to get serious about their
                             training.</p>
                     </div>
                     <div class="products-list owl-carousel grid grid-cols-4 gap-8">
@@ -206,7 +242,7 @@
                                 <a href="" class="btn-outline w-full text-center">Add To Cart</a>
                             </div>
                             <div
-                                class="absolute top-4 right-4 cursor-pointer p-8 rounded-full border border-solid border-base-20">
+                                class="absolute top-4 right-4 cursor-pointer p-8 rounded-full border border-solid border-base-20 flex items-center justify-center">
                                 <i class="fa fa-heart-o text-base-60 text-xl" aria-hidden="true"></i>
                             </div>
                         </div>
@@ -225,7 +261,7 @@
                                 <a href="" class="btn-outline w-full text-center">Add To Cart</a>
                             </div>
                             <div
-                                class="absolute top-4 right-4 cursor-pointer p-8 rounded-full border border-solid border-base-20">
+                                class="absolute top-4 right-4 cursor-pointer p-8 rounded-full border border-solid border-base-20 flex items-center justify-center">
                                 <i class="fa fa-heart-o text-base-60 text-xl" aria-hidden="true"></i>
                             </div>
                         </div>
@@ -244,7 +280,7 @@
                                 <a href="" class="btn-outline w-full text-center">Add To Cart</a>
                             </div>
                             <div
-                                class="absolute top-4 right-4 cursor-pointer p-8 rounded-full border border-solid border-base-20">
+                                class="absolute top-4 right-4 cursor-pointer p-8 rounded-full border border-solid border-base-20 flex items-center justify-center">
                                 <i class="fa fa-heart-o text-base-60 text-xl" aria-hidden="true"></i>
                             </div>
                         </div>
@@ -263,7 +299,7 @@
                                 <a href="" class="btn-outline w-full text-center">Add To Cart</a>
                             </div>
                             <div
-                                class="absolute top-4 right-4 cursor-pointer p-8 rounded-full border border-solid border-base-20">
+                                class="absolute top-4 right-4 cursor-pointer p-8 rounded-full border border-solid border-base-20 flex items-center justify-center">
                                 <i class="fa fa-heart-o text-base-60 text-xl" aria-hidden="true"></i>
                             </div>
                         </div>
@@ -276,14 +312,14 @@
         </section>
 
         <!-- What makes us  -->
-        <section class="what-make-wrap bg-custom-gradient-fullblack py-120 relative">
+        <section class="what-make-wrap bg-custom-gradient-fullblack lg:py-120 py-60 relative">
             <div class="container">
                 <div class="what-make-parent flex items-center flex-col gap-[63px] lg:flex-row">
                     <div class="what-make-left relative lg:w-[40%]">
                         <img src="./img/what-make-img.png" alt="">
                     </div>
                     <div class="what-make-right lg:w-[60%]">
-                        <h2 class="font-spyagency text-base-0 text-4xl text-center sm:text-start max-w-550 pb-40 ">WHAT
+                        <h2 class="font-spyagency text-base-0 text-lg md:text-4xl text-center sm:text-start max-w-550 pb-40 ">WHAT
                             MAKES US <span class="red"> DIFFERENT </span> FROM THE REST?</h2>
                         <div
                             class="make-icon-parent grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-[40px] lg:gap-[74px] justify-space-between">
@@ -348,45 +384,57 @@
         </section>
 
         <!-- trainers -->
-        <section class="trainers-outer-wrap py-120">
+        <section class="trainers-outer-wrap md:py-120 py-[60px]">
             <div class="container">
                 <div class="trainers-inner">
                     <div class="sec-head text-center max-w-[758px] mx-auto mb-48">
-                        <h2 class="font-spyagency text-4xl mb-12">OUR <span class="red">TRAINERS</span></h2>
+                        <h2 class="font-spyagency text-lg md:text-4xl mb-12">OUR <span class="red">TRAINERS</span></h2>
                         <p class="text-base-80 text-lg">If you want to be the best, you have to train with the best. Our
                             trainers have years of professional boxing experience under their belts.</p>
                     </div>
-                    <div class="trainers-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-                        <a href="#"
-                            class="trainers-single h-500 bg-trainer-1-bg bg-cover bg-no-repeat bg-center relative tilt-btn transition duration-300 ease-in-out">
-                            <div
-                                class="trainers-single-btn text-lg font-semibold bg-primary-100 text-base-0 py-20 px-40 block text-left absolute inset-x-0 bottom-0 w-79 hover:bg-base-100">
-                                Alex Spark
-                                <span class="text-sm block">Professional Boxer</span>
+                    <div class="trainers-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <a href="" class="offer-single group bg-cover bg-no-repeat bg-center relative transition duration-300 ease-in-out rounded-tl-lg rounded-tr-lg">
+                            <div class="md:h-[310px] h-auto rounded-tl-lg rounded-tr-lg">
+                                <img src="img/trainer-img-1.png" class="w-full h-full object-cover object-center rounded-tl-lg rounded-tr-lg" alt="">
+                            </div>
+                            <div class="offer-single-btn flex items-start justify-center flex-col bg-base-0 text-base-100 group-hover:text-base-0 md:py-18 py-[14px] px-22 block text-left group-hover:bg-base-100 rounded-bl-lg rounded-br-lg md:min-h-[91px] min-h-[80px]">
+                                <div class="flex items-center gap-[8px] md:text-lg text-medium font-semibold">
+                                    <img src="img/trainer-icon.svg" class="md:hidden group-hover:block" alt=""> Tom Hardy
+                                </div>
+                                <span class="text-sm group-hover:block md:hidden">Professional Boxer</span>
                             </div>
                         </a>
-                        <a href="#"
-                            class="trainers-single h-500 bg-trainer-2-bg bg-cover bg-no-repeat bg-center relative tilt-btn transition duration-300 ease-in-out">
-                            <div
-                                class="trainers-single-btn text-lg font-semibold bg-primary-100 text-base-0 py-20 px-40 block text-left absolute inset-x-0 bottom-0 w-79 hover:bg-base-100">
-                                Tom Hardy
-                                <span class="text-sm block">Personal Trainer</span>
+                        <a href="" class="offer-single group bg-cover bg-no-repeat bg-center relative transition duration-300 ease-in-out rounded-tl-lg rounded-tr-lg">
+                            <div class="md:h-[310px] h-auto rounded-tl-lg rounded-tr-lg">
+                                <img src="img/trainer-img-2.png" class="w-full h-full object-cover object-center rounded-tl-lg rounded-tr-lg" alt="">
+                            </div>
+                            <div class="offer-single-btn flex items-start justify-center flex-col bg-base-0 text-base-100 group-hover:text-base-0 md:py-18 py-[14px] px-22 block text-left group-hover:bg-base-100 rounded-bl-lg rounded-br-lg md:min-h-[91px] min-h-[80px]">
+                                <div class="flex items-center gap-[8px] md:text-lg text-medium font-semibold">
+                                    <img src="img/trainer-icon.svg" class="md:hidden group-hover:block" alt=""> Alex Spark
+                                </div>
+                                <span class="text-sm group-hover:block md:hidden">Personal Trainer</span>
                             </div>
                         </a>
-                        <a href="#"
-                            class="trainers-single h-500 bg-trainer-3-bg bg-cover bg-no-repeat bg-center relative tilt-btn transition duration-300 ease-in-out">
-                            <div
-                                class="trainers-single-btn text-lg font-semibold bg-primary-100 text-base-0 py-20 px-40 block text-left absolute inset-x-0 bottom-0 w-79 hover:bg-base-100">
-                                Andy Braun
-                                <span class="text-sm block">Trainer</span>
+                        <a href="" class="offer-single group bg-cover bg-no-repeat bg-center relative transition duration-300 ease-in-out rounded-tl-lg rounded-tr-lg">
+                            <div class="md:h-[310px] h-auto rounded-tl-lg rounded-tr-lg">
+                                <img src="img/trainer-img-3.png" class="w-full h-full object-cover object-center rounded-tl-lg rounded-tr-lg" alt="">
+                            </div>
+                            <div class="offer-single-btn flex items-start justify-center flex-col bg-base-0 text-base-100 group-hover:text-base-0 md:py-18 py-[14px] px-22 block text-left group-hover:bg-base-100 rounded-bl-lg rounded-br-lg md:min-h-[91px] min-h-[80px]">
+                                <div class="flex items-center gap-[8px] md:text-lg text-medium font-semibold">
+                                    <img src="img/trainer-icon.svg" class="md:hidden group-hover:block" alt=""> Andy Braun
+                                </div>
+                                <span class="text-sm group-hover:block md:hidden">Trainer</span>
                             </div>
                         </a>
-                        <a href="#"
-                            class="trainers-single h-500 bg-trainer-4-bg bg-cover bg-no-repeat bg-center relative tilt-btn transition duration-300 ease-in-out">
-                            <div
-                                class="trainers-single-btn text-lg font-semibold bg-primary-100 text-base-0 py-20 px-40 block text-left absolute inset-x-0 bottom-0 w-79 hover:bg-base-100">
-                                Victoria Kim
-                                <span class="text-sm block">Professional Athelete</span>
+                        <a href="" class="offer-single group bg-cover bg-no-repeat bg-center relative transition duration-300 ease-in-out rounded-tl-lg rounded-tr-lg">
+                            <div class="md:h-[310px] h-auto rounded-tl-lg rounded-tr-lg">
+                                <img src="img/trainer-img-4.png" class="w-full h-full object-cover object-center rounded-tl-lg rounded-tr-lg" alt="">
+                            </div>
+                            <div class="offer-single-btn flex items-start justify-center flex-col bg-base-0 text-base-100 group-hover:text-base-0 md:py-18 py-[14px] px-22 block text-left group-hover:bg-base-100 rounded-bl-lg rounded-br-lg md:min-h-[91px] min-h-[80px]">
+                                <div class="flex items-center gap-[8px] md:text-lg text-medium font-semibold">
+                                    <img src="img/trainer-icon.svg" class="md:hidden group-hover:block" alt=""> Victoria Kim
+                                </div>
+                                <span class="text-sm group-hover:block md:hidden">Professional Athelete</span>
                             </div>
                         </a>
                     </div>
@@ -425,7 +473,7 @@
         </section>
 
         <!-- reviews -->
-        <section class="review-wrap py-120">
+        <section class="review-wrap md:py-120 py-60">
             <div class="container">
                 <div class="review-inner max-w-550  ">
                     <h2 class="font-spyagency text-lg md:text-4xl mb-12">SEE WHY PEOPLE <span class="red">LOVE</span>
@@ -467,7 +515,7 @@
                             <img class="mr-[8px]" src="./img/Star.svg" alt="">
                         </div>
                         <div class="review-text pt-12 pb-20">
-                            <p class="text-medium font-normal text-base-80 min-h-[290px]">It's been a very
+                            <p class="text-medium font-normal text-base-80">It's been a very
                                 long time since I was trained at the Panther Gym (close to 30 years) but its encouraging
                                 to see it's still doing what it does best, offering high quality self-defense training
                                 in a low key, accessible environment. I trained with Daryl Duke the original owner and
@@ -478,10 +526,10 @@
                         <div class="review-name flex items-center">
                             <div
                                 class="name-elipse bg-base-20 w-[70px] h-[70px] flex items-center justify-center rounded-full">
-                                <p class="text-xl font-semibold text-base-100">BC</p>
+                                <p class="lg:text-xl md:text-lg text-medium font-semibold text-base-100">BC</p>
                             </div>
                             <div class="r-name-date pl-20">
-                                <p class="text-lg font-semibold text-base-100">Bryan Campbell</p>
+                                <p class="md:text-lg text-medium font-semibold text-base-100">Bryan Campbell</p>
                                 <span class="text-sm font-semibold text-base-60">February 19, 2020</span>
                             </div>
                         </div>
@@ -495,7 +543,7 @@
                             <img class="mr-[8px]" src="./img/Star.svg" alt="">
                         </div>
                         <div class="review-text pt-12 pb-20">
-                            <p class="text-medium font-normal text-base-80 min-h-[290px]">Easily the best
+                            <p class="text-medium font-normal text-base-80">Easily the best
                                 boxing gym in Edmonton! If you want high quality coaching or classes, Panther's gym is
                                 where you want to train.Benny and Cyndie are fantastic owners, and will do everything
                                 possible to accommodate you in their gym. Highly recommended, 5/5 stars.</p>
@@ -503,10 +551,10 @@
                         <div class="review-name flex items-center">
                             <div
                                 class="name-elipse bg-base-20 w-[70px] h-[70px] flex items-center justify-center rounded-full">
-                                <p class="text-xl font-semibold text-base-100">TN</p>
+                                <p class="lg:text-xl md:text-lg text-medium font-semibold text-base-100">TN</p>
                             </div>
                             <div class="r-name-date pl-20">
-                                <p class="text-lg font-semibold text-base-100">Tony Nguyen</p>
+                                <p class="md:text-lg text-medium font-semibold text-base-100">Tony Nguyen</p>
                                 <span class="text-sm font-semibold text-base-60">October 19, 2019</span>
                             </div>
                         </div>
@@ -520,7 +568,7 @@
                             <img class="mr-[8px]" src="./img/Star.svg" alt="">
                         </div>
                         <div class="review-text pt-12 pb-20">
-                            <p class="text-medium font-normal text-base-80 min-h-[290px]">Hands down the best
+                            <p class="text-medium font-normal text-base-80">Hands down the best
                                 boxing gym in the city. The trainers are phenomenal, the owners are amazing with
                                 wonderful customer service. There's a great sense of boxing community too — whether
                                 you're new to boxing or a regular. Panther gym put me in the best shape of my life! 5
@@ -529,10 +577,10 @@
                         <div class="review-name flex items-center">
                             <div
                                 class="name-elipse bg-base-20 w-[70px] h-[70px] flex items-center justify-center rounded-full">
-                                <p class="text-xl font-semibold text-base-100">MR</p>
+                                <p class="lg:text-xl md:text-lg text-medium font-semibold text-base-100">MR</p>
                             </div>
                             <div class="r-name-date pl-20">
-                                <p class="text-lg font-semibold text-base-100">Meg R</p>
+                                <p class="md:text-lg text-medium font-semibold text-base-100">Meg R</p>
                                 <span class="text-sm font-semibold text-base-60">March 18, 2019</span>
                             </div>
                         </div>

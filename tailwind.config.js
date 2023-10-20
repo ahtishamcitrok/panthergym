@@ -111,7 +111,8 @@ module.exports = {
         '4xl': '36px',     // 4 Extra Large
         '5xl': '40px',     // 5 Extra Large
         '6xl': '48px',     // 6 Extra Large
-        'xxl': '200px',     // 6 Extra Large
+        '7xl': '100px',     // 7 Extra Large
+        'xxl': '200px',     // xxl Extra Large
       },
       maxWidth: {
         '550':'550px',

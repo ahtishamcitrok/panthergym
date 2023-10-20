@@ -8,21 +8,23 @@ jQuery(document).ready(function ($) {
     responsive: {
       0: {
         items: 1,
-        nav: true
+        nav: false,
+        dots: true,
       },
       600: {
         items: 2,
-        nav: false
+        nav: false,
       },
       992: {
         items: 3,
         nav: true,
-        loop: true
+        dots: false,
+        dotsEach: 1,
+        loop: true,
       },
       1200: {
         items: 4,
-        nav: true,
-        loop: true
+        loop: true,
       }
     },
     nav: true,
@@ -42,17 +44,22 @@ jQuery(document).ready(function ($) {
     responsive: {
       0: {
         items: 1,
-        nav: true
+        nav: false,
+        dots: true,
       },
       600: {
-        items: 2,
-        nav: true
+        items: 1,
       },
-      1000: {
-        items: 3,
+      992: {
+        items: 2,
         nav: true,
-        loop: true
-      }
+        dots: false,
+        dotsEach: 1,
+        loop: true,
+      },
+      1200: {
+        items: 3,
+      },
     },
     nav: true,
     navText: [
@@ -181,13 +188,13 @@ $(document).ready(function () {
 
   })
 
-  // $("#main-image").jqZoom({
-  //   selectorWidth: 30,
-  //   selectorHeight: 30,
-  //   viewerWidth: 400,
-  //   viewerHeight: 300
-  // });
-
+  $(".search-btn").on("click", function() {
+    $(".search-wrap").slideToggle(250);
+  });
+  
+  $(".mobile-search-btn").on("click", function() {
+    $(".mobile-search").slideToggle(250);
+  });
 
 });
 
@@ -262,28 +269,6 @@ function setActiveThumbnail(src) {
 
 
 // crowd meter page chartjs
-
-// const ctx = document.getElementById('crowdChart');
-
-//   new Chart(ctx, {
-//     type: 'bar',
-//     data: {
-//       labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-//       datasets: [{
-//         label: '# of Votes',
-//         data: [12, 19, 3, 5, 2, 3],
-//         borderWidth: 1
-//       }]
-//     },
-//     options: {
-//       scales: {
-//         y: {
-//           beginAtZero: true
-//         }
-//     }
-//   }
-// });
-
 
 var ctx = document.getElementById('crowdChart').getContext('2d');
 
