@@ -1080,13 +1080,10 @@ video {
   max-width: 880px;
 }
 
-<<<<<<< HEAD
-=======
 .max-w-\[940px\] {
   max-width: 940px;
 }
 
->>>>>>> 9a7fc711c3a56efd2be97ccd24d90c825fb00f82
 .max-w-\[fit-content\] {
   max-width: -moz-fit-content;
   max-width: fit-content;
@@ -1177,10 +1174,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.gap-16 {
-  gap: 4rem;
 }
 
 .gap-6 {
@@ -1791,6 +1784,10 @@ video {
   padding-bottom: 64px;
 }
 
+.pb-\[8px\] {
+  padding-bottom: 8px;
+}
+
 .pl-12 {
   padding-left: 12px;
 }
@@ -1867,13 +1864,6 @@ video {
   padding-top: 8px;
 }
 
-<<<<<<< HEAD
-=======
-.pb-\[8px\] {
-  padding-bottom: 8px;
-}
-
->>>>>>> 9a7fc711c3a56efd2be97ccd24d90c825fb00f82
 .text-left {
   text-align: left;
 }
@@ -2043,28 +2033,18 @@ video {
   text-decoration-line: underline;
 }
 
-<<<<<<< HEAD
-=======
 .decoration-2 {
   text-decoration-thickness: 2px;
 }
 
->>>>>>> 9a7fc711c3a56efd2be97ccd24d90c825fb00f82
 .underline-offset-2 {
   text-underline-offset: 2px;
-}
-
-<<<<<<< HEAD
-=======
-.underline-offset-4 {
-  text-underline-offset: 4px;
 }
 
 .underline-offset-8 {
   text-underline-offset: 8px;
 }
 
->>>>>>> 9a7fc711c3a56efd2be97ccd24d90c825fb00f82
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -3424,7 +3404,6 @@ table tbody tr:not(:last-child) {
   }
 }
 
-<<<<<<< HEAD
 .color-swatches .active {
   border-color: #E10A17;
 }
@@ -3442,8 +3421,6 @@ table tbody tr:not(:last-child) {
   cursor: initial;
 }
 
-=======
->>>>>>> 9a7fc711c3a56efd2be97ccd24d90c825fb00f82
 .hover\:\!border-primary-100:hover {
   --tw-border-opacity: 1 !important;
   border-color: rgb(225 10 23 / var(--tw-border-opacity)) !important;
@@ -3751,6 +3728,11 @@ table tbody tr:not(:last-child) {
     padding-right: 24px;
   }
 
+  .md\:px-40 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
   .md\:py-12 {
     padding-top: 12px;
     padding-bottom: 12px;
@@ -3759,11 +3741,6 @@ table tbody tr:not(:last-child) {
   .md\:py-24 {
     padding-top: 24px;
     padding-bottom: 24px;
-  }
-
-  .md\:px-40 {
-    padding-left: 40px;
-    padding-right: 40px;
   }
 
   .md\:pb-\[32px\] {
