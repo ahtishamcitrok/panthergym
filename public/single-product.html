@@ -30,6 +30,7 @@
     <!-- css files -->
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/jquery.jqZoom.css" rel="stylesheet">
     <link href="css/output.css" rel="stylesheet">
 </head>
 
@@ -116,32 +117,140 @@
         <section class="pb-120">
             <div class="container">
                 <div class="single-product-inner">
-                    <div class="product-details grid grid-cols-2 gap-[48px] mb-[44px]">
-                        <div class="product-images">
-
-                        </div>
-                        <div class="border rounded-[8px] p-24">
-                            <div class="stock-indicator mb-4">
-                                <span class="text-[#28B42D] text-sm">In Stock</span>
-                            </div>
-                            <div class="product-title mb-4">
-                                <h1 class="font-spyagency text-xl">RIVAL RSX-GENESIS BOXING
-                                    BOOTS 2.0</h1>
-                            </div>
-                            <div class="product-price border-b border-base-20 pb-24 mb-24">
-                                <span class="price text-primary-100 text-lg font-bold">$74.95</span>
-                            </div>
-                            <div class="product-variation">
-                                <p>Select a color: <span class="selected-color font-semibold">Black</span></p>
-                                <div class="color-swatches flex gap-16">
-                                    
+                    <div class="product-details grid lg:grid-cols-2 gap-[48px] mb-[44px]">
+                        <div class="product-images flex items-center justify-center">
+                            <div>
+                                <div class="main-image relative">
+                                    <img src="img/product-image.jpg" class="m-auto block" alt="" id="main-image">
+                                    <div class="gallery-controls absolute top-0 bottom-0 m-auto w-full h-[fit-content] flex justify-between">
+                                        <div class="icon-left bg-base-0 p-12 rounded-[50%] shadow-sm cursor-pointer">
+                                            <img src="img/caret-left.svg" alt="">
+                                        </div>
+                                        <div class="icon-right bg-base-0 p-12 rounded-[50%] shadow-sm cursor-pointer">
+                                            <img src="img/caret-right.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-image-gallery thumbnails grid grid-cols-4 gap-[20px] mt-40">
+                                    <div class="rounded-[8px] bg-[#F9F9F9] p-8 cursor-pointer active">
+                                        <img src="img/product-img-3.png" alt="">
+                                    </div>
+                                    <div class="rounded-[8px] bg-[#F9F9F9] p-8 cursor-pointer">
+                                        <img src="img/product-img-1.png" alt="">
+                                    </div>
+                                    <div class="rounded-[8px] bg-[#F9F9F9] p-8 cursor-pointer">
+                                        <img src="img/product-img-2.png" alt="">
+                                    </div>
+                                    <div class="rounded-[8px] bg-[#F9F9F9] p-8 cursor-pointer">
+                                        <img src="img/product-img-4.png" alt="">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="add-to-cart"></div>
-                            <div class="payment-method"></div>
-                            <img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src=""
-                                alt="">
                         </div>
+                        <div class="">
+                            <div class="border p-24 rounded-[8px]">
+                                <div class="stock-indicator mb-4">
+                                    <span class="text-[#28B42D] text-sm">In Stock</span>
+                                </div>
+                                <div class="product-title mb-4">
+                                    <h1 class="font-spyagency text-xl">RIVAL RSX-GENESIS BOXING
+                                        BOOTS 2.0</h1>
+                                </div>
+                                <div class="product-price border-b border-base-20 pb-24 mb-24">
+                                    <span class="price text-primary-100 text-lg font-bold">$74.95</span>
+                                </div>
+                                <div class="product-variation border-b">
+                                    <div class="mb-32">
+                                        <p class="mb-20">Select a color: <span
+                                                class="selected-color font-semibold">Black</span></p>
+                                        <div class="color-swatches flex gap-[16px] flex-wrap">
+                                            <div
+                                                class="border border-base-20 rounded-[50%] p-[4px] active hover:border-primary-100 cursor-pointer">
+                                                <div class="bg-base-100 w-[32px] h-[32px] rounded-[50%]"></div>
+                                            </div>
+                                            <div
+                                                class="border border-base-20 rounded-[50%] p-[4px] hover:border-primary-100 cursor-pointer">
+                                                <div class="bg-primary-100 w-[32px] h-[32px] rounded-[50%]"></div>
+                                            </div>
+                                            <div
+                                                class="border border-base-20 rounded-[50%] p-[4px] hover:border-primary-100 cursor-pointer">
+                                                <div class="bg-base-0 w-[32px] h-[32px] rounded-[50%]"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-32">
+                                        <p class="mb-20">Select a size: <span
+                                                class="selected-color font-semibold">6</span>
+                                        </p>
+                                        <div class="size-swatches flex gap-[16px] flex-wrap">
+                                            <div
+                                                class="border border-base-20 rounded-[4px] cursor-pointer hover:bg-primary-100 hover:text-base-0">
+                                                <div class="w-[50px] h-[40px] text-center leading-[40px]">5</div>
+                                            </div>
+                                            <div
+                                                class="border border-base-20 rounded-[4px] cursor-pointer hover:bg-primary-100 hover:text-base-0 active">
+                                                <div class="w-[50px] h-[40px] text-center leading-[40px]">6</div>
+                                            </div>
+                                            <div
+                                                class="border border-base-20 rounded-[4px] cursor-pointer hover:bg-primary-100 hover:text-base-0">
+                                                <div class="w-[50px] h-[40px] text-center leading-[40px]">7</div>
+                                            </div>
+                                            <div
+                                                class="border border-base-20 rounded-[4px] cursor-pointer hover:bg-primary-100 hover:text-base-0">
+                                                <div class="w-[50px] h-[40px] text-center leading-[40px]">8</div>
+                                            </div>
+                                            <div
+                                                class="border border-base-20 rounded-[4px] cursor-pointer hover:bg-primary-100 hover:text-base-0">
+                                                <div class="w-[50px] h-[40px] text-center leading-[40px]">9</div>
+                                            </div>
+                                            <div
+                                                class="border border-base-20 rounded-[4px] cursor-pointer hover:bg-primary-100 hover:text-base-0">
+                                                <div class="w-[50px] h-[40px] text-center leading-[40px]">10</div>
+                                            </div>
+                                            <div
+                                                class="border border-base-20 rounded-[4px] cursor-pointer hover:bg-primary-100 hover:text-base-0">
+                                                <div class="w-[50px] h-[40px] text-center leading-[40px]">11</div>
+                                            </div>
+                                            <div
+                                                class="border border-base-20 rounded-[4px] cursor-pointer hover:bg-primary-100 hover:text-base-0">
+                                                <div class="w-[50px] h-[40px] text-center leading-[40px]">12</div>
+                                            </div>
+                                            <div
+                                                class="border border-base-20 rounded-[4px] cursor-pointer hover:bg-primary-100 hover:text-base-0">
+                                                <div class="w-[50px] h-[40px] text-center leading-[40px]">13</div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="add-to-cart flex items-stretch gap-[20px] pt-40 flex-wrap sm:flex-nowrap">
+                                    <div class="flex items-center border-gray-100 items-stretch min-w-[130px]">
+                                        <span
+                                            class="flex items-center cursor-pointer rounded-l bg-base-0 py-1 px-3.5 border border-r-0 duration-100 hover:bg-primary-100 hover:text-base-0">
+                                            - </span>
+                                        <input class=" w-8 border bg-base-0 text-center outline-none" type="text"
+                                            value="2" min="1">
+                                        <span
+                                            class="flex items-center cursor-pointer rounded-r bg-base-0 py-1 px-3.5 border border-l-0 duration-100 hover:bg-primary-100 hover:text-base-0">
+                                            + </span>
+                                    </div>
+                                    <button
+                                        class="btn-filled text-mdium px-40 hover:bg-base-0 hover:text-base-100 w-full min-w-[180px]"
+                                        type="submit">Add To Cart</button>
+                                </div>
+                            </div>
+
+                            <div class="payment-method flex items-center gap-[50px] pt-44 flex-wrap xl:flex-nowrap">
+                                <img src="img/visa-logo.png" alt="">
+                                <img src="img/mastercard-logo.png" alt="">
+                                <img src="img/notron-logo.png" alt="">
+                                <img src="img/interac-logo.png" alt="">
+                                <img src="img/truste-logo.png" alt="">
+                            </div>
+                        </div>
+
+
                     </div>
                     <div class="product-information mb-100">
                         <div class="accordion-wrap border rounded-[8px] m-auto">
@@ -470,6 +579,8 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+    <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+    <script src="js/jquery.jqZoom.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>

@@ -180,7 +180,85 @@ $(document).ready(function () {
     $(this).hasClass('active') ? $(this).removeClass('active') : $(this).addClass('active');
 
   })
+
+  // $("#main-image").jqZoom({
+  //   selectorWidth: 30,
+  //   selectorHeight: 30,
+  //   viewerWidth: 400,
+  //   viewerHeight: 300
+  // });
+
+
 });
+
+$(document).ready(function () {
+  $('.icon-left').click(function () {
+    showPrevImage();
+  });
+
+  $('.icon-right').click(function () {
+    showNextImage();
+  });
+
+  $('.thumbnails .cursor-pointer').click(function () {
+    changeMainImage($(this).find('img').attr('src'));
+  });
+
+  const mainImageContainer = document.querySelector('.main-image');
+
+  const hammerMainImage = new Hammer(mainImageContainer);
+  hammerMainImage.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL });
+
+  hammerMainImage.on('swipeleft', function () {
+    showNextImage();
+  });
+
+  hammerMainImage.on('swiperight', function () {
+    showPrevImage();
+  });
+
+});
+
+function showPrevImage() {
+  const activeIndex = getActiveIndex();
+  if (activeIndex > 0) {
+    setActiveImage(activeIndex - 1);
+  }
+}
+
+function showNextImage() {
+  const activeIndex = getActiveIndex();
+  const totalImages = getTotalImages();
+  if (activeIndex < totalImages - 1) {
+    setActiveImage(activeIndex + 1);
+  }
+}
+
+function changeMainImage(src) {
+  $('#main-image').attr('src', src);
+  setActiveThumbnail(src);
+}
+
+function getActiveIndex() {
+  return $('.thumbnails .cursor-pointer.active').index();
+}
+
+function getTotalImages() {
+  return $('.thumbnails .cursor-pointer').length;
+}
+
+function setActiveImage(index) {
+  $('.thumbnails .cursor-pointer').removeClass('active');
+  $('.thumbnails .cursor-pointer:eq(' + index + ')').addClass('active');
+  const src = $('.thumbnails .cursor-pointer:eq(' + index + ') img').attr('src');
+  changeMainImage(src);
+}
+
+function setActiveThumbnail(src) {
+  $('.thumbnails .cursor-pointer').removeClass('active');
+  $('.thumbnails .cursor-pointer img[src="' + src + '"]').parent().addClass('active');
+}
+
 
 
 // crowd meter page chartjs
