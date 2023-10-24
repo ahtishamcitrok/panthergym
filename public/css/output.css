@@ -1104,6 +1104,14 @@ video {
   max-width: fit-content;
 }
 
+.max-w-\[744px\] {
+  max-width: 744px;
+}
+
+.max-w-\[995px\] {
+  max-width: 995px;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1531,6 +1539,10 @@ video {
   background-image: url('/public/img/shop-banner-img.jpg');
 }
 
+.bg-tour-banner-bg {
+  background-image: url('/public/img/book-tour-banner-img.png');
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -1755,6 +1767,11 @@ video {
   padding-bottom: 42px;
 }
 
+.py-\[60px\] {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .py-\[6px\] {
   padding-top: 6px;
   padding-bottom: 6px;
@@ -1768,11 +1785,6 @@ video {
 .py-\[90px\] {
   padding-top: 90px;
   padding-bottom: 90px;
-}
-
-.py-\[60px\] {
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .\!pb-\[9px\] {
@@ -1925,10 +1937,6 @@ video {
 
 .text-4xl {
   font-size: 36px;
-}
-
-.text-7xl {
-  font-size: 100px;
 }
 
 .text-\[10px\] {
@@ -3670,6 +3678,10 @@ table tbody tr:not(:last-child) {
     margin-top: 48px;
   }
 
+  .md\:mb-\[48px\] {
+    margin-bottom: 48px;
+  }
+
   .md\:hidden {
     display: none;
   }
@@ -4037,6 +4049,11 @@ table tbody tr:not(:last-child) {
     padding-right: 24px;
   }
 
+  .lg\:px-40 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
   .lg\:px-\[24px\] {
     padding-left: 24px;
     padding-right: 24px;
@@ -4057,11 +4074,6 @@ table tbody tr:not(:last-child) {
     padding-bottom: 22px;
   }
 
-  .lg\:px-40 {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
   .lg\:pb-120 {
     padding-bottom: 120px;
   }
@@ -4076,10 +4088,6 @@ table tbody tr:not(:last-child) {
 
   .lg\:text-xl {
     font-size: 24px;
-  }
-
-  .lg\:text-xxl {
-    font-size: 200px;
   }
 }
 
