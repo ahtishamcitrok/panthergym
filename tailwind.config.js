@@ -35,7 +35,8 @@ module.exports = {
         other: {
           100: '#6FCF97',
           customProfileBg: '#D9D9D9',
-          lightgray: '#F9F9F9'
+          lightgray: '#F9F9F9',
+          lightgray2: '#f2f2f2',
         },
       },
       backgroundImage: {
@@ -59,6 +60,7 @@ module.exports = {
         'faq-banner-bg': "url('/public/img/faq-banner-img.jpg')",
         'shop-banner-bg': "url('/public/img/shop-banner-img.jpg')",
         'tour-banner-bg': "url('/public/img/book-tour-banner-img.png')",
+        'trainer-banner-bg': "url('/public/img/trainer-banner-img.png')",
       },
       // Define custom padding values
       padding: {

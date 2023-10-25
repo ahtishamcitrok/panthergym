@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- general tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- title -->
+    <title>Trainer Details</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png" sizes="any">
+
+    <!-- font awesome -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Owl slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- css files -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/output.css" rel="stylesheet">
+</head>
+
+<body class="overflow-x-hidden font-sans">
+
+    <!-- header -->
+    <header>
+        <div class="container">
+            <div class="header-inner flex justify-between items-center py-3">
+                <div class="header-logo">
+                    <a href="index.html"><img src="./img/logo-black.svg" alt="panther gym logo"></a>
+                </div>
+                <div class="header-nav hidden lg:block">
+                    <div class="mobile-menu-logo mobile-menu-logo mb-[24px] block lg:hidden">
+                        <a href="index.html"><img src="./img/logo-black.svg" alt="panther gym logo"></a>
+                    </div>
+                    <nav class="pb-16 lg:p-0">
+                        <ul class="flex xl:gap-x-8 gap-x-[16px]">
+                            <li><a class="font-semibold text-base-80 hover:text-primary-100" href="index.html">Home</a>
+                            </li>
+                            <li><a class="font-semibold text-base-80 hover:text-primary-100" href="#">Shop</a></li>
+                            <li><a class="font-semibold text-base-80 hover:text-primary-100" href="schedule.html">Class
+                                    Schedule</a></li>
+                            <li><a class="font-semibold text-base-80 hover:text-primary-100" href="plans.html">Plans</a>
+                            </li>
+                            <li><a class="font-semibold text-base-80 hover:text-primary-100"
+                                    href="plans-dropin.html">Drop-Ins</a></li>
+                            <li><a class="font-semibold text-base-80 hover:text-primary-100" href="#">FAQ’s</a></li>
+                            <li><a class="font-semibold text-base-80 hover:text-primary-100" href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="mobile-menu-content flex-col flex lg:hidden">
+                        <div class="logged-in hidden pt-[8px]">
+                            <a href="#"
+                                class="btn-filled hover:bg-base-0 hover:text-primary-100 w-[100%] text-center sm:w-[auto]">Become
+                                A Member</a>
+                        </div>
+                        <div class="logged-out  py-16 border-solid border-t border-base-20 w-full">
+                            <ul class="flex gap-x-8">
+                                <li><a class="font-semibold text-base-80 hover:text-primary-100" href="#">Profile</a>
+                                </li>
+                                <li><a class="font-semibold text-base-80 hover:text-primary-100" href="#">Wishlist</a>
+                                </li>
+                                <li><a class="font-semibold text-base-80 hover:text-primary-100" href="#">Cart</a></li>
+                                <li><a class="font-semibold text-base-80 hover:text-primary-100" href="#">Search</a>
+                                </li>
+                                <li><a class="font-semibold hover:text-primary-100 text-primary-100" href="#">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-btns gap-x-6 hidden lg:flex">
+                    <a class="" href=""><img src="./img/header-search-icon.svg" alt=""></a>
+                    <a href=""><img src="./img/header-cart-icon.svg" alt=""></a>
+                    <a href=""><img src="./img/header-wishlist-icon.svg" alt=""></a>
+                    <a href="javascript:void(0)" data-micromodal-trigger="login-modal"><img
+                            src="./img/header-profile-icon.svg" alt=""></a>
+                </div>
+                <div class="menu-toggle block lg:hidden">
+                    <img src="./img/menu.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main class="relative">
+
+        <!-- inner banner -->
+        <section class="inner-banner-wrap dropin-banner relative bg-trainer-banner-bg bg-cover bg-no-repeat bg-center md:h-[350px] h-[200px]">
+            <div class="container h-full">
+                <div class="inner-banner flex items-center justify-start h-full z-10 relative">
+                    <h1 class="font-spyagency text-lg text-base-0 md:text-4xl mb-12 uppercase">our<br
+                            class="md:hidden"> <span class="red">trainers</span></h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- trainer details -->
+        <section class="trainer-wrap lg:py-120 py-60">
+            <div class="container">
+                <div class="trainer-inner flex md:flex-row flex-col lg:items-center items-start xl:gap-[60px] lg:gap-[48px] gap-[32px]">
+                    <div class="trainer-img xl:max-w-[336px] lg:max-w-[260px] max-w-[150px] w-full relative ml-[12px]">
+                        <img src="img/trainer-1-img-detail.png" alt="">
+                    </div>
+                    <div class="w-full">
+                        <div class="flex sm:flex-row flex-col sm:items-center items-start justify-between gap-[16px] mb-16">
+                            <div>
+                                <h2 class="xl:text-xl text-lg text-base-100 xl:font-bold font-semibold">Alex Spark</h2>
+                                <span class="text-medium text-base-80">Bodybuilding and fitness trainer</span>
+                            </div>
+                            <div class="sm:max-w-min w-full">
+                                <a href="javascript:void(0)" data-micromodal-trigger="book-trainer-modal" class="btn-filled md:w-[180px] min-w-max w-full text-center">Book Now</a>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="lg:text-lg text-medium text-base-80 leading-[32px]">As a passionate bodybuilding and fitness trainer, I am driven by a profound commitment to helping others become the best version of themselves. With years of experience and a deep understanding of the science behind exercise and nutrition, I am dedicated to guiding and empowering individuals on their transformative fitness journeys.</p>
+                        </div>
+                        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 xxl:gap-[24px] gap-[16px] mt-32">
+                            <div class="xxl:p-20 p-16 border border-base-20 rounded-lg flex items-center gap-[16px]">
+                                <div class="w-[56px] min-w-[56px] h-[56px] flex items-center justify-center bg-other-lightgray2 rounded-lg">
+                                    <img src="img/experience-icon.svg" alt="">
+                                </div>
+                                <div>
+                                    <h3 class="xxl:text-xl text-lg text-base-100 font-semibold leading-0">15+</h3>
+                                    <p class="text-sm text-base-60 leading-0">Years of Experience</p>
+                                </div>
+                            </div>
+                            <div class="xxl:p-20 p-16 border border-base-20 rounded-lg flex items-center gap-[16px]">
+                                <div class="w-[56px] min-w-[56px] h-[56px] flex items-center justify-center bg-other-lightgray2 rounded-lg">
+                                    <img src="img/clients-icon.svg" alt="">
+                                </div>
+                                <div>
+                                    <h3 class="xxl:text-xl text-lg text-base-100 font-semibold leading-0">298+</h3>
+                                    <p class="text-sm text-base-60 leading-0">Happy Clients</p>
+                                </div>
+                            </div>
+                            <div class="xxl:p-20 p-16 border border-base-20 rounded-lg flex items-center gap-[16px]">
+                                <div class="w-[56px] min-w-[56px] h-[56px] flex items-center justify-center bg-other-lightgray2 rounded-lg">
+                                    <img src="img/calories-icon.svg" alt="">
+                                </div>
+                                <div>
+                                    <h3 class="xxl:text-xl text-lg text-base-100 font-semibold leading-0">68k</h3>
+                                    <p class="text-sm text-base-60 leading-0">Calories Burned</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- why our trainers -->
+        <section class="bg-custom-gradient-fullblack lg:py-120 py-60">
+            <div class="container">
+                <div class="inner">
+                    <div class="sec-head text-center max-w-[758px] mx-auto mb-60">
+                        <h2 class="font-spyagency text-lg md:text-4xl text-base-0 mb-12">Why Choose Our <span class="red">Trainers</span></h2>
+                        <p class="text-base-0 text-lg">Offering expertise, motivation, and a holistic approach to help you reach your goals effectively and sustainably.</p>
+                    </div>
+                    <div class="flex lg:flex-row flex-col justify-space-between lg:gap-[100px] gap-[48px]">
+                        <div class="">
+                            <div class="w-[56px] min-w-[56px] h-[56px] flex items-center justify-center mx-auto bg-base-0 rounded-lg mb-16">
+                                <img src="img/certified-icon.svg" class="" alt="">
+                            </div>
+                            <h3 class="text-base-0 md:font-bold font-semibold md:text-lg text-mlg text-center mb-12">Certified Professional</h3>
+                            <p class="text-base-0 md:text-lg text-medium text-center">A certified fitness professional with extensive knowledge and qualifications in exercise science, nutrition, and personal training.</p>
+                        </div>
+                        <div class="">
+                            <div class="w-[56px] min-w-[56px] h-[56px] flex items-center justify-center mx-auto bg-base-0 rounded-lg mb-16">
+                                <img src="img/strength-icon.svg" class="" alt="">
+                            </div>
+                            <h3 class="text-base-0 md:font-bold font-semibold md:text-lg text-mlg text-center mb-12">Strength and Conditioning</h3>
+                            <p class="text-base-0 md:text-lg text-medium text-center">A master in strength training and conditioning, specializing in building lean muscle, increasing strength, and enhancing athletic performance.</p>
+                        </div>
+                        <div class="">
+                            <div class="w-[56px] min-w-[56px] h-[56px] flex items-center justify-center mx-auto bg-base-0 rounded-lg mb-16">
+                                <img src="img/training-icon.svg" class="" alt="">
+                            </div>
+                            <h3 class="text-base-0 md:font-bold font-semibold md:text-lg text-mlg text-center mb-12">Personalized Training</h3>
+                            <p class="text-base-0 md:text-lg text-medium text-center">Specializes in creating personalized workout and nutrition plans tailored to the specific needs and goals of each client.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- trainers -->
+        <section class="trainers-outer-wrap md:py-120 py-[60px]">
+            <div class="container">
+                <div class="trainers-inner">
+                    <div class="sec-head text-center max-w-[758px] mx-auto mb-48">
+                        <h2 class="font-spyagency text-lg md:text-4xl mb-12">EXPERT <span class="red">TRAINERS</span></h2>
+                        <p class="text-base-80 text-lg">If you want to be the best, you have to train with the best. Our
+                            trainers have years of professional boxing experience under their belts.</p>
+                    </div>
+                    <div class="trainers-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <a href="" class="offer-single group bg-cover bg-no-repeat bg-center relative transition duration-300 ease-in-out rounded-tl-lg rounded-tr-lg">
+                            <div class="md:h-[310px] h-auto rounded-tl-lg rounded-tr-lg">
+                                <img src="img/trainer-img-1.png" class="w-full h-full object-cover object-center rounded-tl-lg rounded-tr-lg" alt="">
+                            </div>
+                            <div class="offer-single-btn flex items-start justify-center flex-col bg-base-0 text-base-100 group-hover:text-base-0 md:py-18 py-[14px] px-22 block text-left group-hover:bg-base-100 rounded-bl-lg rounded-br-lg md:min-h-[91px] min-h-[80px]">
+                                <div class="flex items-center gap-[8px] md:text-lg text-medium font-semibold">
+                                    <img src="img/trainer-icon.svg" class="md:hidden group-hover:block" alt=""> Tom Hardy
+                                </div>
+                                <span class="text-sm group-hover:block md:hidden">Professional Boxer</span>
+                            </div>
+                        </a>
+                        <a href="" class="offer-single group bg-cover bg-no-repeat bg-center relative transition duration-300 ease-in-out rounded-tl-lg rounded-tr-lg">
+                            <div class="md:h-[310px] h-auto rounded-tl-lg rounded-tr-lg">
+                                <img src="img/trainer-img-2.png" class="w-full h-full object-cover object-center rounded-tl-lg rounded-tr-lg" alt="">
+                            </div>
+                            <div class="offer-single-btn flex items-start justify-center flex-col bg-base-0 text-base-100 group-hover:text-base-0 md:py-18 py-[14px] px-22 block text-left group-hover:bg-base-100 rounded-bl-lg rounded-br-lg md:min-h-[91px] min-h-[80px]">
+                                <div class="flex items-center gap-[8px] md:text-lg text-medium font-semibold">
+                                    <img src="img/trainer-icon.svg" class="md:hidden group-hover:block" alt=""> Alex Spark
+                                </div>
+                                <span class="text-sm group-hover:block md:hidden">Personal Trainer</span>
+                            </div>
+                        </a>
+                        <a href="" class="offer-single group bg-cover bg-no-repeat bg-center relative transition duration-300 ease-in-out rounded-tl-lg rounded-tr-lg">
+                            <div class="md:h-[310px] h-auto rounded-tl-lg rounded-tr-lg">
+                                <img src="img/trainer-img-3.png" class="w-full h-full object-cover object-center rounded-tl-lg rounded-tr-lg" alt="">
+                            </div>
+                            <div class="offer-single-btn flex items-start justify-center flex-col bg-base-0 text-base-100 group-hover:text-base-0 md:py-18 py-[14px] px-22 block text-left group-hover:bg-base-100 rounded-bl-lg rounded-br-lg md:min-h-[91px] min-h-[80px]">
+                                <div class="flex items-center gap-[8px] md:text-lg text-medium font-semibold">
+                                    <img src="img/trainer-icon.svg" class="md:hidden group-hover:block" alt=""> Andy Braun
+                                </div>
+                                <span class="text-sm group-hover:block md:hidden">Trainer</span>
+                            </div>
+                        </a>
+                        <a href="" class="offer-single group bg-cover bg-no-repeat bg-center relative transition duration-300 ease-in-out rounded-tl-lg rounded-tr-lg">
+                            <div class="md:h-[310px] h-auto rounded-tl-lg rounded-tr-lg">
+                                <img src="img/trainer-img-4.png" class="w-full h-full object-cover object-center rounded-tl-lg rounded-tr-lg" alt="">
+                            </div>
+                            <div class="offer-single-btn flex items-start justify-center flex-col bg-base-0 text-base-100 group-hover:text-base-0 md:py-18 py-[14px] px-22 block text-left group-hover:bg-base-100 rounded-bl-lg rounded-br-lg md:min-h-[91px] min-h-[80px]">
+                                <div class="flex items-center gap-[8px] md:text-lg text-medium font-semibold">
+                                    <img src="img/trainer-icon.svg" class="md:hidden group-hover:block" alt=""> Victoria Kim
+                                </div>
+                                <span class="text-sm group-hover:block md:hidden">Professional Athelete</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- featured classes -->
+        <section class="lg:pb-120 pb-60">
+            <div class="container">
+                <div class="inner products-list">
+                    <div class="sec-head text-left mb-48 xl:max-w-[860px] max-w-[720px] w-full">
+                        <h2 class="font-spyagency text-base-100 text-lg md:text-4xl mb-12 lg:text-left text-center">featured <span class="red">classes</span></h2>
+                        <p class="text-base-80 text-lg lg:text-left text-center">Join our featured fitness classes and dive into a world of variety and motivation. From high-intensity workouts to mind-body wellness, we offer classes to cater to all your fitness needs.</p>
+                    </div>
+                    <div class="featured-classes owl-carousel grid grid-cols-3 gap-8">
+                        <a href="schedule.html" class="offer-single group bg-cover bg-no-repeat bg-center relative transition duration-300 ease-in-out rounded-tl-lg rounded-tr-lg">
+                            <div class="h-[310px] rounded-tl-lg rounded-tr-lg">
+                                <img src="img/class-img-1.png" class="w-full h-full object-cover object-center rounded-tl-lg rounded-tr-lg" alt="">
+                            </div>
+                            <div class="offer-single-btn md:text-lg text-medium font-semibold bg-base-0 text-base-100 group-hover:text-base-0 py-20 px-16 block text-left group-hover:bg-base-100 rounded-bl-lg rounded-br-lg">
+                                Boxing
+                                <div class="flex items-center gap-[8px] mt-[6px]">
+                                    <img src="img/clock-icon.svg" class="max-w-[18px]" alt="">
+                                    <span class="text-sm text-base-60 group-hover:text-base-0 font-normal">Starts on: 8/31/2023</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="schedule.html" class="offer-single group bg-cover bg-no-repeat bg-center relative transition duration-300 ease-in-out rounded-tl-lg rounded-tr-lg">
+                            <div class="h-[310px] rounded-tl-lg rounded-tr-lg">
+                                <img src="img/class-img-2.png" class="w-full h-full object-cover object-center rounded-tl-lg rounded-tr-lg" alt="">
+                            </div>
+                            <div class="offer-single-btn md:text-lg text-medium font-semibold bg-base-0 text-base-100 group-hover:text-base-0 py-20 px-16 block text-left group-hover:bg-base-100 rounded-bl-lg rounded-br-lg">
+                                Yin Yoga
+                                <div class="flex items-center gap-[8px] mt-[6px]">
+                                    <img src="img/clock-icon.svg" class="max-w-[18px]" alt="">
+                                    <span class="text-sm text-base-60 group-hover:text-base-0 font-normal">Starts on: 9/16/2023</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="schedule.html" class="offer-single group bg-cover bg-no-repeat bg-center relative transition duration-300 ease-in-out rounded-tl-lg rounded-tr-lg">
+                            <div class="h-[310px] rounded-tl-lg rounded-tr-lg">
+                                <img src="img/class-img-3.png" class="w-full h-full object-cover object-center rounded-tl-lg rounded-tr-lg" alt="">
+                            </div>
+                            <div class="offer-single-btn md:text-lg text-medium font-semibold bg-base-0 text-base-100 group-hover:text-base-0 py-20 px-16 block text-left group-hover:bg-base-100 rounded-bl-lg rounded-br-lg">
+                                Competitive Boxing
+                                <div class="flex items-center gap-[8px] mt-[6px]">
+                                    <img src="img/clock-icon.svg" class="max-w-[18px]" alt="">
+                                    <span class="text-sm text-base-60 group-hover:text-base-0 font-normal">Starts on: 9/25/2023</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="mt-48 text-center">
+                        <a href="schedule.html" class="btn-filled min-w-[180px] text-center relative">View All</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="banner-cta bg-cta-banner-bg py-114 bg-cover bg-no-repeat bg-right-top relative">
+            <div class="container">
+                <div class="cta-inner py-28">
+                    <div class="cta-text relative z-[10]">
+                        <h2
+                            class="font-spyagency text-base-0 text-xl text-center sm:text-left md:text-6xl mb-8 sm:leading-62">
+                            READY TO GET STARTED?</h2>
+                        <p class="text-base-0 text-lg font-normal text-center sm:text-left mb-32">Join Panther Gym Today
+                        </p>
+                        <div class="cta-btns flex flex-col md:flex-row gap-[16px]">
+                            <a href="#" class="btn-outline-white text-center">Book
+                                Classes</a>
+                            <a href="#" class="btn-filled-white text-center">Become
+                                A Member</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Book Trainer Modal -->
+        <div id="book-trainer-modal" class="modal sm:px-24 px-16" aria-hidden="true">
+            <div
+                class="modal-inner max-w-[754px] w-full mx-auto relative border rounded-2xl bg-base-0 md:p-74 py-[90px] px-16">
+                <div class="absolute top-[30px] right-[30px]">
+                    <button data-close-modal><img src="./img/close-icon-black.svg" alt=""></button>
+                </div>
+
+                <div tabindex="-1" data-micromodal-close>
+                    <div role="dialog" aria-modal="true" aria-labelledby="login-modal-title">
+                        <div id="login-modal-content">
+                            <div class="tabcontent-inner">
+                                <div class="md:mb-32 mb-24 text-center">
+                                    <h3 class="text-base-80 font-semibold md:text-2xl text-lg text-center">Book Trainer</h3>
+                                </div>
+                                <div>
+                                    <div class="mb-16">
+                                        <label class="text-base-100 font-semibold text-medium mb-8 block w-full" for="">Services</label>
+                                        <select name="" id="" class="w-full rounded-lg text-base-100 border border-base-40 py-12 px-16 focus:border-base-80 focus:outline-none relative">
+                                            <option value="" class="text-base-100">Yoga Traning</option>
+                                            <option value="" class="text-base-100">Boxing</option>
+                                            <option value="" class="text-base-100">Competitive Boxing</option>
+                                            <option value="" class="text-base-100">Group Boxing</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-16">
+                                        <label class="text-base-100 font-semibold text-medium mb-8 block"
+                                            for="">Time</label>
+                                        <div class="relative">
+                                            <input
+                                                class="w-full rounded-lg border border-base-40 py-12 px-16 focus:border-base-80 focus:outline-none"
+                                                type="time" placeholder="Time"
+                                                name="" id="">
+                                        </div>
+                                    </div>
+                                    <div class="mb-16">
+                                        <label class="text-base-100 font-semibold text-medium mb-8 block"
+                                            for="">From</label>
+                                        <div class="relative">
+                                            <input
+                                                class="w-full rounded-lg border border-base-40 py-12 px-16 focus:border-base-80 focus:outline-none"
+                                                type="date" placeholder="From"
+                                                name="" id="">
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <label class="text-base-100 font-semibold text-medium mb-8 block"
+                                            for="">To</label>
+                                        <div class="relative">
+                                            <input
+                                                class="w-full rounded-lg border border-base-40 py-12 px-16 focus:border-base-80 focus:outline-none"
+                                                type="date" placeholder="To"
+                                                name="" id="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="md:mt-32 mt-24 text-right">
+                                    <a href=""
+                                        class="btn-filled md:min-w-[180px] md:w-auto w-full text-center">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Login Modal -->
+        <div id="login-modal" class="modal sm:px-24 px-16" aria-hidden="true">
+            <div
+                class="modal-inner max-w-[754px] w-full mx-auto relative border rounded-2xl bg-base-0 md:p-74 py-[90px] px-16">
+                <div class="absolute top-[30px] right-[30px]">
+                    <button data-close-modal><img src="./img/close-icon-black.svg" alt=""></button>
+                </div>
+
+                <div tabindex="-1" data-micromodal-close>
+                    <div role="dialog" aria-modal="true" aria-labelledby="login-modal-title">
+                        <div id="login-modal-content">
+                            <div class="">
+                                <div class="md:mb-32 mb-24 text-center">
+                                    <h3 class="text-base-80 font-semibold md:text-2xl text-lg text-center">Login</h3>
+                                </div>
+                                <div>
+                                    <div class="mb-[18px]">
+                                        <label class="text-base-100 font-semibold text-medium mb-8 block" for="">Member
+                                            ID or Email Address</label>
+                                        <input
+                                            class="w-full rounded-lg border border-base-40 py-12 px-16 focus:border-base-80 focus:outline-none"
+                                            type="text" autocomplete="off" placeholder="Member ID or Email Address"
+                                            name="" id="">
+                                    </div>
+                                    <div class="">
+                                        <label class="text-base-100 font-semibold text-medium mb-8 block"
+                                            for="">Password</label>
+                                        <div class="relative">
+                                            <input
+                                                class="relative w-full rounded-lg border border-base-40 py-12 px-16 focus:border-base-80 focus:outline-none password"
+                                                type="password" autocomplete="new-password" placeholder="Password"
+                                                name="" id="">
+                                            <i class="fa fa-eye-slash toggle-password text-base-40 absolute top-0 bottom-0 right-[16px] m-auto h-[16px] cursor-pointer"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="md:mt-32 mt-24 flex flex-col md:flex-row md:justify-between items-center justify-start gap-[24px]">
+                                    <a href=""
+                                        class="btn-filled md:min-w-[180px] md:w-auto w-full  text-center">Login</a>
+                                    <a href="" class="text-right text-base-80 hover:text-primary-100">Forgot
+                                        Password?</a>
+                                </div>
+                                <div class="md:mt-48 mt-32">
+                                    <p class="text-base-80 text-center">Don’t have an account? <a href=""
+                                            class="font-semibold text-base-80 hover:text-primary-100">Sign Up</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-base-100">
+        <div class="container">
+            <div class="footer-inner">
+                <div
+                    class="footer-cta py-[80px] border-b border-base-20 flex flex-col md:flex-row justify-between items-center gap-[32px]">
+                    <div class="footer-cta-text text-center md:text-start">
+                        <h4 class="text-base-0 font-spyagency text-xl mb-12">Keep In Touch Through Our <br> Newsletter!
+                        </h4>
+                        <p class="text-base-0 text-mdium">Product launches and behind the scenes info...</p>
+                    </div>
+                    <div class="footer-cta-form border border-base-20 rounded-lg py-12 px-16 max-w-[520px] w-full">
+                        <form action="" class="flex justify-between gap-x-6">
+                            <input class="w-full bg-base-100 text-base-0 focus:border-transparent outline-none"
+                                type="email" placeholder="Enter your email address" name="" id="">
+                            <button class="btn-filled text-mdium px-40 hover:bg-base-0 hover:text-base-100"
+                                type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-links-wrap py-[80px] grid-cols-1 footer-grid-cols">
+                    <div class="footer-links">
+                        <a href="" class="mb-16 block"><img src="./img/logo-white.svg" alt=""></a>
+                        <p class="text-base-0">Panther Gym is an Edmonton based Boxing Gym & Training Center. Ready to
+                            get in shape and become disciplined? Reach out today or come to one of our walk-in classes.
+                        </p>
+                    </div>
+                    <div class="footer-links">
+                        <h4 class="text-medium font-bold text-base-0 mb-16">Quick Links</h4>
+                        <ul>
+                            <li class="mb-12"><a class="text-mdium text-base-0 hover:text-primary-100" href="">Home</a>
+                            </li>
+                            <li class="mb-12"><a class="text-mdium text-base-0 hover:text-primary-100" href="">Class
+                                    Schedule</a></li>
+                            <li class="mb-12"><a class="text-mdium text-base-0 hover:text-primary-100" href="">Plans</a>
+                            </li>
+                            <li class="mb-12"><a class="text-mdium text-base-0 hover:text-primary-100"
+                                    href="">Drop-Ins</a></li>
+                            <li class="mb-12"><a class="text-mdium text-base-0 hover:text-primary-100" href="">FAQ’s</a>
+                            </li>
+                            <li class="mb-12"><a class="text-mdium text-base-0 hover:text-primary-100" href="">Contact
+                                    Us</a></li>
+                            <li class="mb-12"><a class="text-mdium text-base-0 hover:text-primary-100" href="">Privacy
+                                    Policy</a></li>
+                            <li class=""><a class="text-mdium text-base-0 hover:text-primary-100" href="">Terms &
+                                    Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4 class="text-medium font-bold text-base-0 mb-16">Classes & Services</h4>
+                        <ul>
+                            <li class="mb-12"><a class="text-mdium text-base-0 hover:text-primary-100" href="">Boxing
+                                    Classes</a></li>
+                            <li class="mb-12"><a class="text-mdium text-base-0 hover:text-primary-100" href="">Yoga
+                                    Classes</a></li>
+                            <li class="mb-12"><a class="text-mdium text-base-0 hover:text-primary-100"
+                                    href="">Competitive Boxing</a></li>
+                            <li class="mb-12"><a class="text-mdium text-base-0 hover:text-primary-100" href="">Personal
+                                    Training</a></li>
+                            <li class=""><a class="text-mdium text-base-0 hover:text-primary-100" href="">Nutrition
+                                    Counselling</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4 class="text-medium font-bold text-base-0 mb-16">Contact Us</h4>
+                        <ul>
+                            <li class="mb-12 flex items-start gap-x-2"><img src="./img/location-icon.svg"
+                                    class="pt-[4px]" alt=""><a class="text-mdium text-base-0 hover:text-base-0"
+                                    href="javascript:void(0);">9556 82 Ave NW, Edmonton, AB T6C 0Z8P</a></li>
+                            <li class="mb-12 flex items-start gap-x-2"><img src="./img/phone-icon.svg" class="pt-[2px]"
+                                    alt=""><a class="text-mdium text-base-0 hover:text-primary-100"
+                                    href="tel:7807186161">(780) 718-6161</a></li>
+                            <li class="flex items-start gap-x-2"><img src="./img/mail-icon.svg" class="pt-[2px]"
+                                    alt=""><a class="text-mdium text-base-0 hover:text-primary-100"
+                                    href="mailto:info@panthergym.com">info@panthergym.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright bg-base-20 py-12">
+            <div class="container">
+                <div
+                    class="flex flex-col md:flex-row gap-[20px] text-center md:text-start justify-between items-center">
+                    <p class="text-sm text-base-100">Copyright © 2023 Panther Gym | All Rights Reserved</p>
+                    <ul class="flex items-center gap-x-6">
+                        <li><a href=""><img src="./img/facebook-icon.svg" alt=""></a></li>
+                        <li><a href=""><img src="./img/insta-icon.svg" alt=""></a></li>
+                        <li><a href=""><img src="./img/twitter-icon.svg" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

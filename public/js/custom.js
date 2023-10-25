@@ -36,6 +36,38 @@ jQuery(document).ready(function ($) {
     onResized: setEqualHeight,
   })
 
+  // featured classes slider
+  $('.featured-classes.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 24,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: false,
+        dots: true,
+      },
+      768: {
+        items: 2,
+        nav: false,
+      },
+      992: {
+        items: 3,
+        nav: true,
+        dots: false,
+        dotsEach: 1,
+        loop: true,
+      },
+    },
+    nav: true,
+    navText: [
+      "<img src='./img/arrow-left.svg' class='prev-btn'>",
+      "<img src='./img/arrow-right.svg' class='next-btn'>"
+    ],
+    onInitialized: setEqualHeight, // Call function on carousel initialization
+    onResized: setEqualHeight,
+  })
+
   // Testimonails Slider 
   $('.review-parent-box').owlCarousel({
     loop: true,
