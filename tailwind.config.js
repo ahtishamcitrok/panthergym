@@ -37,6 +37,7 @@ module.exports = {
           customProfileBg: '#D9D9D9',
           lightgray: '#F9F9F9',
           lightgray2: '#f2f2f2',
+          lightgray3: '#a7a7a7',
         },
       },
       backgroundImage: {
