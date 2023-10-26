@@ -58,7 +58,7 @@
                             </li>
                             <li><a class="font-semibold text-base-80 hover:text-primary-100"
                                     href="plans-dropin.html">Drop-Ins</a></li>
-                            <li><a class="font-semibold text-base-80 hover:text-primary-100 active active:text-primary-100"
+                            <li><a class="font-semibold text-base-80 hover:text-primary-100"
                                     href="#">FAQ’s</a></li>
                             <li><a class="font-semibold text-base-80 hover:text-primary-100" href="#">Contact Us</a>
                             </li>
@@ -121,27 +121,31 @@
                         <div class="product-images flex items-center justify-center">
                             <div>
                                 <div class="main-image relative">
-                                    <img src="img/product-image.jpg" class="m-auto block" alt="" id="main-image">
-                                    <div class="gallery-controls absolute top-0 bottom-0 m-auto w-full h-[fit-content] flex justify-between">
-                                        <div class="icon-left bg-base-0 p-12 rounded-[50%] shadow-sm cursor-pointer">
+                                    <!-- Add a data-fslightbox attribute with a unique ID to the main image -->
+                                    <a href="img/product-image.jpg" data-fslightbox="gallery">
+                                        <img src="img/product-image.jpg" class="m-auto block" alt="" id="main-image">
+                                    </a>
+                                        <!-- Previous image button -->
+                                        <div class="icon-left bg-base-0 p-12 rounded-[50%] shadow-sm cursor-pointer absolute top-0 bottom-0 m-auto h-[fit-content] flex justify-between" data-fslightbox="gallery">
                                             <img src="img/caret-left.svg" alt="">
                                         </div>
-                                        <div class="icon-right bg-base-0 p-12 rounded-[50%] shadow-sm cursor-pointer">
+                                        <!-- Next image button -->
+                                        <div class="icon-right bg-base-0 p-12 rounded-[50%] shadow-sm right-0 cursor-pointer absolute top-0 bottom-0 m-auto h-[fit-content] flex justify-between" data-fslightbox="gallery">
                                             <img src="img/caret-right.svg" alt="">
                                         </div>
-                                    </div>
                                 </div>
                                 <div class="product-image-gallery thumbnails grid grid-cols-4 gap-[20px] mt-40">
-                                    <div class="rounded-[8px] bg-[#F9F9F9] p-8 cursor-pointer active">
+                                    <!-- Add data-fslightbox attributes to each thumbnail with the same gallery ID -->
+                                    <div class="rounded-[8px] bg-[#F9F9F9] p-8 cursor-pointer" data-fslightbox="gallery">
                                         <img src="img/product-img-3.png" alt="">
                                     </div>
-                                    <div class="rounded-[8px] bg-[#F9F9F9] p-8 cursor-pointer">
+                                    <div class="rounded-[8px] bg-[#F9F9F9] p-8 cursor-pointer" data-fslightbox="gallery">
                                         <img src="img/product-img-1.png" alt="">
                                     </div>
-                                    <div class="rounded-[8px] bg-[#F9F9F9] p-8 cursor-pointer">
+                                    <div class="rounded-[8px] bg-[#F9F9F9] p-8 cursor-pointer" data-fslightbox="gallery">
                                         <img src="img/product-img-2.png" alt="">
                                     </div>
-                                    <div class="rounded-[8px] bg-[#F9F9F9] p-8 cursor-pointer">
+                                    <div class="rounded-[8px] bg-[#F9F9F9] p-8 cursor-pointer" data-fslightbox="gallery">
                                         <img src="img/product-img-4.png" alt="">
                                     </div>
                                 </div>
@@ -580,7 +584,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
     <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
-    <script src="js/jquery.jqZoom.js"></script>
+    <script src="js/fslightbox.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>

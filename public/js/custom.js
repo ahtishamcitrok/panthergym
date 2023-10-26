@@ -275,7 +275,9 @@ function showNextImage() {
 
 function changeMainImage(src) {
   $('#main-image').attr('src', src);
+  $('#main-image').parent().attr('href', src);
   setActiveThumbnail(src);
+  refreshFsLightbox();
 }
 
 function getActiveIndex() {

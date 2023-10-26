@@ -182,8 +182,8 @@
                                             </div>
                                             <div class="fields grid grid-cols-1 gap-[24px]">
                                                 <div class="">
-                                                    <input class="rounded-lg border border-base-40 py-12 px-16 focus:border-base-80 focus:outline-none" type="checkbox" autocomplete="off" name="" id="">
-                                                    <label class="text-base-100 font-semibold text-medium mb-8 ms-12" for="">Ship to a different address?</label>
+                                                    <input class="rounded-lg border border-base-40 py-12 px-16 focus:border-base-80 focus:outline-none cursor-pointer" type="checkbox" autocomplete="off" name="address" id="address">
+                                                    <label class="text-base-100 font-semibold text-medium mb-8 ms-12 cursor-pointer" for="address">Ship to a different address?</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -241,7 +241,7 @@
                                             <p class="md:text-mlg font-semibold text-base-100 mb-16">Credit Card (Stripe)</p>
                                             <div class="checkout-form">
                                                 <div class="fields grid grid-cols-1 gap-[24px] mb-[24px]">
-                                                    <div class="">
+                                                    <div class="required">
                                                         <label class="text-base-100 font-semibold text-medium mb-8 block" for="">Card Number</label>
                                                         <input class="w-full bg-other-lightgray rounded-lg border border-base-40 py-12 px-16 focus:border-base-80 focus:outline-none" type="text" autocomplete="off" placeholder="1234 1234 1234 1234" name="" id="">
                                                     </div>
@@ -258,6 +258,10 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                            </div>
+                                            <div class="">
+                                                <input class="rounded-lg border border-base-40 py-12 px-12 focus:border-base-80 focus:outline-none cursor-pointer" type="checkbox" autocomplete="off" name="info" id="info">
+                                                <label class="text-base-100 text-medium mb-8 ms-12 cursor-pointer" for="info">Save payment information to my account for future purchases.</label>
                                             </div>
 
                                         </li>

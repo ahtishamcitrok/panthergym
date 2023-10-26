@@ -1050,7 +1050,8 @@ table tbody tr:not(:last-child) {
     overflow: auto;
 }
 .cart-list-wrap, .wishlist-list-wrap {
-    min-width: 850px;
+    /* min-width: 850px; */
+    min-width: 1100px;
 }
 .cart-list-item, .wishlist-list-item {
 
