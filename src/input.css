@@ -149,6 +149,7 @@ span.red {
         top: 1px;
     }
 }
+
 .banner-home::after {
     content: '';
     background-image: url(../img/linear-gradient.svg);
@@ -161,6 +162,21 @@ span.red {
     width: 100%;
     height: 100%;
 }
+
+.banner-home .banner-inner::after {
+    content: '';
+    background-image: url(../img/home-banner-abstract-corner.svg);
+    /* background-position: left center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 370px;
+    height: 140px;
+}
+
+
 @media (max-width: 575px) {
     .banner-home::after {
         background-image: url(../img/linear-gradient-mobile.svg);
@@ -172,13 +188,17 @@ span.red {
     content: '';
     background-image: url(../img/panther-icon.svg);
     background-position: left center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    bottom: 14px;
-    left: 20px;
-    width: 152px;
-    height: 110px;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: auto;
+    left: auto;
+    right: 47%;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
     z-index: 9;
 }
 
@@ -188,12 +208,27 @@ span.red {
 
 .about-outer-wrap::before {
     content: '';
-    background-image: url(../img/abstract-red-bg.svg);
+    background: linear-gradient(179deg, #A0000C 60.73%, rgba(77, 0, 6, 0.60) 117.12%);
     background-repeat: no-repeat;
     background-position: 100% 100%;
     background-size: cover;
     width: 100%;
-    height: 77%;
+    height: 83%;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.about-outer-wrap::after {
+    content: '';
+    background-image: url(../img/video-abstract-bg.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+    width: 100%;
+    height: 83%;
     display: block;
     position: absolute;
     right: 0;
@@ -276,35 +311,54 @@ span.red {
 
 .what-make-wrap::before {
     content: '';
-    background-image: url(../img/what-make-graphic.svg);
-    background-position: left bottom;
+    /* background-image: url(../img/what-make-graphic.svg); */
+    background-image: url(../img/right-abstract-corner.svg);
+    background-position: right bottom;
     background-size:contain;
     background-repeat: no-repeat;
     position: absolute;
     bottom: 14px;
-    left: 0px;
+    right: 0px;
     bottom: 0;
-    width: 445px;
-    height: 323px;
+    width: 354px;
+    height: 221px;
+    z-index: 1;
+}
+
+.what-make-wrap::after {
+    content: '';
+    background-image: url(../img/abstract-boxes-bg.svg);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 14px;
+    right: 0px;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
    
 }
 
 .what-get::before {
     content: '';
-    background-image: url(../img/what-get-bg-before.svg);
-    background-position:top;
-    background-size:cover;
+    /* background-image: url(../img/what-get-bg-before.svg); */
+    background-image: url(../img/what-get-corner-before.svg);
+    background-position: unset;
+    background-size: unset;
     background-repeat: no-repeat;
     position: absolute;
-    top:0px;
+    bottom: 0;
     left: 0px;
-    right:0px;
+    right: auto;
+    max-width: 427px;
     width: 100%;
-    height: 25px;
+    height: 216px;
    
 }
 
-.what-get::after {
+/* .what-get::after {
     content: '';
     background-image: url(../img/what-get-bg-after.svg);
     background-position:bottom;
@@ -317,7 +371,7 @@ span.red {
     width: 100%;
     height: 25px;
    
-}
+} */
 
 .join-us::after {
     content: '';
@@ -336,15 +390,18 @@ span.red {
 
 .what-get-img::after {
     content: '';
-    background-image: url(../img/what-get-lion.svg);
-    background-position: right;
-    background-size: contain;
+    /* background-image: url(../img/what-get-lion.svg); */
+    background: #E10A17;
+    background-position: unset;
+    background-size: unset;
     background-repeat: no-repeat;
+    border-radius: 8px;
     position: absolute;
-    bottom: -90px;
-    right: -210px;
-    width: 276px;
-    height: 199px;
+    top: -5%;
+    right: -3%;
+    width: 50%;
+    height: 110%;
+    z-index: -1;
 }
 
 .banner-cta::before {
@@ -557,12 +614,28 @@ ul.check-list li {
         display: none !important;
     }
 
+    .what-make-wrap::before {
+        width: 154px;
+        height: 101px;
+    }
+
 }
 @media (max-width: 767px)  {
 
     .tilt-btn {
         -webkit-clip-path: polygon(25% 0%, 100% 0%, 74% 100%, 0% 110%);
         clip-path: polygon(25% 0%, 100% 0%, 74% 100%, 0% 110%);
+    }
+
+    .what-get-img::after {
+        display: none;
+    }
+
+    .what-get::before {
+        background-size: cover;
+        max-width: 367px;
+        width: 100%;
+        height: 156px;
     }
 }
 
@@ -620,6 +693,11 @@ img.close-menu {
 @media (max-width: 575px) {
     .header-nav {
         padding: 20px 16px;
+    }
+
+    .what-get::before {
+        max-width: 327px;
+        height: 116px;
     }
 }
 .owl-nav > *, .tablinks {
@@ -1041,6 +1119,10 @@ table tbody tr:not(:last-child) {
 
     .plan-single .btn-filled {
         padding: 6px 12px;
+    }
+
+    .what-make-wrap::before {
+        display: none;
     }
 
 }
