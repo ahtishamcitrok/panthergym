@@ -836,6 +836,10 @@ video {
   margin-top: 48px;
 }
 
+.mt-\[68px\] {
+  margin-top: 68px;
+}
+
 .mt-\[6px\] {
   margin-top: 6px;
 }
@@ -990,6 +994,10 @@ video {
   width: 42px;
 }
 
+.w-\[50\%\] {
+  width: 50%;
+}
+
 .w-\[50px\] {
   width: 50px;
 }
@@ -1086,6 +1094,10 @@ video {
 
 .max-w-\[28px\] {
   max-width: 28px;
+}
+
+.max-w-\[350px\] {
+  max-width: 350px;
 }
 
 .max-w-\[374px\] {
@@ -2883,6 +2895,22 @@ span.red {
   z-index: 0;
 }
 
+.pricing-tabs .tablinks.active {
+  background-color: #E10A17;
+}
+
+.pricing-tabs .tablinks.active span {
+  color: #ffffff;
+}
+
+.plans-wrap-inner .tabcontent {
+  display: none;
+}
+
+.plans-wrap-inner .tabcontent.active {
+  display: block;
+}
+
 /* --------------------- */
 
 .inner-icon {
@@ -3538,6 +3566,7 @@ table tbody tr:not(:last-child) {
 
   .popular p {
     line-height: 18px;
+    font-weight: 600;
   }
 
   .calendar-body {
@@ -3547,6 +3576,12 @@ table tbody tr:not(:last-child) {
   .member-details {
     grid-template-columns: 130px 1fr;
     gap: 20px;
+  }
+
+  .plan-single .btn-outline {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 6px;
   }
 }
 
@@ -3961,6 +3996,10 @@ table tbody tr:not(:last-child) {
     margin-top: 48px;
   }
 
+  .md\:mt-\[92px\] {
+    margin-top: 92px;
+  }
+
   .md\:hidden {
     display: none;
   }
@@ -4013,6 +4052,10 @@ table tbody tr:not(:last-child) {
 
   .md\:max-w-\[520px\] {
     max-width: 520px;
+  }
+
+  .md\:max-w-\[524px\] {
+    max-width: 524px;
   }
 
   .md\:max-w-\[56px\] {
@@ -4250,6 +4293,10 @@ table tbody tr:not(:last-child) {
     margin-top: 32px;
   }
 
+  .lg\:mt-\[108px\] {
+    margin-top: 108px;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -4377,6 +4424,11 @@ table tbody tr:not(:last-child) {
     padding-bottom: 22px;
   }
 
+  .lg\:py-\[17px\] {
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+
   .lg\:pb-120 {
     padding-bottom: 120px;
   }
@@ -4395,6 +4447,10 @@ table tbody tr:not(:last-child) {
 
   .lg\:text-xl {
     font-size: 24px;
+  }
+
+  .lg\:font-bold {
+    font-weight: 700;
   }
 }
 
