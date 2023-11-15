@@ -62,6 +62,7 @@ module.exports = {
         'shop-banner-bg': "url('/public/img/shop-banner-img.jpg')",
         'tour-banner-bg': "url('/public/img/book-tour-banner-img.png')",
         'trainer-banner-bg': "url('/public/img/trainer-banner-img.png')",
+        '404-page-bg': "url('/public/img/404-page-bg.png')",
       },
       // Define custom padding values
       padding: {
