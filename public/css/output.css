@@ -920,6 +920,10 @@ video {
   height: 32px;
 }
 
+.h-\[36px\] {
+  height: 36px;
+}
+
 .h-\[40px\] {
   height: 40px;
 }
@@ -958,10 +962,6 @@ video {
   height: 100vh;
 }
 
-.h-\[36px\] {
-  height: 36px;
-}
-
 .min-h-\[48px\] {
   min-height: 48px;
 }
@@ -994,6 +994,10 @@ video {
   width: 32px;
 }
 
+.w-\[36px\] {
+  width: 36px;
+}
+
 .w-\[42px\] {
   width: 42px;
 }
@@ -1024,10 +1028,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[36px\] {
-  width: 36px;
 }
 
 .min-w-\[130px\] {
@@ -1172,6 +1172,10 @@ video {
   max-width: 758px;
 }
 
+.max-w-\[786px\] {
+  max-width: 786px;
+}
+
 .max-w-\[800px\] {
   max-width: 800px;
 }
@@ -1199,10 +1203,6 @@ video {
 .max-w-\[fit-content\] {
   max-width: -moz-fit-content;
   max-width: fit-content;
-}
-
-.max-w-\[786px\] {
-  max-width: 786px;
 }
 
 .flex-1 {
@@ -1405,10 +1405,6 @@ video {
 
 .overflow-x-hidden {
   overflow-x: hidden;
-}
-
-.overflow-y-scroll {
-  overflow-y: scroll;
 }
 
 .truncate {
@@ -1674,6 +1670,10 @@ video {
   background-image: url('/public/img/trainer-banner-img.png');
 }
 
+.bg-class-detail-page-bg {
+  background-image: url('/public/img/class-detail-banner-img.png');
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -1786,6 +1786,11 @@ video {
 .px-\[16px\] {
   padding-left: 16px;
   padding-right: 16px;
+}
+
+.px-\[24px\] {
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .px-\[34px\] {
@@ -1916,21 +1921,6 @@ video {
 .py-\[90px\] {
   padding-top: 90px;
   padding-bottom: 90px;
-}
-
-.py-\[58px\] {
-  padding-top: 58px;
-  padding-bottom: 58px;
-}
-
-.px-\[44px\] {
-  padding-left: 44px;
-  padding-right: 44px;
-}
-
-.px-\[24px\] {
-  padding-left: 24px;
-  padding-right: 24px;
 }
 
 .\!pb-\[9px\] {
@@ -2115,10 +2105,6 @@ video {
 
 .text-xxl {
   font-size: 200px;
-}
-
-.text-5xl {
-  font-size: 40px;
 }
 
 .\!font-semibold {
@@ -4195,10 +4181,6 @@ table tbody tr:not(:last-child) {
     padding: 74px;
   }
 
-  .md\:p-40 {
-    padding: 40px;
-  }
-
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -4222,6 +4204,11 @@ table tbody tr:not(:last-child) {
   .md\:px-40 {
     padding-left: 40px;
     padding-right: 40px;
+  }
+
+  .md\:px-\[44px\] {
+    padding-left: 44px;
+    padding-right: 44px;
   }
 
   .md\:py-0 {
@@ -4249,19 +4236,14 @@ table tbody tr:not(:last-child) {
     padding-bottom: 24px;
   }
 
-  .md\:py-\[20px\] {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
   .md\:py-40 {
     padding-top: 40px;
     padding-bottom: 40px;
   }
 
-  .md\:px-\[44px\] {
-    padding-left: 44px;
-    padding-right: 44px;
+  .md\:py-\[20px\] {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .md\:py-\[58px\] {
@@ -4287,6 +4269,10 @@ table tbody tr:not(:last-child) {
 
   .md\:text-2xl {
     font-size: 28px;
+  }
+
+  .md\:text-3xl {
+    font-size: 32px;
   }
 
   .md\:text-4xl {
@@ -4319,10 +4305,6 @@ table tbody tr:not(:last-child) {
 
   .md\:text-xl {
     font-size: 24px;
-  }
-
-  .md\:text-3xl {
-    font-size: 32px;
   }
 
   .md\:font-bold {
@@ -4515,16 +4497,16 @@ table tbody tr:not(:last-child) {
     text-align: left;
   }
 
+  .lg\:text-5xl {
+    font-size: 40px;
+  }
+
   .lg\:text-lg {
     font-size: 20px;
   }
 
   .lg\:text-xl {
     font-size: 24px;
-  }
-
-  .lg\:text-5xl {
-    font-size: 40px;
   }
 
   .lg\:font-bold {
