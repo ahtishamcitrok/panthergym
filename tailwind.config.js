@@ -64,6 +64,8 @@ module.exports = {
         'trainer-banner-bg': "url('/public/img/trainer-banner-img.png')",
         '404-page-bg': "url('/public/img/404-page-bg.png')",
         'class-detail-page-bg': "url('/public/img/class-detail-banner-img.png')",
+        'news-banner-bg': "url('/public/img/news-banner-img.png')",
+        'linear-gradient-black': 'linear-gradient(180deg, rgba(0, 0, 0, 0.00) 16.12%, rgba(0, 0, 0, 0.80) 100%)',
       },
       // Define custom padding values
       padding: {

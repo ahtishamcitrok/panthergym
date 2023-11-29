@@ -574,6 +574,10 @@ video {
   }
 }
 
+.pointer-events-none {
+  pointer-events: none;
+}
+
 .visible {
   visibility: visible;
 }
@@ -644,6 +648,10 @@ video {
 
 .top-\[15px\] {
   top: 15px;
+}
+
+.top-\[16px\] {
+  top: 16px;
 }
 
 .top-\[30px\] {
@@ -747,6 +755,14 @@ video {
   margin-bottom: 8px;
 }
 
+.mb-\[10px\] {
+  margin-bottom: 10px;
+}
+
+.mb-\[12px\] {
+  margin-bottom: 12px;
+}
+
 .mb-\[16px\] {
   margin-bottom: 16px;
 }
@@ -828,6 +844,10 @@ video {
   margin-top: 48px;
 }
 
+.mt-\[12px\] {
+  margin-top: 12px;
+}
+
 .mt-\[24px\] {
   margin-top: 24px;
 }
@@ -842,6 +862,10 @@ video {
 
 .mt-\[6px\] {
   margin-top: 6px;
+}
+
+.mt-\[8px\] {
+  margin-top: 8px;
 }
 
 .block {
@@ -906,6 +930,10 @@ video {
 
 .h-\[200px\] {
   height: 200px;
+}
+
+.h-\[300px\] {
+  height: 300px;
 }
 
 .h-\[306px\] {
@@ -1192,6 +1220,10 @@ video {
   max-width: 880px;
 }
 
+.max-w-\[903px\] {
+  max-width: 903px;
+}
+
 .max-w-\[940px\] {
   max-width: 940px;
 }
@@ -1203,6 +1235,11 @@ video {
 .max-w-\[fit-content\] {
   max-width: -moz-fit-content;
   max-width: fit-content;
+}
+
+.max-w-max {
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 
 .flex-1 {
@@ -1248,6 +1285,10 @@ video {
 
 .grid-cols-\[1fr\] {
   grid-template-columns: 1fr;
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
@@ -1354,6 +1395,10 @@ video {
   gap: 64px;
 }
 
+.gap-\[6px\] {
+  gap: 6px;
+}
+
 .gap-\[8px\] {
   gap: 8px;
 }
@@ -1411,6 +1456,10 @@ video {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.overflow-ellipsis {
+  text-overflow: ellipsis;
 }
 
 .whitespace-nowrap {
@@ -1630,6 +1679,10 @@ video {
   background-image: url('/public/img/account-banner-img.png');
 }
 
+.bg-class-detail-page-bg {
+  background-image: url('/public/img/class-detail-banner-img.png');
+}
+
 .bg-cta-banner-bg {
   background-image: url('/public/img/cta-banner-img.png');
 }
@@ -1650,8 +1703,16 @@ video {
   background-image: url('/public/img/home-banner-mobile.jpg');
 }
 
+.bg-linear-gradient-black {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 16.12%, rgba(0, 0, 0, 0.80) 100%);
+}
+
 .bg-member-banner-bg {
   background-image: url('/public/img/member-banner-bg.png');
+}
+
+.bg-news-banner-bg {
+  background-image: url('/public/img/news-banner-img.png');
 }
 
 .bg-plans-banner-bg {
@@ -1668,10 +1729,6 @@ video {
 
 .bg-trainer-banner-bg {
   background-image: url('/public/img/trainer-banner-img.png');
-}
-
-.bg-class-detail-page-bg {
-  background-image: url('/public/img/class-detail-banner-img.png');
 }
 
 .bg-cover {
@@ -1781,6 +1838,11 @@ video {
 .px-\[0\] {
   padding-left: 0;
   padding-right: 0;
+}
+
+.px-\[10px\] {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .px-\[16px\] {
@@ -1896,6 +1958,11 @@ video {
 .py-\[20px\] {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.py-\[2px\] {
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .py-\[42px\] {
@@ -2944,6 +3011,18 @@ span.red {
   display: block;
 }
 
+/* news page css */
+
+.news-inner-wrap {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 20px;
+}
+
+.tag-shadow {
+  box-shadow: 0px 4px 30px 0px rgba(51, 51, 51, 0.08);
+}
+
 /* --------------------- */
 
 .inner-icon {
@@ -3105,6 +3184,10 @@ ul.check-list li {
   .why-our-trainers::after {
     max-width: 200px;
     height: 80px;
+  }
+
+  .news-inner-wrap {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -3888,6 +3971,10 @@ table tbody tr:not(:last-child) {
   display: block;
 }
 
+.group:hover .group-hover\:cursor-pointer {
+  cursor: pointer;
+}
+
 .group:hover .group-hover\:bg-base-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(19 19 19 / var(--tw-bg-opacity));
@@ -4337,6 +4424,10 @@ table tbody tr:not(:last-child) {
 }
 
 @media (min-width: 992px) {
+  .lg\:mb-48 {
+    margin-bottom: 48px;
+  }
+
   .lg\:mb-\[60px\] {
     margin-bottom: 60px;
   }
@@ -4363,6 +4454,10 @@ table tbody tr:not(:last-child) {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:h-full {
+    height: 100%;
   }
 
   .lg\:w-\[40\%\] {
@@ -4527,6 +4622,14 @@ table tbody tr:not(:last-child) {
     max-width: 860px;
   }
 
+  .xl\:max-w-\[903px\] {
+    max-width: 903px;
+  }
+
+  .xl\:max-w-\[954px\] {
+    max-width: 954px;
+  }
+
   .xl\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -4554,6 +4657,16 @@ table tbody tr:not(:last-child) {
 
   .xl\:p-40 {
     padding: 40px;
+  }
+
+  .xl\:px-\[18px\] {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .xl\:py-\[5px\] {
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 
   .xl\:text-medium {
@@ -4605,6 +4718,10 @@ table tbody tr:not(:last-child) {
 
   .xxl\:p-20 {
     padding: 20px;
+  }
+
+  .xxl\:text-lg {
+    font-size: 20px;
   }
 
   .xxl\:text-xl {
