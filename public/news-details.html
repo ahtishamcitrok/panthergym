@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- title -->
-    <title>News Updates</title>
+    <title>News Details</title>
 
     <!-- favicon -->
     <link rel="icon" type="image/png" href="images/favicon.png" sizes="any">
@@ -100,71 +100,87 @@
     <!-- main -->
     <main class="relative">
 
-        <!-- inner banner -->
-        <section class="inner-banner-wrap dropin-banner news relative bg-news-banner-bg bg-cover bg-no-repeat bg-center md:h-[350px] h-[200px]">
-            <div class="container h-full">
-                <div class="inner-banner flex items-center justify-start h-full z-10 relative">
-                    <h1 class="font-spyagency text-lg text-base-0 md:text-4xl mb-12 uppercase">news<br
-                            class="md:hidden"> <span class="red">updates</span></h1>
-                </div>
-            </div>
-        </section>
-
-        
-        <!-- updates wrap -->
-        <section class="news-wrap lg:py-120 py-60">
+        <!-- news wrap -->
+        <section class="news-wrap">
             <div class="container">
-                <div class="news-inner">
-                    <div class="sec-head text-center lg:mb-48 mb-32 xl:max-w-[954px] max-w-[720px] w-full mx-auto">
-                        <h2 class="font-spyagency text-base-100 text-lg md:text-4xl mb-12 text-center uppercase">latest <span class="red">updates</span></h2>
-                        <p class="text-base-80 text-lg text-center">Stay informed with our breaking updates, covering the latest in fitness trends and gym happenings. Dive deeper into training tips, nutritional advice, and athlete spotlights for your fitness journey.</p>
+                <div class="news-inner max-w-[762px] w-full mx-auto md:pt-[0] pt-[40px]">
+                
+                    <!-- Breadcrumbs -->
+                    <div class="breadcrumbs pt-[40px] pb-[32px] md:block hidden">
+                        <div class="container !px-[0px]">
+                            <ul class="breadcrumbs-list flex gap-[20px]">
+                                <li><a href="index.html" class="text-sm text-primary-100 hover:text-base-100">Home</a></li>
+                                <li><a href="news.html" class="text-sm text-primary-100 hover:text-base-100">News</a></li>
+                                <li><a href="#" class="font-semibold">Insider Tips and Strategies in Competitive Boxing</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="news-inner-wrap">
-                        <div class="relative group">
-                            <a href="news-details.html" class="group-hover:cursor-pointer"><img class="rounded-lg w-full lg:h-full md:h-[350px] h-[300px] object-cover object-center group-hover:cursor-pointer" src="img/latest-news-img-1.png" alt=""></a>
-                            <div class="absolute left-0 bottom-0 w-full lg:px-24 px-16 lg:py-24 py-16 group-hover:cursor-pointer bg-linear-gradient-black rounded-lg">
-                                <span class="xl:py-[5px] py-[2px] xl:px-[18px] px-[10px] bg-base-0 text-xs text-primary-100 font-semibold block max-w-max rounded-full mb-[10px] tag-shadow">Competitive Boxing</span>
-                                <a href="" class="xxl:text-lg text-medium text-base-0 xl:font-bold font-semibold hover:text-primary-100 group-hover:text-primary-100 w-[90%] whitespace-nowrap overflow-hidden overflow-ellipsis block">Insider Tips and Strategies in Competitive Boxing</a>
-                                <div class="flex items-center gap-[8px] mt-[8px]">
-                                    <img src="img/calendar-icon.svg" class="max-w-[18px]" alt="">
-                                    <span class="text-xs text-base-0 group-hover:text-base-0 font-normal">28 NOV 2023</span>
-                                </div>
-                            </div>
+
+                    <div class="rounded-lg overflow-hidden w-full">
+                        <img class="rounded-lg w-full h-full object-cover object-center" src="img/news-details-img.png" alt="">
+                    </div>
+                    <div class="flex sm:flex-row flex-col sm:items-center items-start justify-between mt-[32px] mb-[12px] gap-[12px]">
+                        <span class="xl:py-[5px] py-[2px] xl:px-[18px] px-[10px] bg-primary-20 text-xs text-primary-100 font-semibold block max-w-max rounded-full">Competitive Boxing</span>
+                        <div class="flex items-center gap-[8px]">
+                            <img src="img/calendar-icon.svg" class="max-w-[18px]" alt="">
+                            <span class="text-xs text-base-60 font-normal">28 NOV 2023</span>
                         </div>
-                        <div class="flex flex-col justify-between gap-[20px]">
-                            <div class="h-full relative group"><a href=""><img class="rounded-lg w-full lg:h-full md:h-[350px] h-[300px] object-cover object-center" src="img/latest-news-img-2.png" alt=""></a>
-                                <div class="absolute left-0 bottom-0 w-full lg:px-24 px-16 lg:py-24 py-16 group-hover:cursor-pointer bg-linear-gradient-black rounded-lg">
-                                    <span class="xl:py-[5px] py-[2px] xl:px-[18px] px-[10px] bg-base-0 text-xs text-primary-100 font-semibold block max-w-max rounded-full mb-[10px] tag-shadow">Yin Yoga</span>
-                                    <a href="" class="xxl:text-lg text-medium text-base-0 xl:font-bold font-semibold hover:text-primary-100 group-hover:text-primary-100 w-[90%] whitespace-nowrap overflow-hidden overflow-ellipsis block">Explore Yin Yoga Practices</a>
-                                    <div class="flex items-center gap-[8px] mt-[8px]">
-                                        <img src="img/calendar-icon.svg" class="max-w-[18px]" alt="">
-                                        <span class="text-xs text-base-0 group-hover:text-base-0 font-normal">27 NOV 2023</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="h-full relative group"><a href=""><img class="rounded-lg w-full lg:h-full md:h-[350px] h-[300px] object-cover object-center" src="img/latest-news-img-3.png" alt=""></a>
-                                <div class="absolute left-0 bottom-0 w-full lg:px-24 px-16 lg:py-24 py-16 group-hover:cursor-pointer bg-linear-gradient-black rounded-lg">
-                                    <span class="xl:py-[5px] py-[2px] xl:px-[18px] px-[10px] bg-base-0 text-xs text-primary-100 font-semibold block max-w-max rounded-full mb-[10px] tag-shadow">Gym Training</span>
-                                    <a href="" class="xxl:text-lg text-medium text-base-0 xl:font-bold font-semibold hover:text-primary-100 group-hover:text-primary-100 w-[90%] whitespace-nowrap overflow-hidden overflow-ellipsis block">Gym Training Essentials</a>
-                                    <div class="flex items-center gap-[8px] mt-[8px]">
-                                        <img src="img/calendar-icon.svg" class="max-w-[18px]" alt="">
-                                        <span class="text-xs text-base-0 group-hover:text-base-0 font-normal">26 NOV 2023</span>
-                                    </div>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="sm:mb-[24px] mb-[18px]">
+                        <h1 class="lg:font-bold font-semibold lg:text-xl text-lg text-base-100 sm:leading-[39px] leading-[32px] sm:mb-[24px] mb-[10px]">Insider Tips and Strategies in Competitive Boxing</h1>
+                        <p class="lg:text-mlg text-medium text-base-60 sm:leading-[32px] leading-[30px]">Competitive boxing isn't just about strength and agility; it's a strategic game that demands finesse and mental prowess. Whether you're a seasoned boxer or just starting, mastering the intricacies of the sport can make a world of difference in the ring. Here are some insider tips and strategies that can elevate your boxing game and give you the edge you need.</p>
+                    </div>
+                    <div class="sm:mb-[24px] mb-[18px]">
+                        <h2 class="font-semibold lg:text-lg text-mlg text-base-100 sm:leading-[39px] leading-[32px] mb-[8px]">1. Technique Precision over Power</h2>
+                        <p class="lg:text-mlg text-medium text-base-60 sm:leading-[32px] leading-[30px]">While power is essential, it's the precision of your technique that truly counts. Focus on perfecting your stance, footwork, and punches. A well-executed jab with accuracy can often be more effective than a powerful but wild swing. Work on honing your technique through dedicated practice and repetition.</p>
+                    </div>
+                    <div class="sm:mb-[24px] mb-[18px]">
+                        <h2 class="font-semibold lg:text-lg text-mlg text-base-100 sm:leading-[39px] leading-[32px] mb-[8px]">2. Mental Fortitude and Strategy</h2>
+                        <p class="lg:text-mlg text-medium text-base-60 sm:leading-[32px] leading-[30px]">Boxing is not just physical; it's a mental game as well. Developing a strategy and reading your opponent's moves are critical. Study their patterns, anticipate their actions, and adapt your strategy accordingly. Being mentally agile and composed during a match can give you a significant advantage.</p>
+                    </div>
+                    <div class="sm:mb-[32px] mb-[24px]">
+                        <h2 class="font-semibold lg:text-lg text-mlg text-base-100 sm:leading-[39px] leading-[32px] mb-[8px]">3. Endurance and Cardiovascular Fitness</h2>
+                        <p class="lg:text-mlg text-medium text-base-60 sm:leading-[32px] leading-[30px]">Boxing is a high-intensity sport that demands exceptional cardiovascular endurance. Incorporate endurance training into your routine—running, skipping, and interval training—to build stamina. A boxer with superior endurance can maintain control and precision even in the later rounds.</p>
+                    </div>
+                    <div class="flex sm:flex-row flex-col sm:gap-[22px] gap-[16px] sm:mb-[32px] mb-[24px]">
+                        <div>
+                            <img class="w-full rounded-lg" src="img/news-details-inner-img-1.png" alt="">
                         </div>
+                        <div>
+                            <img class="w-full rounded-lg" src="img/news-details-inner-img-2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="sm:mb-[24px] mb-[18px]">
+                        <h2 class="font-semibold lg:text-lg text-mlg text-base-100 sm:leading-[39px] leading-[32px] mb-[8px]">4. Proper Hydration and Recovery</h2>
+                        <p class="lg:text-mlg text-medium text-base-60 sm:leading-[32px] leading-[30px]">Staying hydrated is paramount. During intense training, you lose a significant amount of fluids through sweat. Ensure you're adequately hydrated before, during, and after workouts or matches. Additionally, prioritize post-workout recovery—rest, proper nutrition, and adequate sleep are vital for your body's recovery and growth.</p>
+                    </div>
+                    <div class="sm:mb-[24px] mb-[18px]">
+                        <h2 class="font-semibold lg:text-lg text-mlg text-base-100 sm:leading-[39px] leading-[32px] mb-[8px]">5. Quality Coaching and Continuous Learning</h2>
+                        <p class="lg:text-mlg text-medium text-base-60 sm:leading-[32px] leading-[30px]">A knowledgeable coach can elevate your skills significantly. Seek guidance from experienced trainers who can fine-tune your techniques, provide strategic insights, and help you grow as a boxer. Additionally, never stop learning. Watch fights, study techniques, and continuously seek to improve and evolve your skills.</p>
+                    </div>
+                    <div class="sm:mb-[48px] mb-[24px]">
+                        <h3 class="font-semibold lg:text-lg text-mlg text-base-100 sm:leading-[39px] leading-[32px] mb-[8px]">In Conclusion</h3>
+                        <p class="lg:text-mlg text-medium text-base-60 sm:leading-[32px] leading-[30px]">Competitive boxing is an art that requires dedication, strategy, and continuous improvement. By focusing on technique, mental strength, endurance, hydration, and learning from experienced mentors, you can refine your craft and step into the ring with confidence. Incorporating these insider tips and strategies can set you on the path to becoming a formidable and successful boxer.</p>
+                    </div>
+                    <div class="flex flex-row items-center justify-start gap-[16px] pt-[24px] border-t border-base-20">
+                        <p class="md:text-mlg text-medium font-semibold text-base-100">Share:</p>
+                        <ul class="flex items-center gap-[12px]">
+                            <li><a href="" class="flex items-center justify-center border border-base-40 hover:border-base-100 rounded-full w-[30px] h-[30px]"><img class="h-[16px] w-auto" src="./img/facebook-icon.svg" alt=""></a></li>
+                            <li><a href="" class="flex items-center justify-center border border-base-40 hover:border-base-100 rounded-full w-[30px] h-[30px]"><img class="h-[16px] w-auto" src="./img/insta-icon.svg" alt=""></a></li>
+                            <li><a href="" class="flex items-center justify-center border border-base-40 hover:border-base-100 rounded-full w-[30px] h-[30px]"><img class="h-[16px] w-auto" src="./img/twitter-icon.svg" alt=""></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- featured classes -->
-        <section class="why-our-trainers relative bg-custom-gradient-fullblack lg:py-120 py-60">
+        <section class="lg:py-120 py-60">
             <div class="container">
                 <div class="inner products-list">
                     <div class="sec-head text-center lg:mb-48 mb-32 xl:max-w-[903px] max-w-[903px] mx-auto w-full">
-                        <h2 class="font-spyagency text-base-0 text-lg md:text-4xl mb-12 text-center">featured <span class="red">updates</span></h2>
-                        <p class="text-base-0 text-lg text-center">Featured updates are your gateway to the latest in fitness trends, gym news, and wellness insights. Stay in the loop with our curated collection of breaking stories and athlete spotlights.</p>
+                        <h2 class="font-spyagency text-base-100 text-lg md:text-4xl mb-12 text-center">featured <span class="red">updates</span></h2>
+                        <p class="text-base-80 text-lg text-center">Featured updates are your gateway to the latest in fitness trends, gym news, and wellness insights. Stay in the loop with our curated collection of breaking stories and athlete spotlights.</p>
                     </div>
                     <div class="featured-classes grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-[24px] gap-[20px]">
                         <a href="schedule.html" class="offer-single group bg-cover bg-no-repeat bg-center relative transition duration-300 ease-in-out rounded-tl-lg rounded-tr-lg">
@@ -206,51 +222,6 @@
                                     <span class="text-sm text-base-60 group-hover:text-base-0 font-normal">1 year ago</span>
                                 </div>
                                 <div class="line-clamp-2">Latest Fights, Training Insights, and Champion Stories</div>
-                                <span class="block font-semibold text-medium text-primary-100 flex flex-row justify-start items-center gap-[6px] mt-[12px]">Read More <img src="img/arrow-right-red.svg" alt=""></span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="mt-48 text-center">
-                        <a href="schedule.html" class="btn-filled min-w-[180px] text-center relative">Load More</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- last week updates -->
-        <section class="relative lg:py-120 py-60">
-            <div class="container">
-                <div class="inner products-list">
-                    <div class="sec-head text-center lg:mb-48 mb-32 xl:max-w-[903px] max-w-[903px] mx-auto w-full">
-                        <h2 class="font-spyagency text-base-100 text-lg md:text-4xl mb-12 text-center">last <span class="red">week</span></h2>
-                        <p class="text-base-100 text-lg text-center">Recap of Last Week's Fitness News. <br class="hidden lg:block"> Dive into the Latest Trends, Workouts, and Success Stories.</p>
-                    </div>
-                    <div class="featured-classes grid md:grid-cols-2 grid-cols-1 gap-[20px]">
-                        <a href="schedule.html" class="offer-single group bg-cover bg-no-repeat bg-center relative transition duration-300 ease-in-out rounded-tl-lg rounded-tr-lg">
-                            <div class="h-[310px] rounded-tl-lg rounded-tr-lg relative">
-                                <img src="img/last-week-img-1.png" class="w-full h-full object-cover object-center rounded-tl-lg rounded-tr-lg" alt="">
-                                <span class="xl:py-[5px] py-[2px] xl:px-[18px] px-[10px] bg-base-0 text-xs text-primary-100 font-semibold block max-w-max rounded-full absolute top-[16px] left-[16px] pointer-events-none tag-shadow">Gym Training</span>
-                            </div>
-                            <div class="offer-single-btn md:text-lg text-medium font-semibold lg:font-bold bg-base-0 text-base-100 group-hover:text-base-0 py-20 px-16 block text-left group-hover:bg-base-100 rounded-bl-lg rounded-br-lg">
-                                <div class="flex items-center gap-[8px] mb-[12px]">
-                                    <img src="img/calendar-icon.svg" class="max-w-[18px]" alt="">
-                                    <span class="text-sm text-base-60 group-hover:text-base-0 font-normal">28 NOV 2023</span>
-                                </div>
-                                <div class="w-[100%] whitespace-nowrap overflow-hidden overflow-ellipsis block">Training Techniques, and Fitness Success Stories</div>
-                                <span class="block font-semibold text-medium text-primary-100 flex flex-row justify-start items-center gap-[6px] mt-[12px]">Read More <img src="img/arrow-right-red.svg" alt=""></span>
-                            </div>
-                        </a>
-                        <a href="schedule.html" class="offer-single group bg-cover bg-no-repeat bg-center relative transition duration-300 ease-in-out rounded-tl-lg rounded-tr-lg">
-                            <div class="h-[310px] rounded-tl-lg rounded-tr-lg relative">
-                                <img src="img/last-week-img-2.png" class="w-full h-full object-cover object-center rounded-tl-lg rounded-tr-lg" alt="">
-                                <span class="xl:py-[5px] py-[2px] xl:px-[18px] px-[10px] bg-base-0 text-xs text-primary-100 font-semibold block max-w-max rounded-full absolute top-[16px] left-[16px] pointer-events-none tag-shadow">Health Tips</span>
-                            </div>
-                            <div class="offer-single-btn md:text-lg text-medium font-semibold lg:font-bold bg-base-0 text-base-100 group-hover:text-base-0 py-20 px-16 block text-left group-hover:bg-base-100 rounded-bl-lg rounded-br-lg">
-                                <div class="flex items-center gap-[8px] mb-[12px]">
-                                    <img src="img/calendar-icon.svg" class="max-w-[18px]" alt="">
-                                    <span class="text-sm text-base-60 group-hover:text-base-0 font-normal">16 OCT 2023</span>
-                                </div>
-                                <div class="w-[100%] whitespace-nowrap overflow-hidden overflow-ellipsis block">Water's Crucial Role in Gym Workouts</div>
                                 <span class="block font-semibold text-medium text-primary-100 flex flex-row justify-start items-center gap-[6px] mt-[12px]">Read More <img src="img/arrow-right-red.svg" alt=""></span>
                             </div>
                         </a>
