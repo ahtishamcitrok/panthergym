@@ -150,7 +150,11 @@ module.exports = {
       },
       boxShadow: {
         'sm': '0px 4px 34px 4px rgba(51, 51, 51, 0.08)',
-      }
+      },
+      height: {
+        'custom-card-lg': 'calc(100% - 306px)',
+        'custom-card-sm': 'calc(100% - 250px)',
+      },
     },
   },
   variants: {},

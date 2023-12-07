@@ -876,6 +876,10 @@ video {
   margin-top: 8px;
 }
 
+.mt-auto {
+  margin-top: auto;
+}
+
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -929,10 +933,6 @@ video {
 
 .hidden {
   display: none;
-}
-
-.h-606 {
-  height: 606px;
 }
 
 .h-\[16px\] {
@@ -996,6 +996,10 @@ video {
   height: auto;
 }
 
+.h-custom-card-lg {
+  height: calc(100% - 306px);
+}
+
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
@@ -1015,10 +1019,6 @@ video {
 
 .min-h-\[80px\] {
   min-height: 80px;
-}
-
-.min-h-\[169px\] {
-  min-height: 169px;
 }
 
 .w-170 {
@@ -1051,6 +1051,10 @@ video {
 
 .w-\[36px\] {
   width: 36px;
+}
+
+.w-\[40px\] {
+  width: 40px;
 }
 
 .w-\[42px\] {
@@ -1145,6 +1149,10 @@ video {
 
 .max-w-\[100px\] {
   max-width: 100px;
+}
+
+.max-w-\[1070px\] {
+  max-width: 1070px;
 }
 
 .max-w-\[150px\] {
@@ -1281,6 +1289,10 @@ video {
   max-width: max-content;
 }
 
+.max-w-\[375px\] {
+  max-width: 375px;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1400,10 +1412,6 @@ video {
 
 .gap-\[20px\] {
   gap: 20px;
-}
-
-.gap-\[22px\] {
-  gap: 22px;
 }
 
 .gap-\[24px\] {
@@ -1561,6 +1569,11 @@ video {
 .rounded-r {
   border-top-right-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
+}
+
+.rounded-t-lg {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 
 .rounded-bl-lg {
@@ -1804,6 +1817,10 @@ video {
      object-position: center;
 }
 
+.\!p-0 {
+  padding: 0px !important;
+}
+
 .p-12 {
   padding: 12px;
 }
@@ -1832,8 +1849,9 @@ video {
   padding: 4px;
 }
 
-.p-0 {
-  padding: 0px;
+.\!px-\[0px\] {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
 
 .px-0 {
@@ -1894,6 +1912,11 @@ video {
 .px-\[10px\] {
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.px-\[15px\] {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .px-\[16px\] {
@@ -2039,16 +2062,6 @@ video {
 .py-\[90px\] {
   padding-top: 90px;
   padding-bottom: 90px;
-}
-
-.px-\[0px\] {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.\!px-\[0px\] {
-  padding-left: 0px !important;
-  padding-right: 0px !important;
 }
 
 .\!pb-\[9px\] {
@@ -3074,6 +3087,21 @@ span.red {
   z-index: 0;
 }
 
+.punch-passes::after {
+  content: '';
+  background-image: url(../img/why-trainers-after.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width:420px;
+  width: 100%;
+  height: 167px;
+  z-index: 0;
+  transform: rotatey(180deg);
+}
+
 .pricing-tabs .tablinks.active {
   background-color: #E10A17;
 }
@@ -3264,7 +3292,7 @@ ul.check-list li {
     height: 80px;
   }
 
-  .why-our-trainers::after {
+  .why-our-trainers::after, .punch-passes::after {
     max-width: 200px;
     height: 80px;
   }
@@ -4306,6 +4334,10 @@ table tbody tr:not(:last-child) {
     max-width: 56px;
   }
 
+  .md\:max-w-none {
+    max-width: none;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -4764,6 +4796,10 @@ table tbody tr:not(:last-child) {
 
   .xl\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .xl\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .xl\:flex-nowrap {
